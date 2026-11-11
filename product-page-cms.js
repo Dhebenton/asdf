@@ -657,13 +657,16 @@
           }
 
           const heading = $('.wrapper > h2', section);
+          const brochure = product.brochure;
+
+          section.classList.toggle('ae', !brochure?.url);
+          heading?.classList.toggle('column', !brochure?.url);
 
           if (heading?.nextElementSibling) {
                heading.nextElementSibling.classList.add('je');
           }
 
           const button = $('.spec-sheet', section);
-          const brochure = product.brochure;
           const downloadColumn = button?.parentElement;
 
           if (downloadColumn) {
