@@ -414,6 +414,8 @@ nav {
      inset: 0;
      backdrop-filter: blur(4px);
      z-index: 100;
+     pointer-events: none;
+     opacity: 0;
      &.zindex {
           z-index: 105;
      }
@@ -793,9 +795,9 @@ nav {
 #teams-slider {
      .teams-card {
           transition-duration: .25s;
-          width: 350px;
-          max-width: 350px;
-          min-width: 350px;
+          width: 370px;
+          max-width: 370px;
+          min-width: 370px;
 
           * {
                transition: inherit;
