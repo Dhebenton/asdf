@@ -65,17 +65,6 @@
    FILTER
 ============================================================ */
 
-.background-blur {
-     background-color: hsl(0, 0%, 10%, .15);
-     position: fixed;
-     inset: 0;
-     backdrop-filter: blur(4px);
-     z-index: 100;
-     &.zindex {
-          z-index: 105;
-     }
-}
-
 .filter-wrap {
      background-color: white;
      width: 390px;

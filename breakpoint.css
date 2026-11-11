@@ -103,6 +103,52 @@
           }
      }
 
+     nav {
+          .content {
+               .logo {
+                    svg {
+                         height: 12.5px;
+                    }
+               }
+
+               .links-wrap .links a {
+                    font-size: 11px;
+                    padding: 17px 1px;
+               }
+
+               button {
+                    padding: 4px;
+                    margin: -4px 0;
+
+                    svg {
+                         height: 12px;
+                    }
+               }
+          }
+
+          .language-select {
+               width: 120px;
+               button {
+                    text-align: left;
+                    padding: 8px;
+                    width: 100%;
+                    font-size: 11px;
+                    font-weight: 450;
+                    color: var(--text);
+                    
+                    &:hover {
+                         background-color: hsl(0, 0%, 0%, .04);
+                         color: var(--heading);
+                         text-decoration: underline;
+                    }
+
+                    &.active {
+                         color: var(--heading);
+                    }
+               }
+          }
+     }
+
      /* ============================================================
           HERO
      ============================================================ */
@@ -531,6 +577,33 @@
      ============================================================ */
 
      /* ============================================================
+          NAV
+     ============================================================ */
+
+     nav {
+          .content {
+               padding: var(--g20);
+
+               .links-wrap  {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    opacity: 0;
+                    display: none;
+               }
+
+               .menu-button {
+                    padding: 2px;
+                    svg {
+                         height: auto;
+                         margin-bottom: -1px;
+                         width: 16px;
+                    }
+               }
+          }
+     }
+
+     /* ============================================================
           HERO
      ============================================================ */
 
@@ -919,6 +992,20 @@
                }
           }
           
+     }
+
+     /* ============================================================
+          NAV
+     ============================================================ */
+
+     nav {
+          .content {
+               .menu-button {
+                    svg {
+                         width: 15px;
+                    }
+               }
+          }
      }
 
      /* ============================================================
@@ -1385,6 +1472,26 @@
 
           svg {
                height: 10.5px;
+          }
+     }
+
+     nav {
+          .content {
+               gap: var(--g32);
+               .logo {
+                    height: 11.5px;
+               }
+
+               button {
+                    svg {
+                         height: 11.5px;
+                    }
+               }
+               .menu-button {
+                    svg {
+                         width: 14px;
+                    }
+               }
           }
      }
 
