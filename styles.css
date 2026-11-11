@@ -732,6 +732,8 @@ nav {
 
      img.fs {
           position: absolute;
+          object-fit: cover;
+          object-position: center;
      }
 
      h2 {

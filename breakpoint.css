@@ -690,7 +690,7 @@
           height: auto;
           width: 100%;
           max-height: auto;
-          aspect-ratio: 1 / 1.2;
+          aspect-ratio: 1.5 / 1;
      }
 
      /* ============================================================
@@ -1327,6 +1327,16 @@
                     }
                }
           }
+     }
+
+     #promotional-banner {
+          height: auto;
+          width: 100%;
+          h2 {
+               font-size: 15.5px;
+          }
+          max-height: auto;
+          aspect-ratio: 1.1 / 1;
      }
 
      /* ============================================================
