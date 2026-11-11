@@ -571,7 +571,7 @@
                                    </s>
                               ` : ''}
                          </p>
-                         <span>VAT included</span>
+                         <span>+ VAT</span>
                     </div>
 
                     ${getHeroStats(product, specs).map(spec => `
@@ -668,14 +668,11 @@
 
           if (downloadColumn) {
                downloadColumn.hidden = !brochure?.url;
+               downloadColumn.style.display = brochure?.url ? '' : 'none';
           }
 
           if (button && brochure?.url) {
                button.hidden = false;
-
-               const filename =
-                    brochure.originalFilename ||
-                    `${product.name} brochure.pdf`;
 
                const existingLabel = $('.etr-brochure-label', button);
 
@@ -691,11 +688,7 @@
 
                label.className = 'etr-brochure-label';
 
-               const size = brochure.size
-                    ? ` (${(brochure.size / 1048576).toFixed(1)} MB)`
-                    : '';
-
-               label.textContent = `Download ${filename}${size}`;
+               label.textContent = 'View Specification Sheet';
 
                button.appendChild(label);
 
@@ -1089,6 +1082,7 @@ function renderMedia(product) {
           const grid = $('.attachment-grid', section);
 
           section.hidden = !attachments.length || !grid;
+          section.style.display = section.hidden ? 'none' : '';
 
           if (section.hidden) return false;
 
