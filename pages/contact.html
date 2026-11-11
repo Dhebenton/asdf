@@ -9,8 +9,8 @@
           <link rel="stylesheet" href="/contact.css">
           <link rel="stylesheet" href="/breakpoint.css">
           <link rel="stylesheet" href="/info-page.css">
-          <title>ETR Tehnika</title>
-          <meta name="description" content="">
+          <title data-i18n-title="contactMetaTitle">Contact ETR Tehnika | Machinery Sales &amp; Support</title>
+          <meta name="description" content="Contact ETR Tehnika for machinery sales, financing, servicing and practical equipment support across Estonia." data-i18n-content="contactMetaDescription">
 
      </head>
      <body id="info-page">
@@ -44,121 +44,141 @@
                <symbol id="plus" viewBox="0 0 8 8">
                     <path d="M3.54784 8V4.45216H0v-.90432h3.54784V0h.90432v3.54784H8v.90432H4.45216V8z"/>
                </symbol>
+               <symbol viewBox="0 0 8 7" id="check">
+                    <path d="M2.83729 6.23035L0 3.40768L0.745887 2.64717L2.83729 4.73857L7.25411 0L8 0.745887L2.83729 6.23035Z"/>
+               </symbol>
           </svg>
 
           <section class="breadcrumbs ch">
                <div class="fr g16 content">
-                    <a href="">Home</a>
+                    <a href="/">Home</a>
                     <svg viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
-                    <a href="" class="active">Contact</a>
+                    <span class="active" data-i18n="contactPageHeading">Contact Us</span>
                </div>
           </section>
 
           <section class="background-black section-heading fr ch">
-               <h1>Contact Us</h1>
+               <h1 data-i18n="contactPageHeading">Contact Us</h1>
           </section>
 
           <section class="ch" id="contact-page-form">
-               <h2 class="yes-tablet">Start the conversation</h2>
+               <h2 class="yes-tablet" data-i18n="contactStart">Start the conversation</h2>
                <div class="fc as sha g60">
                     <div class="fc no-tablet g12">
-                         <h2>Start the conversation</h2>
-                         <p class="sub">14.6-tonne crawler excavator with a Cummins turbo engine, <br>designed for large-scale earthmoving and construction work.</p>
+                         <h2 data-i18n="contactStart">Start the conversation</h2>
+                         <p class="sub" data-i18n="contactIntro">Contact our team for machinery enquiries, financing options or servicing, <br>and get practical guidance suited to your requirements.</p>
                     </div>
                     <div class="grid">
                          <div class="fc g12">
-                              <h3>Phone Number</h3>
-                              <a href="">+372 56831391</a>
+                              <h3 data-i18n="contactPhone">Phone Number</h3>
+                              <a href="tel:+37256831391">+372 5683 1391</a>
                          </div>
                          <div class="fc g12">
-                              <h3>Email</h3>
-                              <a href="">+info@etrtehnika.ee</a>
+                              <h3 data-i18n="contactEmail">Email</h3>
+                              <a href="mailto:info@etrtehnika.ee">info@etrtehnika.ee</a>
                          </div>
                          <div class="fc g12">
-                              <h3>Social Media</h3>
+                              <h3 data-i18n="contactSocial">Social Media</h3>
                               <div class="fc g4">
-                                   <a href="">+Whatsapp</a>
-                                   <a href="">+Facebook</a>
+                                   <a href="https://wa.me/37256831391" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                                   <a href="https://www.facebook.com/ETRTEHNIKA" target="_blank" rel="noopener noreferrer">Facebook</a>
                               </div>
                          </div>
                          <div class="fc g12">
-                              <h3>Office</h3>
-                              <a href="">Läike tee 1, Peetri, 75312 <br>Harju maakond, Estonia</a>
+                              <h3 data-i18n="contactOffice">Office</h3>
+                              <a href="https://www.google.com/maps/search/?api=1&amp;query=L%C3%A4ike%20tee%201%2C%20Peetri%2C%20Estonia" target="_blank" rel="noopener noreferrer">Läike tee 1, Peetri, 75312 <br><span data-i18n="contactAddressRegion">Harju maakond, Estonia</span></a>
                          </div>
                     </div>
                </div>
-               <form action="" class="fc g28">
-                    <div class="fr g14">
-                         <div class="fc g10">
-                              <label for="">Name</label>
-                              <input type="text">
+               <div class="contact-form-wrap">
+                    <form id="contact-form" class="fc g28">
+                         <div class="fr g14">
+                              <div class="fc g10">
+                                   <label for="contact-name" data-i18n="formName">Name</label>
+                                   <input id="contact-name" name="name" type="text" autocomplete="name" required>
+                              </div>
+                              <div class="fc g10">
+                                   <label for="contact-email" data-i18n="contactEmail">Email</label>
+                                   <input id="contact-email" name="email" type="email" autocomplete="email" required>
+                              </div>
                          </div>
                          <div class="fc g10">
-                              <label for="">Email</label>
-                              <input type="text">
+                              <label for="contact-phone" data-i18n="contactPhone">Phone Number</label>
+                              <input id="contact-phone" name="phone" type="tel" autocomplete="tel" required>
                          </div>
+                         <div class="fc g10">
+                              <label for="contact-message" data-i18n="formMessage">Message</label>
+                              <textarea id="contact-message" name="message"></textarea>
+                         </div>
+                         <button type="submit" class="button" data-i18n="formSend">Send Message</button>
+                    </form>
+
+                    <div class="contact-success fc jc ac" aria-hidden="true">
+                         <div class="success-icon fr jc">
+                              <svg viewBox="0 0 8 7" fill="currentColor"><use href="#check"></use></svg>
+                         </div>
+                         <h2 tabindex="-1" data-i18n="formSuccessHeading">Message Sent</h2>
+                         <p data-i18n="formSuccessText">Thank you. A member of our team will be in touch shortly.</p>
+                         <button type="button" class="button contact-reset" data-i18n="formSendAnother">Send Another Message</button>
                     </div>
-                    <div class="fc g10">
-                         <label for="">Message</label>
-                         <textarea type="text"></textarea>
-                    </div>
-                    <button class="button">Send Message</button>
-               </form>
+               </div>
           </section>
 
-          <section class="fc g36 c" id="specialist">
-               <h2>Speak To A Specialist</h2>
-               <div class="fr wrap g16">
-                    <div class="specialist-card fc g32">
-                         <div class="fc g12">
-                              <h3>Patrick Epner</h3>
-                              <p class="pos">Product & Sales Manager</p>
-                         </div>
-                         <div class="fr g16">
-                              <div class="con">
-                                   <p class="head">Phone</p>
-                                   <a href="">+372 56831391</a>
-                              </div>
-                              <div class="con">
-                                   <p class="head">Email</p>
-                                   <a href="">tanel.epner@etrtehnika.ee</a>
-                              </div>
-                         </div>
+
+<section class="fc g36 c" id="specialist">
+     <h2 data-i18n="contactSpecialist">Speak To A Specialist</h2>
+     <div class="fr wrap g16">
+          <div class="specialist-card fc g32">
+               <div class="fc g12">
+                    <h3>Joosep Hein</h3>
+                    <p class="pos" data-i18n="teamJoosepRole">After-Sales Service Manager</p>
+               </div>
+               <div class="fr g16">
+                    <div class="con">
+                         <p class="head" data-i18n="contactPhoneShort">Phone</p>
+                         <a href="tel:+37256831391">+372 5683 1391</a>
                     </div>
-                    <div class="specialist-card fc g32">
-                         <div class="fc g12">
-                              <h3>Patrick Epner</h3>
-                              <p class="pos">Product & Sales Manager</p>
-                         </div>
-                         <div class="fr g16">
-                              <div class="con">
-                                   <p class="head">Phone</p>
-                                   <a href="">+372 56831391</a>
-                              </div>
-                              <div class="con">
-                                   <p class="head">Email</p>
-                                   <a href="">tanel.epner@etrtehnika.ee</a>
-                              </div>
-                         </div>
-                    </div>
-                    <div class="specialist-card fc g32">
-                         <div class="fc g12">
-                              <h3>Patrick Epner</h3>
-                              <p class="pos">Product & Sales Manager</p>
-                         </div>
-                         <div class="fr g16">
-                              <div class="con">
-                                   <p class="head">Phone</p>
-                                   <a href="">+372 56831391</a>
-                              </div>
-                              <div class="con">
-                                   <p class="head">Email</p>
-                                   <a href="">tanel.epner@etrtehnika.ee</a>
-                              </div>
-                         </div>
+                    <div class="con">
+                         <p class="head" data-i18n="contactEmail">Email</p>
+                         <a href="mailto:joosep@etrtehnika.ee">joosep@etrtehnika.ee</a>
                     </div>
                </div>
-          </section>
+          </div>
+          <div class="specialist-card fc g32">
+               <div class="fc g12">
+                    <h3>Tanel-Patrick Epner</h3>
+                    <p class="pos" data-i18n="teamTanelRole">Sales Director</p>
+               </div>
+               <div class="fr g16">
+                    <div class="con">
+                         <p class="head" data-i18n="contactPhoneShort">Phone</p>
+                         <a href="tel:+37253425735">+372 5342 5735</a>
+                    </div>
+                    <div class="con">
+                         <p class="head" data-i18n="contactEmail">Email</p>
+                         <a href="mailto:tanel.epner@etrtehnika.ee">tanel.epner@etrtehnika.ee</a>
+                    </div>
+               </div>
+          </div>
+          <div class="specialist-card fc g32">
+               <div class="fc g12">
+                    <h3>Maris Ristal</h3>
+                    <p class="pos" data-i18n="teamProductSalesRole">Product &amp; Sales Manager</p>
+               </div>
+               <div class="fr g16">
+                    <div class="con">
+                         <p class="head" data-i18n="contactPhoneShort">Phone</p>
+                         <a href="tel:+3725547367">+372 5547367</a>
+                    </div>
+                    <div class="con">
+                         <p class="head" data-i18n="contactEmail">Email</p>
+                         <a href="mailto:Maris.Ristal@etrtehnika.ee">Maris.Ristal@etrtehnika.ee</a>
+                    </div>
+               </div>
+          </div>
+     </div>
+</section>
+
 
           <footer class="background-black ch">
                <a href="" class="logo fr"><svg viewBox="0 0 101 14" fill="currentColor"><use href="#logo"></use></svg></a>
@@ -210,6 +230,8 @@
                </div>
           </footer>
 
-          <script src="/js/info-table.js"></script>
+          <script src="/listing-pages.js" defer></script>
+          <script src="/contact-page.js" defer></script>
+          <script src="/nav.js" defer></script>
      </body>
 </html>

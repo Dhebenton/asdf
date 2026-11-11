@@ -206,7 +206,25 @@
             showFilters: 'Show Filters',
             servicePageHeading: 'Service & Warranty',
             financingPageHeading: 'Financing Options',
-            tradeInPageHeading: 'Trade-In Options'
+            tradeInPageHeading: 'Trade-In Options',
+            contactPageHeading: 'Contact Us',
+            contactMetaTitle: 'Contact ETR Tehnika | Machinery Sales & Support',
+            contactMetaDescription: 'Contact ETR Tehnika for machinery sales, financing, servicing and practical equipment support across Estonia.',
+            contactStart: 'Start the conversation',
+            contactIntro: 'Contact our team for machinery enquiries, financing options or servicing, <br>and get practical guidance suited to your requirements.',
+            contactPhone: 'Phone Number',
+            contactPhoneShort: 'Phone',
+            contactEmail: 'Email',
+            contactSocial: 'Social Media',
+            contactOffice: 'Office',
+            contactAddressRegion: 'Harju County, Estonia',
+            contactSpecialist: 'Speak To A Specialist',
+            formName: 'Name',
+            formMessage: 'Message',
+            formSend: 'Send Message',
+            formSuccessHeading: 'Message Sent',
+            formSuccessText: 'Thank you. A member of our team will be in touch shortly.',
+            formSendAnother: 'Send Another Message'
         },
         et: {
             navMachinery: 'Masinad',
@@ -400,7 +418,25 @@
             showFilters: 'Näita filtreid',
             servicePageHeading: 'Hooldus ja garantii',
             financingPageHeading: 'Finantseerimisvõimalused',
-            tradeInPageHeading: 'Tehnika vahetusvõimalused'
+            tradeInPageHeading: 'Tehnika vahetusvõimalused',
+            contactPageHeading: 'Võta ühendust',
+            contactMetaTitle: 'Võta ühendust | ETR Tehnika müük ja tugi',
+            contactMetaDescription: 'Võta ETR Tehnikaga ühendust masinate müügi, finantseerimise, hoolduse ja praktilise tehnilise toe küsimustes üle Eesti.',
+            contactStart: 'Alustame vestlust',
+            contactIntro: 'Võta meie meeskonnaga ühendust tehnika, finantseerimise või hoolduse küsimustes <br>ning saa oma vajadustele vastavat praktilist nõu.',
+            contactPhone: 'Telefoninumber',
+            contactPhoneShort: 'Telefon',
+            contactEmail: 'E-post',
+            contactSocial: 'Sotsiaalmeedia',
+            contactOffice: 'Kontor',
+            contactAddressRegion: 'Harju maakond, Eesti',
+            contactSpecialist: 'Räägi spetsialistiga',
+            formName: 'Nimi',
+            formMessage: 'Sõnum',
+            formSend: 'Saada sõnum',
+            formSuccessHeading: 'Sõnum saadetud',
+            formSuccessText: 'Aitäh. Meie meeskonna liige võtab sinuga peagi ühendust.',
+            formSendAnother: 'Saada uus sõnum'
         }
     };
 
@@ -437,6 +473,11 @@
         document.querySelectorAll('[data-i18n-content]').forEach(element => {
             const value = translations[selected][element.dataset.i18nContent];
             if (value) element.setAttribute('content', value);
+        });
+
+        document.querySelectorAll('[data-i18n-title]').forEach(element => {
+            const value = translations[selected][element.dataset.i18nTitle];
+            if (value) document.title = value;
         });
 
         languageOptions.forEach(option => {
@@ -540,11 +581,12 @@
         if (!event.matches) closeMobileMenu();
     });
 
-    let lastScroll = window.scrollY;
-    let scrollDistance = 0;
-    const scrollThreshold = 60;
+    if (document.body.classList.contains('home-page')) {
+        let lastScroll = window.scrollY;
+        let scrollDistance = 0;
+        const scrollThreshold = 60;
 
-    window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', () => {
         if (mobileMenu?.classList.contains('active') || languageSelect?.classList.contains('active')) return;
 
         const currentScroll = window.scrollY;
@@ -565,8 +607,11 @@
             scrollDistance = 0;
         }
 
-        lastScroll = currentScroll;
-    }, { passive: true });
+            lastScroll = currentScroll;
+        }, { passive: true });
+    } else {
+        nav.style.transform = 'none';
+    }
 
     mobileMenu?.setAttribute('aria-hidden', 'true');
     setLanguage(readStoredLanguage() || 'en');

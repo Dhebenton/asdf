@@ -246,7 +246,7 @@ h2, .h2 {
 ============================================================ */
 
 nav {
-     position: fixed;
+     position: relative;
      top: 0;
      left: 0;
      right: 0;
@@ -353,6 +353,10 @@ nav {
                transform: translateY(0);
           }
      }
+}
+
+body.home-page nav {
+     position: fixed;
 }
 
 .nav-menu-tablet {
@@ -1079,6 +1083,7 @@ body.nav-open {
           .faq {
                display: grid;
                cursor: pointer;
+               width: 100%;
                grid-template-columns: 1fr min-content;
                border-top: 1px solid hsl(0, 0%, 0%, .07);
                padding: var(--g14) 0;

@@ -477,14 +477,6 @@
                const purchasingFor = enquiry.querySelector('[data-radio-name="purchasingFor"].active');
                const payment = enquiry.querySelector('[data-radio-name="payment"].active');
 
-               if (!purchasingFor || !payment) {
-                    enquiry.querySelector(
-                         `[data-radio-name="${purchasingFor ? 'payment' : 'purchasingFor'}"]`
-                    )?.focus();
-                    alert('Please select who you are purchasing for and your intended payment method.');
-                    return;
-               }
-
                const data = new FormData(form);
 
                const payload = {
@@ -496,8 +488,8 @@
                          lastName: String(data.get('lastName') || '').trim(),
                          email: String(data.get('email') || '').trim(),
                          phone: String(data.get('phone') || '').trim(),
-                         purchasingFor: purchasingFor.dataset.radioValue || '',
-                         payment: payment.dataset.radioValue || '',
+                         purchasingFor: purchasingFor?.dataset.radioValue || '',
+                         payment: payment?.dataset.radioValue || '',
                          message: String(data.get('message') || '').trim()
                     },
 
