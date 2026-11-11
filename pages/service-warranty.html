@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="icon" type="image/svg+xml" href="/assets/public/favicon/favicon.svg">
+          <link rel="stylesheet" href="/styles.css">
+          <link rel="stylesheet" href="/pages.css">
+          <link rel="stylesheet" href="/breakpoint.css">
+          <link rel="stylesheet" href="/info-page.css">
+          <title>ETR Tehnika</title>
+          <meta name="description" content="">
+
+     </head>
+     <body id="info-page">
+          <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+               <symbol id="logo" viewBox="0 0 101 14">
+                    <path d="M20.2606 11.0052V2.26676h5.9984v1.47693h-4.2581v2.14154h4.11v1.46462h-4.11v2.16616h4.3569v1.48919zM29.9758 11.0052V3.74369h-2.6413V2.26676h7.0352v1.47693h-2.6413v7.26151zM35.447 11.0052V2.26676h3.7521c.6418 0 1.1931.10666 1.6539.32.469.21333.831.51692 1.0861.91077.2551.38564.3826.84513.3826 1.37847 0 .40205-.0864.75897-.2592 1.07077-.1645.31179-.3949.56616-.6911.76308-.288.18872-.6171.30769-.9874.35692l-.0494-.12307c.576 0 1.0162.12718 1.3206.38153.3127.25437.4896.64001.5308 1.15693l.2221 2.52304h-1.7773l-.1728-2.25227c-.0247-.34461-.1316-.59487-.3209-.75077q-.2838-.24615-.9627-.24615h-1.9871v3.24919zm1.7403-4.73843h1.8637c.469 0 .8311-.10667 1.0861-.32.2633-.22154.395-.53334.395-.93539 0-.41026-.1317-.72205-.395-.93539-.2633-.22153-.65-.3323-1.1601-.3323h-1.7897zM49.1937 11.0052V3.74369h-2.6412V2.26676h7.0351v1.47693h-2.6413v7.26151zM54.6649 11.0052V2.26676h5.9984v1.47693h-4.2581v2.14154h4.11v1.46462h-4.11v2.16616h4.3569v1.48919zM62.5052 11.0052V2.26676h1.7403v4.16001l-.7776-.56615h5.0727l-.7899.56615V2.26676h1.7403v8.73844h-1.7403V6.796l.7899.55385h-5.0727l.7776-.55385v4.2092zM71.4544 11.0052V2.26676h1.9748l3.6286 6.30156V2.26676h1.7403v8.73844h-2.0118l-3.5916-6.10459v6.10459zM80.7652 11.0052V2.26676h1.7402v8.73844zM84.652 11.0052V2.26676h1.7403v3.90155l3.3078-3.90155h2.0488l-3.2584 3.84001 3.4559 4.89843h-1.9871l-2.6166-3.71689-.9504 1.08308v2.63381zM92.584 11.0052l3.1597-8.73844h2.0982l3.1591 8.73844h-1.8138l-.6912-1.96919h-3.4188l-.6789 1.96919zm2.9992-3.4215h2.4191l-1.2095-3.53232zM11.9966 8.70849c.0295-.00798.0586.01366.0586.04352v2.68379c0 .0203-.0139.0381-.0339.0435l-7.44372 2.0179c-.00881.0024-.01815.0022-.02683-.0006L.0317159 12.0379c-.0433747-.014-.0418766-.0745.0021405-.0864zM11.9966 4.38162c.0295-.00798.0586.01366.0586.04352v2.66497c0 .0203-.0139.0381-.0339.04352L4.66077 9.12899c-.00883.0024-.0182.00217-.0269-.00066L.159371 7.67635c-.043317-.01406-.041772-.07446.002209-.08639zM12.0552-.0000145V2.71279c0 .02029-.0139.0381-.0339.04352L4.57889 4.77386c-.00883.0024-.0182.00217-.0269-.00065L.0968986 3.32752c-.0433163-.01406-.0417714-.07446.0022094-.08639z"/>
+               </symbol>
+               <symbol id="search-glass" viewBox="0 0 14 13">
+                    <path d="M5.12191 0c2.83594.00002317 5.12189 2.28526 5.12189 5.12191 0 1.21726-.42256 2.33172-1.12714 3.20885l3.91244 3.91244-.2037.2028-.5541.554-3.90943-3.90843c-.88177.71971-2.00828 1.15223-3.23996 1.15223C2.28597 10.2438.00002264 7.95856 0 5.12191 0 2.28527 2.28527 0 5.12191 0m0 1.07196c-2.22057 0-4.04995 1.83038-4.04995 4.05096.00021 2.2204 1.82951 4.04995 4.04995 4.04995 2.22043-.00002 4.04974-1.82957 4.04996-4.04995 0-2.22056-1.8294-4.05094-4.04996-4.05096"/>
+               </symbol>
+               <symbol id="globe" viewBox="0 0 13 13">
+                    <path d="M6.95852 11.989c.52812-.2074 1.04537-.7815 1.45421-1.6625.44868-.96709.73592-2.24816.7608-3.63349-.78044-.12434-1.51376-.1875-2.21501-.21446zm-.91704-5.54006c-.81478.01151-1.56314.08376-2.21807.17667.01931 1.41325.31035 2.71119.76386 3.68859.40791.8791.92486 1.4554 1.45421 1.6707zm4.04602.3707c-.0594 1.9313-.55071 3.64026-1.34084 4.76806 1.71704-.7519 2.97594-2.35962 3.26684-4.27686-.6541-.19965-1.3044-.36716-1.926-.4912m-7.17807-.07557c-.89949.18608-1.55968.39296-1.926005.52592C1.25227 9.20515 2.52316 10.8034 4.24721 11.5703c-.79205-1.1347-1.29478-2.86167-1.33778-4.82623m5.86991-5.34501C9.52103 2.468 10.0048 4.07432 10.0865 5.89749c.6303.13523 1.3081.29361 1.9944.5055-.0382-2.23211-1.3895-4.14742-3.30156-5.00393m-4.55868 0C2.32575 2.24841.979983 4.13726.919089 6.34375 1.373 6.19385 2.05801 6.00744 2.91555 5.8454c.09909-1.79878.57018-3.3846 1.30511-4.44634M6.95852 5.5564c.70121.01328 1.43212.0884 2.20275.19505-.08386-1.27093-.37778-2.40358-.80675-3.25357-.39634-.78527-.88616-1.29516-1.396-1.48892zm-.91704-4.55357c-.50823.18378-.99342.68365-1.38783 1.46033-.42637.83964-.72201 1.96232-.81492 3.22396.66288-.07497 1.39396-.14313 2.20275-.15421zM13 6.5c0 3.5875-2.9125 6.5-6.5 6.5C2.91245 13 0 10.0875 0 6.5 0 2.91245 2.91245 0 6.5 0 10.0875 0 13 2.91245 13 6.5"/>
+               </symbol>
+               <symbol id="arrow-right" viewBox="0 0 11 8">
+                    <path d="m7.45005.0837298.06184.0618462-.00095.000951L10.8535 3.48811l.0628.06184.0837.08278-3.48906 3.48811-.06089.06279-.08278.08469-.08278-.08373-.61846-.61846-.08278-.08183.08183-.08278.06185-.0628 2.15509-2.15509H0v-1.0999h8.88202L6.58325.784015 7.36727 0z"/>
+               </symbol>
+               <symbol id="button-arrow" viewBox="0 0 8 10" >
+                    <path d="M1.09961 0v5.97559h4.5625l-1.4502-1.4502.08789-.08887.69043-.68945.08789.08887 2.6875 2.68847-.08789.08887-2.59961 2.59961-.08789.08887-.08886-.08789-.60157-.60157-.08789-.08886 1.4502-1.44922H0V0z"/>
+               </symbol>
+               <symbol id="play-button" viewBox="0 0 12 16">
+                    <path d="m0 0 12 7.71433L0 15.4286z"/>
+               </symbol>
+               <symbol id="plus" viewBox="0 0 9 9">
+                    <path d="M9 3.9375H5.0625V0h-1.125v3.9375H0v1.125h3.9375V9h1.125V5.0625H9z"/>
+               </symbol>
+               <symbol id="chevron-right" viewBox="0 0 5 8">
+                    <path d="M0 7.40864.624277 8 4.22268 4.59136 3.59841 4l-.43686.41382z"></path>
+                    <path d="M4.22268 4.59136 4.84696 4l-.62428-.59136L3.59841 4zM0 .591357 3.16155 3.58618 3.59841 4l.62427-.59136L.624277 0z"></path>
+               </symbol>
+
+               <symbol id="plus" viewBox="0 0 8 8">
+                    <path d="M3.54784 8V4.45216H0v-.90432h3.54784V0h.90432v3.54784H8v.90432H4.45216V8z"/>
+               </symbol>
+          </svg>
+
+          <section class="breadcrumbs ch">
+               <div class="fr g16 content">
+                    <a href="">Home</a>
+                    <svg viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
+                    <a href="" class="active">Service & Warranty</a>
+               </div>
+          </section>
+
+          <section id="info-page-cover" class="fr ch">
+               <picture>
+                    <img src="/assets/service-warranty-cover.avif" loading="lazy" decoding="async">
+               </picture>
+          </section>
+
+          <section id="info-page-call-to-action" class="ch">
+               <div class="fr content jsb">
+                    <h1>Service & Warranty</h1>
+                    <a href="" class="button">Get In Touch</a>
+               </div>
+          </section>
+
+          <section class="ch first fc ae">
+               <div class="column fc g40">
+                    <h2>Equipment Servicing & Support</h2>
+                    <div class="fc g20">
+                         <p class="text mobile-no">ETR provides machinery servicing, repairs and technical support to help customers maintain their equipment and keep it operating reliably. We understand the importance of dependable machinery and provide practical, knowledgeable support throughout its working life.</p>
+                         <p class="text mobile-yes">ETR provides machinery servicing, repairs and technical support to help customers maintain their equipment and keep it operating reliably.</p>
+                         <p class="text mobile-no">Our experienced team offers assistance tailored to each customer's requirements, from diagnosing technical issues to carrying out necessary repairs and maintenance. We also provide guidance on equipment operation, servicing and spare parts across our range of machinery brands, helping customers maintain performance and make informed decisions about their equipment.</p>
+                         <p class="text mobile-yes">Our experienced team offers practical assistance tailored to each customer's requirements, from identifying technical issues to carrying out necessary repairs. We also provide guidance on equipment operation, maintenance and spare parts across our range of machinery brands.</p>
+                    </div>
+                    <div class="fc g20">
+                         <h3>Equipment Services & Support</h3>
+                         <div class="fc g6">
+                              <div class="before list">
+                                   <p class="text">Machinery servicing and maintenance</p>
+                              </div>
+                              <div class="before list">
+                                   <p class="text">Equipment diagnostics and troubleshooting</p>
+                              </div>
+                              <div class="before list">
+                                   <p class="text">Mechanical repairs</p>
+                              </div>
+                              <div class="before list">
+                                   <p class="text">Technical advice and assistance</p>
+                              </div>
+                              <div class="before list">
+                                   <p class="text">Spare parts guidance and support</p>
+                              </div>
+                              <div class="before list">
+                                   <p class="text">Equipment operation guidance</p>
+                              </div>
+                              <div class="before list">
+                                   <p class="text">Warranty-related enquiries</p>
+                              </div>
+                              <div class="before list">
+                                   <p class="text">Repairs covered by workmanship warranty</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <section class="c second fc ae">
+               <div class="column fc g40">
+                    <h2>Why Choose ETR</h2>
+                    <div class="fc info-table-wrap">
+                         <div class="tra top-stroke info-table">
+                              <picture>
+                                   <img src="/assets/trade-in.avif" loading="lazy" decoding="async">
+                              </picture>
+                              <div class="fc g12">
+                                   <h3>Reliable Equipment Support</h3>
+                                   <p>Access practical servicing and repair assistance from an experienced team familiar with the machinery we supply, helping keep your equipment in working condition.</p>
+                              </div>
+                              <div class="icon yes-hmobile fr jc">
+                                   <svg viewBox="0 0 8 8" fill="currentColor"><use href="#plus"></use></svg>
+                              </div>
+                         </div>
+                         <div class="tra info-table">
+                              <picture>
+                                   <img src="/assets/contr-ind.avif" loading="lazy" decoding="async">
+                              </picture>
+                              <div class="fc g12">
+                                   <h3>Experienced Technical Guidance</h3>
+                                   <p>Receive knowledgeable advice on machinery maintenance, operation and technical issues, with support tailored to your equipment and requirements.</p>
+                              </div>
+                              <div class="icon yes-hmobile fr jc">
+                                   <svg viewBox="0 0 8 8" fill="currentColor"><use href="#plus"></use></svg>
+                              </div>
+                         </div>
+                         <div class="tra info-table">
+                              <picture>
+                                   <img src="/assets/farm-ind.avif" loading="lazy" decoding="async">
+                              </picture>
+                              <div class="fc g12">
+                                   <h3>Warranty & Peace of Mind</h3>
+                                   <p>Benefit from warranty coverage on completed repair work, alongside manufacturer warranties on spare parts, giving you confidence in the support behind your equipment.</p>
+                              </div>
+                              <div class="icon yes-hmobile fr jc">
+                                   <svg viewBox="0 0 8 8" fill="currentColor"><use href="#plus"></use></svg>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <section id="way-to-buy" class="background-black fr jsb as ch g52">
+               <div class="fc g24">
+                    <h2 class="line-height">More Ways to Purchase, Finance And <br class="no-tablet">Manage Your <br class="yes-tablet"/> Machinery and Equipment</h2>
+                    <a class="button-arrow no-hmobile fr" href="/pages/all-categories.html">
+                         <svg viewBox="0 0 8 10" fill="currentColor"><use href="#button-arrow"></use></svg>
+                         Speak To An Expert
+                    </a>
+               </div>
+               <div class="column fr g24">
+                    <a href="" class="black-card">
+                         <div class="image-wrap fc">
+                              <picture>
+                                   <img src="/assets/trade-in.avif" loading="lazy" decoding="async">
+                              </picture>
+                         </div>
+                         <h3>Trade In Your Existing Machine</h3>
+                         <p>Put the value of your current equipment towards your next purchase with a straightforward trade-in process.</p>
+                         <svg class="yes-hmobile" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
+                    </a>
+                    <a href="" class="black-card">
+                         <div class="image-wrap fc">
+                              <picture>
+                                   <img src="/assets/finance.avif" loading="lazy" decoding="async">
+                              </picture>
+                         </div>
+                         <h3>Explore Equipment Financing Options</h3>
+                         <p>Flexible financing solutions to help you spread the cost of your next machine with payment options suited to your business.</p>
+                         <svg class="yes-hmobile" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
+                    </a>
+               </div>
+          </section>
+
+          <section id="call-to-action" class="fr ch jsb">
+               <div class="fc g24 as">
+                    <h2 class="line-height">Talk to our experts about finding the right <br>equipment and support for your next project</h2>
+                    <a href="" class="button">Speak To An Expert</a>
+               </div>
+               <picture>
+                    <img src="/assets/cta-image.avif" loading="lazy" decoding="async">
+               </picture>
+          </section>
+
+          <footer class="background-black ch">
+               <a href="" class="logo fr"><svg viewBox="0 0 101 14" fill="currentColor"><use href="#logo"></use></svg></a>
+               <div class="links-wrap fr as g100">
+                    <div class="links tra fc g12">
+                         <h3>Equipment</h3>
+                         <a href="/pages/all-brands.html">Excavators</a>
+                         <a href="/pages/all-industries.html">Generators</a>
+                         <a href="">Loaders</a>
+                         <a href="">Forestry</a>
+                         <a href="">All Categories</a>
+                    </div>
+                    <div class="links mobile-no tra fc g12">
+                         <h3>Brands</h3>
+                         <a href="">Shantui</a>
+                         <a href="">Heracles</a>
+                         <a href="">Cast Loaders</a>
+                         <a href="">Lantzmann</a>
+                         <a href="">All Brands</a>
+                    </div>
+                    <div class="links tra fc g12">
+                         <h3>Resources</h3>
+                         <a href="">Articles & Guides</a>
+                         <a href="">Equipment Manuals</a>
+                         <a href="">Service & Warranty</a>
+                         <a href="">Financing Options</a>
+                         <a href="">Trade-In Options</a>
+                    </div>
+                    <div class="links tra fc g12">
+                         <h3>ETR</h3>
+                         <a href="">About ETR</a>
+                         <a href="">Contact Us</a>
+                         <a href="">Our Location</a>
+                         <a href="">Our Reviews</a>
+                    </div>
+               </div>
+               <div class="socials-wrap fr g28">
+                    <a href="" class="fr"><img src="/assets/instagram.svg"/></a>
+                    <a href="" class="fr"><img src="/assets/facebook.svg"/></a>
+                    <a href="" class="fr"><img src="/assets/linkedin.svg"/></a>
+                    <a href="" class="fr"><img class="youtube" src="/assets/youtube.svg"/></a>
+               </div>
+               <div class="seperator fr jsb">
+                    <span>© 2026 ETR Tehnika. All rights reserved.</span>
+                    <div class="fr g20">
+                         <a href="">Privacy <span class="mobile-no">Policy</span></a>
+                         <a href="">Terms <span class="mobile-no">Of Service</span></a>
+                    </div>
+               </div>
+          </footer>
+
+          <script src="/js/info-table.js"></script>
+     </body>
+</html>

@@ -1,0 +1,1642 @@
+@media (max-width: 1580px) {
+     /* ============================================================
+          VARIABLES
+     ============================================================ */
+
+     :root {
+          --ch: 6.5%;
+          --cv: 115px;
+
+          --gmultiplier: .92;
+     }
+
+     .load-ammount {
+          font-size: 10.5px;
+     }
+
+     .col {
+          max-width: 720px;
+          width: auto;
+     }
+
+     /* ============================================================
+          TYPOGRAPHY
+     ============================================================ */
+
+     h2, .h2 {
+          font-size: 17px;
+     }
+
+
+     /* ============================================================
+          COMPONENT = BUTTON
+     ============================================================ */
+
+     .button {
+          padding: 7px 11px;
+          font-size: 11.5px;
+
+          &.small {
+               font-size: 11px;
+               padding: 6px 10px;
+          }
+     }
+
+     /* ============================================================
+          COMPONENT = ARROW BUTTON
+     ============================================================ */
+
+     .button-arrow {
+          font-size: 12px;
+
+          svg {
+               height: 11px;
+          }
+     }
+
+     /* ============================================================
+          PRODUCT CARD
+     ============================================================ */
+
+     .product.card {
+          width: 380px;
+          min-width: 380px;
+
+          .image-wrap {
+               .sale-tag {
+                    font-size: 11px;
+               }
+          }
+
+          .content {
+               .tagss, .tagss button {
+                    gap: 3px;
+                    font-size: 11.5px;
+               }
+
+               .price,
+               h3 {
+                    font-size: 13px;
+               }
+
+               .stats-wrap {
+                    .stat {
+                         .sta {
+                              font-size: 11px;
+                              font-weight: 400;
+                              color: var(--subtext);
+                         }
+
+                         .ans {
+                              font-size: 11.5px;
+                         }
+                    }
+               }
+
+               .fr.g16 button {
+                    font-size: 11px;
+               }
+
+               .sep {
+                    height: 11px;
+               }
+          }
+     }
+
+     /* ============================================================
+          HERO
+     ============================================================ */
+
+     #home-hero {
+          grid-template-rows: 1fr 1.4fr;
+          .top {
+               padding: var(--g36);
+               
+               h1 {
+                    font-size: 18px;
+               }
+          }
+
+          .bottom {
+               .fc {
+                    padding-left: var(--g20);
+                    .head, .head span {
+                         font-size: 12px;
+                    }
+
+                    .sub, .sub span {
+                         font-size: 11.5px;
+                    }
+               }
+          }
+     }
+
+     /* ============================================================
+          CATEGORIES
+     ============================================================ */
+
+     #categories-section {
+          .card {
+               span {
+                    font-size: 11.5px;
+               }
+
+               h3 {
+                    font-size: 13px;
+               }
+
+               .arrow {
+                    width: 20px;
+
+                    svg {
+                         width: 10px;
+                    }
+               }
+          }
+     }
+
+     /* ============================================================
+          SECTION
+     ============================================================ */
+
+     #brands-section {
+          .brands-wrap {
+               margin: 0 -14px;
+
+               .brand {
+                    .aflatek {
+                         width: 92px;
+                    }
+
+                    .heracles {
+                         width: 71px;
+                    }
+
+                    .lantzman {
+                         width: 85px;
+                    }
+
+                    .shantui {
+                         width: 72px;
+                    }
+
+                    .loncin {
+                         width: 65px;
+                    }
+
+                    .geoworks {
+                         width: 110px;
+                    }
+
+                    .castloaders {
+                         width: 98px;
+                    }
+               }
+          }
+     }
+
+     /* ============================================================
+          INDUTRIES
+     ============================================================ */
+
+     #browse-by-industries {
+          .black-card {
+               width: 410px;
+               min-width: 410px;
+          }
+     }
+
+     .black-card {
+          h3 {
+               font-size: 13px;
+          }
+
+          p {
+               font-size: 11.5px;
+          }
+     }
+
+     /* ============================================================
+          SHOP ALL
+     ============================================================ */
+
+     #shop-all {
+          .tab {
+               font-size: 11px;
+          }
+     }
+
+     /* ============================================================
+          PROMOTIONAL BANNER
+     ============================================================ */
+
+     #promotional-banner {
+          height: 80vh;
+          max-height: 800px;
+
+          h2 {
+               font-size: 17px;
+          }
+
+          .log {
+               height: 13px;
+          }
+     }
+
+     /* ============================================================
+          ABOUT SECTION
+     ============================================================ */
+
+     #about-section {
+          .car-grid {
+               div {
+                    .num {
+                         font-size: 15px;
+                    }
+
+                    .an {
+                         font-size: 12px;
+                    }
+               }
+          }
+     }
+
+     /* ============================================================
+          WAYS TO BUY
+     ============================================================ */
+
+     #way-to-buy {
+          h2 {
+               white-space: nowrap;
+          }
+     }
+
+     /* ============================================================
+          POINTERS 
+     ============================================================ */
+
+     #pointers {
+          img {
+               width: auto;
+               width: 45%;
+          }
+
+          .pointers-wrap {
+               width: 430px;
+
+               .pointer {
+                    h3 {
+                         font-size: 12.5px;
+                    }
+
+                    .icon {
+                         width: 16px;
+                         svg {
+                              height: 6px;
+                         }
+                    }
+
+                    .text-wrap {
+                         p {
+                              font-size: 11.5px;
+                         }
+                    }
+               }
+          }
+     }
+
+     /* ============================================================
+     FAQ
+     ============================================================ */
+
+     #faq {
+          gap: var(--g80);
+          h2 {
+               white-space: nowrap;
+          }
+
+          .faq-column {
+               grid-template-columns: 170px 1fr;
+
+               .heading {
+                    font-size: 11.5px;
+               }
+
+               .faq {
+
+                    h3 {
+                         font-size: 12.5px;
+                    }
+
+                    svg {
+                         height: 8px;
+                    }
+
+                    p {
+                         font-size: 11.5px;
+                    }
+               }
+          }
+     }
+
+     /* ============================================================
+          COVERAGE SECTION
+     ============================================================ */
+
+     #coverage-section {
+          .gap,
+          .coverage-card {
+               background-color: white;
+               position: relative;
+               width: 365px;
+          }
+
+          .coverage-card {
+               h3,
+               h2 {
+                    font-size: 13.5px;
+               }
+
+               p {
+                    font-size: 12px;
+               }
+
+               h3 {
+                    font-size: 12.5px;
+               }
+
+               &.address p {
+                    font-size: 11.5px;
+               }
+          }
+     }
+
+     /* ============================================================
+          CTA
+     ============================================================ */
+
+     #call-to-action {
+          h2 {
+               font-size: 20px;
+          }
+
+          picture {
+               width: 45%;
+          }
+     }
+
+     /* ============================================================
+          ARTICLE
+     ============================================================ */
+
+     #articles {
+          .article-wrap-hero {
+               grid-template-columns: 1.6fr 1fr;
+          }
+
+          .article-large {
+               
+
+               .latest {
+                    font-size: 12.5px;
+               }
+
+               h3 {
+                    font-size: 17px;
+               }
+          }
+     }
+
+     .tag {
+          font-size: 10px;
+     }
+
+
+     .tag.large {
+          font-size: 11px;
+     }
+     .article-card {
+          h3 {
+               font-size: 13px;
+          }
+
+          p {
+               font-size: 11px;
+          }
+     }
+
+     /* ============================================================
+          FOOTER
+     ============================================================ */
+
+     footer {
+          .logo {
+               svg {
+                    height: 15px;
+               }
+          }
+
+          .links-wrap {
+               .links {
+                    h3 {
+                         font-size: 12.5px;
+                    }
+
+                    a {
+                         font-size: 12px;
+                    }
+               }
+          }
+
+          .socials-wrap {
+               a {
+                    img {
+                         width: 14px;
+                    }
+
+                    .youtube {
+                         width: 15px;
+                    }
+               }
+          }
+
+          .seperator {
+               span, a {
+                    font-size: 11px;
+               }
+          }
+     }
+}
+
+@media (max-width: 1300px) {
+     :root {
+          --ch: 5%;
+     }
+
+     /* ============================================================
+          WAYS TO BUY
+     ============================================================ */
+
+     #way-to-buy {
+          gap: var(--g52);
+          flex-direction: column;
+          h2 {
+               white-space: nowrap;
+          }
+
+          .col {
+               width: 100% !important;
+               max-width: 100%;
+          }
+     }
+}
+
+@media (max-width: 1080px) {
+     :root {
+          --ch: 6.5%;
+          --cv: 105px;
+     }
+
+     .no-tablet {
+          display: none;
+     }
+
+     .yes-tablet {
+          display: block;
+
+          &.fr,.fc {
+               display: flex;
+          }
+     }
+
+     .col {
+          width: 100%;
+          max-width: 100%;
+     }
+
+     /* ============================================================
+          TYPOGRAPHY
+     ============================================================ */
+
+     h2, .h2 {
+          font-size: 16.5px;
+     }
+
+     /* ============================================================
+          COMPONENT = BUTTON
+     ============================================================ */
+
+     /* ============================================================
+          COMPONENT = ARROW BUTTON
+     ============================================================ */
+
+     /* ============================================================
+          HERO
+     ============================================================ */
+
+     #home-hero {
+          grid-template-rows: 1fr 1.2fr;
+
+          .bottom {
+               .fc {
+                    width: 100%;
+                    padding-left: var(--g28);
+               }
+          }
+     }
+
+     /* ============================================================
+          CATEGORIES
+     ============================================================ */
+
+     #categories-section {
+          h2 {
+               grid-column: 1 / 2;
+          }
+
+          .card {
+               picture {
+                    margin: 1% -2%;
+               }
+          }
+          grid-template-columns: 1fr 1fr;
+     }
+
+     /* ============================================================
+          BRANDS
+     ============================================================ */
+
+     #brands-section {
+          .brands-wrap {
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+               margin: 0 -12px;
+
+               .brand {
+                    height: 100px;
+                    img {
+                         opacity: .9;
+                         filter: saturate(1);
+                    }
+               }
+          }
+     }
+
+     /* ============================================================
+          INDUTRIES
+     ============================================================ */
+
+     #browse-by-industries {
+          .black-card {
+               width: 380px;
+               min-width: 380px;
+          }
+     }
+
+     /* ============================================================
+          SHOP ALL
+     ============================================================ */
+
+     #shop-all {
+          .shop-all-grid {
+               display: flex;
+               flex-direction: row;
+               gap: var(--g12);
+          }
+
+          .slider {
+               gap: 0px !important;
+          }
+     }
+
+     /* ============================================================
+          PROMOTIONAL BANNER
+     ============================================================ */
+
+     #promotional-banner {
+          height: auto;
+          width: 100%;
+          max-height: auto;
+          aspect-ratio: 1 / 1.2;
+     }
+
+     /* ============================================================
+          ABOUT SECTION
+     ============================================================ */
+
+     #about-section {
+          flex-direction: column;
+          gap: var(--g40);
+          .car-grid {
+               div {
+                    .num {
+                         font-size: 15px;
+                    }
+
+                    .an {
+                         font-size: 12px;
+                    }
+               }
+          }
+     }
+
+     /* ============================================================
+          POINTERS 
+     ============================================================ */
+
+     #pointers {
+          img {
+               width: auto;
+               width: 40%;
+          }
+
+          .pointers-wrap {
+               width: 390px;
+
+               .pointer {
+                    h3 {
+                         font-size: 12px;
+                    }
+
+                    .icon {
+                         width: 16px;
+                         svg {
+                              height: 6px;
+                         }
+                    }
+
+                    .text-wrap {
+                         p {
+                              font-size: 11px;
+                         }
+                    }
+               }
+          }
+     }
+
+     /* ============================================================
+     FAQ
+     ============================================================ */
+
+     #faq {
+          gap: var(--g52);
+          flex-direction: column;
+
+          .column {
+               max-width: 100%;
+          }
+     }
+
+     /* ============================================================
+          COVERAGE SECTION
+     ============================================================ */
+
+     #coverage-section {
+          padding: var(--cv);
+          height: auto;
+          padding-bottom: 0;
+          background-color: white;
+          grid-template-rows: min-content 1fr;
+          display: grid;
+          justify-content: center;
+          .gap {
+               display: none;
+          }
+          .coverage-card {
+               position: relative;
+               width: 100%;
+               padding: 0 var(--ch);
+          }
+
+          .coverage-card.address {
+               width: auto;
+               padding: var(--g20);
+               position: absolute;
+               bottom: var(--g32);
+               left: var(--g16);
+               margin-bottom: 0;
+               right: var(--g16);
+          }
+
+          #estonia-map {
+               position: relative;
+               grid-row: 2 / 3;
+               aspect-ratio: 1 / 1.1;
+               height: auto;
+               width: 100svw;
+               margin: var(--g32) 0;
+               margin-bottom: 0;
+          }
+
+          .maplibregl-ctrl-bottom-right {
+               display: none;
+          }
+     }
+
+     /* ============================================================
+          ARTICLE
+     ============================================================ */
+
+     #articles {
+          .article-wrap-hero {
+       grid-template-columns: 1fr 1fr;
+          }
+       .article-large {
+          grid-row: 1 / 2;
+          grid-column: 1 / 3;
+          aspect-ratio: 1.2 / 1;
+       }
+     }
+
+     .article-card {
+
+     }
+
+     /* ============================================================
+          CTA
+     ============================================================ */
+
+     #call-to-action {
+          flex-direction: column;
+          align-items: end;
+          div {
+               width: 100%;
+          }
+          h2 {
+               font-size: 19px;
+          }
+
+          picture {
+               width: 75%;
+               margin-top: -12%;
+          }
+     }
+
+     /* ============================================================
+          FOOTER
+     ============================================================ */
+
+     footer {
+          grid-template-columns: 1fr 1fr;
+          .links-wrap {
+               grid-column: 1 / 3;
+               grid-row: 2 / 3;
+               width: 100%;
+               justify-content: space-between;
+               margin-top: var(--g80);
+          }
+
+          .socials-wrap {
+               margin-top: 0;
+               justify-self: end;
+          }
+     }
+}
+
+@media (max-width: 770px) {
+     :root {
+          --ch: 6%;
+          --cv: 95px;
+
+          --gmultiplier: .87;
+     }
+
+     .no-hmobile {
+          display: none;
+     }
+
+     .yes-hmobile {
+          display: block !important;
+
+          &.fr,.fc {
+               display: flex;
+          }
+     }
+
+     /* ============================================================
+          TYPOGRAPHY
+     ============================================================ */
+
+     h2, .h2 {
+          font-size: 15.5px;
+     }
+
+     /* ============================================================
+          COMPONENT = BUTTON
+     ============================================================ */
+
+     .button {
+          padding: 7px 11px;
+          font-size: 11px;
+          &.small {
+               font-size: 10.5px;
+               padding: 6px 10px;
+          }
+     }
+
+     /* ============================================================
+          COMPONENT = ARROW BUTTON
+     ============================================================ */
+
+     .button-arrow {
+          font-size: 11.5px;
+
+          svg {
+               height: 11px;
+          }
+     }
+
+     /* ============================================================
+          SLIDER
+     ============================================================ */
+
+     [data-slider] {
+          .progress-indicator {
+               padding: 2px 4px;
+               gap: 2px;
+
+               div {
+                    width: 13px;
+               }
+          }
+     }
+
+     .slider-bottom {
+          margin-top: var(--g26);
+
+          .slider-prev, .slider-next {
+               width: 24px;
+
+          }
+     }
+
+     .load-ammount {
+          font-size: 10.5px;
+     }
+
+     /* ============================================================
+          PRODUCT CARD
+     ============================================================ */
+
+     .product.card {
+          width: 320px;
+          min-width: 320px;
+
+          .image-wrap {
+               .sale-tag {
+                    font-size: 10.5px;
+               }
+          }
+
+          .content {
+               .tagss, .tagss button {
+                    font-size: 11.5px;
+               }
+
+               .price,
+               h3 {
+                    font-size: 12.5px;
+               }
+
+               .stats-wrap {
+                    .stat {
+                         .sta {
+                              font-size: 10.5px;
+                         }
+
+                         .ans {
+                              font-size: 11px;
+                         }
+                    }
+               }
+
+               .fr.g16 button {
+                    font-size: 10.5px;
+               }
+
+               .sep {
+                    height: 11px;
+               }
+          }
+          
+     }
+
+     /* ============================================================
+          HERO
+     ============================================================ */
+
+     #home-hero {
+          grid-template-rows: 1fr 1fr;
+
+          .top {
+               display: grid;
+               grid-template-columns: auto 1fr;
+               row-gap: var(--g24);
+               column-gap: var(--g10);
+               grid-template-rows: 1fr min-content;
+
+               h1 {
+                    grid-column: 1 / 3;
+                    font-size: 17px;
+               }
+
+               .button {
+                    justify-self: start;
+               }
+          }
+
+          .bottom {
+               .fc {
+                    width: 100%;
+                    padding-left: var(--g28);
+               }
+
+               .bottom {
+               .fc {
+                    .head, .head span {
+                         font-size: 12px;
+                    }
+
+                    .sub, .sub span {
+                         font-size: 11.5px;
+                    }
+               }
+          }
+          }
+     }
+
+     /* ============================================================
+          CATEGORIES
+     ============================================================ */
+
+     #categories-section {
+          grid-template-columns: 1fr 1fr;
+          gap: var(--g12);
+
+          .button-arrow {
+               grid-column: 1 / 3;
+               grid-row: 6 / 7;
+               margin-top: calc(var(--g48) - var(--g12));
+          }
+          h2 {
+               grid-column: 1 / 3;
+               margin-bottom: calc(var(--g48) - var(--g12));
+          }
+
+          .card {
+               padding: var(--g20);
+               padding-top: var(--g24);
+               h3 {
+                    font-size: 12px;
+               }
+          }
+     }
+
+     /* ============================================================
+          SECTION
+     ============================================================ */
+
+     #brands-section {
+          gap: var(--g40);
+          padding: var(--g60);
+          padding-bottom: var(--g20);
+          .brands-wrap .brand {
+               height: 90px;
+
+               .aflatek {
+                    width: 85px;
+               }
+
+               .heracles {
+                    width: 64px;
+               }
+
+               .lantzman {
+                    width: 78px;
+               }
+
+               .shantui {
+                    width: 66px;
+               }
+
+               .geoworks {
+                    width: 105px;
+               }
+
+               .castloaders {
+                    width: 91px;
+               }
+          }
+     }
+
+     /* ============================================================
+          INDUSTRIES
+     ============================================================ */
+
+     #browse-by-industries {
+          padding: var(--g60);
+          gap: var(--g48);
+          
+          .fr.g16 {
+               gap: var(--g6) !important;
+          }
+     }
+
+     #browse-by-industries [data-slider-track] {
+          flex-direction: column;
+          gap: 4px;
+          width: 100%;
+     }
+
+     #browse-by-industries [data-slider-track] > * {
+          width: 100%;
+     }
+
+     #browse-by-industries .slider-bottom {
+          display: none;
+     }
+
+     .black-card {
+          padding: var(--g10) var(--g14);
+          border-radius: 2px;
+          background-color: hsl(0, 0%, 12%);
+          color: #E5E5E5;
+          display: grid;
+          grid-template-columns: 1fr min-content;
+
+          .image-wrap {
+               display: none;
+          }
+
+          p {
+               display: none;
+          }
+
+          h3 {
+               font-size: 12.5px;
+               padding-bottom: 0px;
+               color: #E5E5E5;
+          }
+
+          svg {
+               height: 9px;
+               align-self: center;
+          }
+     }
+
+     /* ============================================================
+          SHOP ALL
+     ============================================================ */
+
+     #shop-all {
+          gap: var(--g32);
+          .topp {
+               flex-direction: column;
+               justify-content: start;
+               align-items: start;
+               gap: var(--g52);
+          }
+     }
+
+     /* ============================================================
+          ABOUT SECTION
+     ============================================================ */
+
+     #about-section {
+          flex-direction: column;
+          .car-grid {
+               div {
+                    .num {
+                         font-size: 13.5px;
+                    }
+
+                    .an {
+                         font-size: 11px;
+                    }
+               }
+          }
+     }
+
+     /* ============================================================
+          TEAM SLIDER
+     ============================================================ */
+
+     #teams-slider {
+          .teams-card {
+               width: 290px;
+               max-width: 290px;
+
+               .cover {
+                    .position {
+                         font-size: 10.5px;
+                    }
+                    
+                    .icon {
+                         height: 17px;
+
+                         svg {
+                              height: 7px;
+                         }
+                    }
+
+                    .name {
+                         font-size: 12px;
+                    }
+
+                    .des {
+                         font-size: 10.5px;
+                    }
+
+                    .contact-wrap {
+                         opacity: 0;
+                         .heading {
+                              font-size: 11px;
+                         }
+
+                         a {
+                              font-size: 11px;
+                         }
+                    }
+               }
+
+               .bot {
+                    h3 {
+                         font-size: 11.5px;
+                    }
+
+                    .position {
+                         font-size: 11.5px;
+                    }
+               }
+          }
+     }
+
+
+     /* ============================================================
+          WAYS TO PURCHASE
+     ============================================================ */
+
+     #way-to-buy {
+          gap: var(--g36);
+          padding: var(--g60);
+          .col {
+               a {
+                    width: 100%;
+               }
+               flex-direction: column;
+               gap: var(--g6);
+          }
+     }
+
+     /* ============================================================
+          POINTERS 
+     ============================================================ */
+
+     #pointers {
+          img {
+               width: 100%;
+          }
+
+          .pointers-wrap {
+               width: 100%;
+          }
+     }
+
+     /* ============================================================
+     FAQ
+     ============================================================ */
+
+     #faq {
+          .column {
+               gap: var(--g60);
+          }
+          .faq-column {
+               border-bottom: 1px solid hsl(0, 0%, 0%, 0.07);
+               display: flex;
+               flex-direction: column;
+               border-top: none;
+
+               .heading {
+                    font-size: 11px;
+                    padding-bottom: var(--g28);
+               }
+
+               .faq.first {
+                    border-top: 1px solid hsl(0, 0%, 0%, 0.07);
+               }
+
+               .faq {
+
+                    h3 {
+                         font-size: 11.5px;
+                    }
+
+                    svg {
+                         height: 8px;
+                    }
+
+                    p {
+                         font-size: 10.5px;
+                    }
+               }
+          }
+     }
+
+     /* ============================================================
+          ARTICLE
+     ============================================================ */
+
+     #articles {
+          .article-wrap-hero {
+               display: flex;
+               flex-direction: column;
+               gap: var(--g28);
+          }
+
+          .article-large {
+               .latest {
+                    font-size: 11px;
+               }
+
+               h3 {
+                    font-size: 14px;
+               }
+          }
+     }
+
+     .tag.large {
+          font-size: 10.5px;
+     }
+
+     .article-card {
+          h3 {
+               font-size: 12px;
+          }
+
+          p {
+               font-size: 10.5px;
+          }
+     }
+
+     /* ============================================================
+          CTA
+     ============================================================ */
+
+     #call-to-action {
+          padding: var(--g80);
+          h2 {
+               font-size: 18px;
+          }
+
+          picture {
+               width: 68%;
+               margin-top: -10%;
+          }
+     }
+
+     /* ============================================================
+          FOOTER
+     ============================================================ */
+
+     footer {
+          padding-top: var(--g80);
+
+          .logo {
+               svg {
+                    height: 14px;
+               }
+          }
+
+          .links-wrap {
+               gap: var(--g60);
+               .links {
+                    gap: var(--g14);
+                    h3 {
+                         font-size: 12px;
+                    }
+
+                    a {
+                         font-size: 11.5px;
+                         line-height: 1.3;
+                    }
+               }
+          }
+
+          .socials-wrap {
+               a {
+                    img {
+                         width: 13px;
+                    }
+
+                    .youtube {
+                         width: 14px;
+                    }
+               }
+          }
+
+          .seperator {
+               span, a {
+                    font-size: 10.5px;
+               }
+          }
+     }
+}
+
+@media (max-width: 540px) {
+
+     :root {
+          --cv: 85px;
+     }
+     
+     .mobile-no {
+          display: none;
+     }
+
+     .mobile-yes {
+          display: block;
+
+          &.fr,.fc {
+               display: flex;
+          }
+     }
+
+     /* ============================================================
+          TYPOGRAPHY
+     ============================================================ */
+
+     h2, .h2 {
+          font-size: 14.5px;
+     }
+
+     /* ============================================================
+          COMPONENT = BUTTON
+     ============================================================ */
+
+     .button {
+          font-size: 11px;
+     }
+
+     /* ============================================================
+          COMPONENT = ARROW BUTTON
+     ============================================================ */
+
+     .button-arrow {
+          font-size: 11px;
+
+          svg {
+               height: 10.5px;
+          }
+     }
+
+     /* ============================================================
+          HERO
+     ============================================================ */
+
+     #home-hero {
+          grid-template-rows: 1.1fr 1fr;
+
+          .top {
+               h1 {
+                    font-size: 16px;
+               }
+          }
+     }
+
+     #categories-section {
+          grid-template-columns: 1fr;
+          gap: var(--g6);
+
+          .button-arrow {
+               margin-top: calc(var(--g48) - var(--g6));
+               grid-column: 1 / 2;
+               grid-row: 10 / 11;
+               justify-self: start;
+          }
+
+          h2 {
+               grid-column: 1 / 2;
+               margin-bottom: calc(var(--g48) - var(--g6));
+          }
+
+          .card {
+               padding: var(--g12);
+               gap: var(--g16);
+               padding-right: var(--g16);
+               grid-template-columns: .67fr 2fr min-content;
+
+               span {
+                    display: none;
+               }
+               
+               picture {
+                    grid-column: 1 / 2;
+                    aspect-ratio: 86 / 49;
+                    margin: 1% 0%;
+               }
+
+               .arrow {
+                    aspect-ratio: auto;
+                    width: auto;
+                    grid-column: 3 / 4;
+                    grid-row: 1 / 2;
+                    align-self: center;
+                    background-color: transparent;
+
+                    svg {
+                         height: 8px;
+                         color: var(--heading);
+                    }
+               }
+
+               h3 {
+                    font-size: 12px;
+                    align-self: center;
+               }
+          }
+     }
+
+     /* ============================================================
+          SECTION
+     ============================================================ */
+
+     #brands-section .brands-wrap {
+          width: 105%;
+           .brand {
+               height: 70px;
+
+               .aflatek {
+                    width: 72px;
+               }
+
+               .loncin {
+                    width: 59px;
+               }
+
+               .lantzman {
+                    width: 70px;
+               }
+
+               .shantui {
+                    width: 63px;
+               }
+
+               .geoworks {
+                    width: 95px;
+               }
+
+               .castloaders {
+                    width: 82px;
+               }
+          }
+     }
+
+      /* ============================================================
+          SHOP ALL
+     ============================================================ */
+
+     #shop-all {
+          .tab {
+               font-size: 10.5px;
+          }
+     }
+
+     /* ============================================================
+          ABOUT SECTION
+     ============================================================ */
+
+     #about-section {
+          flex-direction: column;
+          .car-grid {
+               grid-template-columns: 1fr;
+               gap: var(--g10);
+               div {
+                    .num {
+                         font-size: 13px;
+                    }
+
+                    .an {
+                         font-size: 10.5px;
+                    }
+               }
+          }
+     }
+
+     /* ============================================================
+          POINTERS 
+     ============================================================ */
+
+     #pointers {
+          .pointers-wrap {
+               .pointer {
+                    h3 {
+                         font-size: 11.5px;
+                    }
+
+                    .icon {
+                         width: auto;
+                         background-color: transparent !important;
+                         svg {
+                              color: var(--text);
+                              height: 6px;
+                         }
+                    }
+
+                    .text-wrap {
+                         p {
+                              font-size: 10.5px;
+                         }
+                    }
+
+                    &.active {
+                         .icon {
+                              background-color: transparent !important;
+                              svg {
+                                   height: 8px;
+                                   color: var(--heading);
+                              }
+                         }
+                    }
+               }
+          }
+     }
+
+     /* ============================================================
+          POINTERS 
+     ============================================================ */
+
+     #coverage-section {
+          .coverage-card {
+               h3,
+               h2 {
+                    font-size: 13px;
+               }
+
+               p {
+                    font-size: 11.5px;
+               }
+
+               h3 {
+                    font-size: 12px;
+               }
+
+               &.address p {
+                    font-size: 11px;
+               }
+          }
+     }
+
+     /* ============================================================
+          CTA
+     ============================================================ */
+
+     #call-to-action {
+          padding: var(--g80);
+          h2 {
+               font-size: 16px;
+          }
+
+          picture {
+               width: 85%;
+               margin-top: -3%;
+          }
+     }
+
+     /* ============================================================
+          FOOTER
+     ============================================================ */
+
+     footer {
+          grid-template-rows: auto auto 1fr auto;
+
+          .links-wrap {
+               margin-top: var(--g52);
+               flex-wrap: wrap;
+               grid-row: 3 / 4;
+               justify-content: start;
+          }
+
+          .logo {
+               grid-column: 1 / 3;
+          }
+
+          .socials-wrap {
+               margin-top: var(--g32);
+               grid-column: 1 / 3;
+               grid-row: 2 / 3;
+               justify-self: start;
+               a {
+                    img {
+                         width: 13px;
+                    }
+
+                    .youtube {
+                         width: 14px;
+                    }
+
+                    &:hover {
+                         opacity: 2;
+                    }
+               }
+          }
+     }
+}
