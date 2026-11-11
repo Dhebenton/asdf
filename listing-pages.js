@@ -11,6 +11,7 @@
         'service-warranty.html': { headingKey: 'servicePageHeading', heading: 'Service & Warranty', cards: [] },
         'financing-options.html': { headingKey: 'financingPageHeading', heading: 'Financing Options', cards: [] },
         'trade-in-options.html': { headingKey: 'tradeInPageHeading', heading: 'Trade-In Options', cards: [] },
+        'product-page.html': { headingKey: 'allEquipmentHeading', heading: 'Equipment', cards: [] },
         'categories.html': {
             headingKey: 'allCategoriesHeading',
             heading: 'All Categories',

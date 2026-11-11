@@ -13,7 +13,7 @@
           <link rel="stylesheet" href="/product-page.css">
 
           <title>Equipment | ETR Tehnika</title>
-          <meta name="description" content="">
+          <meta name="description" content="View equipment specifications, media, attachments and send an enquiry to ETR Tehnika.">
      </head>
 
      <body id="info-page">
@@ -67,7 +67,7 @@
                <div class="fr g16 content">
                     <a href="/">Home</a>
                     <svg viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
-                    <a href="/equipment/">Equipment</a>
+                    <a href="/pages/all-products.html">Equipment</a>
                     <svg viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                     <span class="active">Product</span>
                </div>
@@ -134,7 +134,7 @@
                     </div>
 
                     <div class="fr no-hmobile g12">
-                         <a href="/contact/" class="button grey">Get In Touch</a>
+                         <a href="/pages/contact.html" class="button grey">Get In Touch</a>
                          <button type="button" class="button blue" data-open-enquiry>Send An Enquiry</button>
                     </div>
                </div>
@@ -270,7 +270,7 @@
                                         <use href="#arrow-right"></use>
                                    </svg>
                               </button>
-                         </divf>
+                         </div>
 
                          <div class="progress-indicator fr"></div>
                     </div>
@@ -442,7 +442,7 @@
                RESPONSIVE CTA
           ============================================================ -->
           
-<div class="enquiry-flow" role="dialog" aria-modal="true" aria-label="Send an enquiry" aria-hidden="true" inert>
+<div class="enquiry-flow tra" role="dialog" aria-modal="true" aria-label="Send an enquiry" aria-hidden="true" inert>
      <div class="top fr jsb">
           <h2>Send An Enquiry</h2>
           <button type="button" class="iccon fr jc enquiry-close" aria-label="Close enquiry">
@@ -491,17 +491,15 @@
                               <label>Purchasing For</label>
 
                               <div class="fc g8">
-                                   <label class="radio-wrap fr g8">
-                                        <input type="radio" name="purchasingFor" value="Business" required>
+                                   <div class="radio-wrap fr g8" role="radio" tabindex="0" aria-checked="false" data-radio-name="purchasingFor" data-radio-value="Business">
                                         <div class="radio fr"><div></div></div>
                                         <span>Business</span>
-                                   </label>
+                                   </div>
 
-                                   <label class="radio-wrap fr g8">
-                                        <input type="radio" name="purchasingFor" value="Personal">
+                                   <div class="radio-wrap fr g8" role="radio" tabindex="0" aria-checked="false" data-radio-name="purchasingFor" data-radio-value="Personal">
                                         <div class="radio fr"><div></div></div>
                                         <span>Personal</span>
-                                   </label>
+                                   </div>
                               </div>
                          </div>
 
@@ -509,17 +507,15 @@
                               <label>Intended Payment</label>
 
                               <div class="fc g8">
-                                   <label class="radio-wrap fr g8">
-                                        <input type="radio" name="payment" value="Full Payment" required>
+                                   <div class="radio-wrap fr g8" role="radio" tabindex="0" aria-checked="false" data-radio-name="payment" data-radio-value="Full Payment">
                                         <div class="radio fr"><div></div></div>
                                         <span>Full Payment</span>
-                                   </label>
+                                   </div>
 
-                                   <label class="radio-wrap fr g8">
-                                        <input type="radio" name="payment" value="Finance">
+                                   <div class="radio-wrap fr g8" role="radio" tabindex="0" aria-checked="false" data-radio-name="payment" data-radio-value="Finance">
                                         <div class="radio fr"><div></div></div>
                                         <span>Finance</span>
-                                   </label>
+                                   </div>
                               </div>
                          </div>
                     </div>
@@ -530,19 +526,30 @@
                     </div>
                </div>
           </form>
+
+          <div class="enquiry-success fc jc ac" aria-hidden="true">
+               <div class="success-icon fr jc">
+                    <svg viewBox="0 0 8 7" fill="currentColor">
+                         <use href="#check"></use>
+                    </svg>
+               </div>
+               <h3 tabindex="-1">Enquiry Sent</h3>
+               <p>Thank you. A member of our team will be in touch shortly.</p>
+          </div>
      </div>
 
      <div class="bottom fr je">
-          <button type="submit" form="product-enquiry-form" class="button">Send Message</button>
+          <button type="submit" form="product-enquiry-form" class="button enquiry-submit">Send Message</button>
      </div>
 </div>
 
           <!-- SCRIPTS: Load CMS first, enquiry second -->
-          <script src="/js/nav.js" defer></script>
-          <script src="/js/info-table.js" defer></script>
-          <script src="/js/slider.js" defer></script>
-          <script src="/js/product-page-cms.js" defer></script>
-          <script src="/js/product-enquiry.js" defer></script>
+          <script src="/listing-pages.js" defer></script>
+          <script src="/info-table.js" defer></script>
+          <script src="/slider.js" defer></script>
+          <script src="/product-page-cms.js" defer></script>
+          <script src="/product-enquiry.js" defer></script>
+          <script src="/nav.js" defer></script>
 
           <script>
                document.addEventListener('DOMContentLoaded', () => {
