@@ -8,8 +8,9 @@
           const form = document.querySelector('#product-enquiry-form');
           const success = enquiry?.querySelector('.enquiry-success');
           const submitButton = enquiry?.querySelector('.enquiry-submit');
+          const formStatus = enquiry?.querySelector('.form-status');
 
-          if (!enquiry || !blur || !form || !success || !submitButton) {
+          if (!enquiry || !blur || !form || !success || !submitButton || !formStatus) {
                console.error('ETR Enquiry: Missing enquiry HTML, background blur or form.');
                return;
           }
@@ -63,6 +64,9 @@
                submitButton.type = 'submit';
                submitButton.setAttribute('form', 'product-enquiry-form');
                submitButton.textContent = 'Send Message';
+               submitButton.disabled = false;
+               formStatus.hidden = true;
+               formStatus.textContent = '';
           }
 
           function showSuccess() {
@@ -73,6 +77,7 @@
                submitButton.type = 'button';
                submitButton.removeAttribute('form');
                submitButton.textContent = 'Close';
+               submitButton.disabled = false;
 
                requestAnimationFrame(() => {
                     success.querySelector('h3')?.focus({ preventScroll: true });
@@ -464,7 +469,7 @@
              FORM SUBMISSION
           ============================================================ */
 
-          form.addEventListener('submit', event => {
+          form.addEventListener('submit', async event => {
                event.preventDefault();
 
                if (!product) {
@@ -496,14 +501,36 @@
                     pageURL: location.href
                };
 
-               document.dispatchEvent(
-                    new CustomEvent('etrEnquirySubmit', {
-                         detail: payload
-                    })
-               );
+               submitButton.disabled = true;
+               submitButton.textContent = document.documentElement.lang === 'et' ? 'Saadan…' : 'Sending…';
+               formStatus.hidden = true;
 
-               console.log('ETR enquiry payload:', payload);
-               showSuccess();
+               try {
+                    await window.ETRSupabase.insert('equipment_enquiries', {
+                         product_name: payload.product.name,
+                         product_slug: payload.product.slug || null,
+                         attachments: payload.attachments,
+                         first_name: payload.customer.firstName,
+                         last_name: payload.customer.lastName,
+                         email: payload.customer.email,
+                         phone: payload.customer.phone,
+                         purchasing_for: payload.customer.purchasingFor || null,
+                         payment_method: payload.customer.payment || null,
+                         message: payload.customer.message || null,
+                         page_url: payload.pageURL
+                    });
+
+                    document.dispatchEvent(new CustomEvent('etrEnquirySubmit', { detail: payload }));
+                    showSuccess();
+               } catch (error) {
+                    console.error('ETR enquiry submission failed:', error);
+                    formStatus.textContent = document.documentElement.lang === 'et'
+                         ? 'Päringu saatmine ebaõnnestus. Palun proovi uuesti.'
+                         : 'Unable to send your enquiry. Please try again.';
+                    formStatus.hidden = false;
+                    submitButton.disabled = false;
+                    submitButton.textContent = document.documentElement.lang === 'et' ? 'Saada sõnum' : 'Send Message';
+               }
           });
 
           /* ============================================================
@@ -523,6 +550,15 @@
                     attachments: [...attachments]
                })
           };
+
+          if (new URLSearchParams(location.search).get('enquire') === '1') {
+               const openWhenReady = () => {
+                    if (getProduct()) openEnquiry();
+               };
+
+               document.addEventListener('etr:productloaded', openWhenReady, { once: true });
+               openWhenReady();
+          }
 
           console.log('ETR enquiry initialized');
      }

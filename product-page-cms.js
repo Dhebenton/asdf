@@ -1395,6 +1395,10 @@ function renderMedia(product) {
                     attachments: hasAttachments
                });
 
+               document.dispatchEvent(new CustomEvent('etr:productloaded', {
+                    detail: { product }
+               }));
+
                await imagePromise;
 
                console.log('ETR product loaded:', product.name);

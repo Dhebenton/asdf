@@ -85,6 +85,17 @@
           textarea {
                height: 120px;
           }
+
+          .form-status {
+               color: var(--red);
+               font-size: 11.5px;
+               line-height: 1.5;
+          }
+
+          button:disabled {
+               opacity: .6;
+               pointer-events: none;
+          }
      }
 }
 

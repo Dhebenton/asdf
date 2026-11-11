@@ -561,9 +561,24 @@
     });
 
     document.addEventListener('click', event => {
+        const enquiryLink = event.target.closest('[data-enquire-url]');
+        if (enquiryLink) {
+            event.preventDefault();
+            event.stopPropagation();
+            window.location.assign(enquiryLink.dataset.enquireUrl);
+            return;
+        }
+
         if (!languageSelect?.contains(event.target) && !languageButton?.contains(event.target)) {
             setLanguageMenu(false);
         }
+    });
+
+    document.addEventListener('keydown', event => {
+        const enquiryLink = event.target.closest('[data-enquire-url]');
+        if (!enquiryLink || (event.key !== 'Enter' && event.key !== ' ')) return;
+        event.preventDefault();
+        window.location.assign(enquiryLink.dataset.enquireUrl);
     });
 
     document.addEventListener('keydown', event => {

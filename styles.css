@@ -1719,6 +1719,17 @@ html[lang="et"] footer .links-wrap .links {
                color: var(--subtext);
           }
 
+          .card-actions [data-enquire-url] {
+               cursor: pointer;
+
+               &:hover,
+               &:focus-visible {
+                    color: var(--blue);
+                    text-decoration: underline;
+                    outline: none;
+               }
+          }
+
           .sep {
                height: 12px;
                background-color: hsl(0, 0%, 0%, .1);

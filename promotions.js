@@ -207,7 +207,7 @@
                     <div class="card-actions fr g16">
                         <span>${escapeHTML(text.learnMore)}</span>
                         <div class="sep"></div>
-                        <span>${escapeHTML(text.enquire)}</span>
+                        <span role="link" tabindex="0" data-enquire-url="${escapeHTML(link)}&amp;enquire=1">${escapeHTML(text.enquire)}</span>
                     </div>
                 </div>
             </a>

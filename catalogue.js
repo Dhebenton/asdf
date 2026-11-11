@@ -147,8 +147,9 @@
                 <p class="sta">${escapeHTML(spec.label)}:</p>
                 <p class="ans">${escapeHTML(spec.value)}</p>
             </div>`).join('');
+        const link = `/pages/product-page.html?slug=${encodeURIComponent(product.slug)}`;
         return `
-            <a href="/pages/product-page.html?slug=${encodeURIComponent(product.slug)}" class="product card">
+            <a href="${link}" class="product card">
                 <div class="image-wrap fc">
                     <img src="${escapeHTML(product.image || '/assets/placeholder-1.png')}" alt="${escapeHTML(product.name)}" loading="lazy" decoding="async">
                 </div>
@@ -159,7 +160,7 @@
                         <p class="price">${escapeHTML(formatPrice(price))}</p>
                     </div>
                     ${specs ? `<div class="fr stats-wrap">${specs}</div>` : ''}
-                    <div class="card-actions fr g16"><span>Learn More</span><div class="sep"></div><span>Enquire</span></div>
+                    <div class="card-actions fr g16"><span>Learn More</span><div class="sep"></div><span role="link" tabindex="0" data-enquire-url="${link}&amp;enquire=1">Enquire</span></div>
                 </div>
             </a>`;
     };
