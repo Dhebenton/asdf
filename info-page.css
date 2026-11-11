@@ -9,6 +9,7 @@
           display: flex;
           border-radius: 3px;
           overflow: hidden;
+          width: 100%;
      }
 }
 
@@ -243,13 +244,15 @@
 @media (max-width: 1310px) {
      #way-to-buy {
           .column {
-               width: 100%;
+               width: 100% !important;
           }
      }
 }
 
 @media (max-width: 1080px) {
-     
+     #info-page .column {
+          width: 100% !important;
+     }
 }
 
 @media (max-width: 770px) {
@@ -367,8 +370,13 @@
 
      #about-hero {
           .h1-wrap {
+               padding-top: var(--g40);
                h1 {
-                    font-size: 15.5px;
+                    font-size: 15px;
+
+                    br {
+                         display: none;
+                    }
                }
           }
      }
@@ -417,4 +425,12 @@
                }
           }
      }
+}
+
+.g60 {
+     gap: var(--g60);
+}
+
+.g32 {
+     gap: var(--g32);
 }

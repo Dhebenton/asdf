@@ -1,0 +1,493 @@
+{
+ "wp-3182": {
+  "brand": "Shantui",
+  "items": [
+   "Kiirliide mehanililine",
+   "Kaevekopad",
+   "Kaablikraavi kopad",
+   "Planeerkopad",
+   "Setteroobad",
+   "Rotaatorkopad",
+   "Kallutav rotaator kiirühendused",
+   "Kallutavad kiirühendused",
+   "Tõstekahvlid",
+   "Sõelkopad",
+   "Hüdrovasarad",
+   "Maafreesid",
+   "Planeermistala",
+   "Haaratsid",
+   "Kobestuskihvad",
+   "Võsagiljotiinid",
+   "Reha",
+   "V-kujuline kopp"
+  ]
+ },
+ "wp-ctl75v-roomik-minilaadur": {
+  "brand": "Shantui",
+  "items": [
+   "Külgnihutusega tõstekahvlid",
+   "Maafrees",
+   "Rootoräke",
+   "Tõstekahvlid",
+   "Lumesahk",
+   "Kivikorjamiskopp",
+   "V-Lumesahk",
+   "Maapuur",
+   "Minikaevur",
+   "Hammustakopp",
+   "Muruniiduk",
+   "Planeerimiskopp",
+   "Puuhaarts",
+   "silohaarts",
+   "Tasandusrest"
+  ]
+ },
+ "wp-h190": {
+  "brand": "Heracles",
+  "items": [
+   "Tõsterkahvlid",
+   "Lumesahk",
+   "Palgihaarts",
+   "Hammustakopp",
+   "Kivikopp",
+   "Tasnadusrest",
+   "Hüdrauliline Maapuur",
+   "Big Bag tõstja",
+   "Silohaarts"
+  ]
+ },
+ "wp-halumasin-lantzmann-proc20g-track480-auto": {
+  "brand": "Lantzmann",
+  "items": [
+   "Plagitõstuk",
+   "Hüdrauliline Laadimisramp"
+  ]
+ },
+ "wp-halumasin-traktor-lantzmann-proc20pto-480-auto": {
+  "brand": "Lantzmann",
+  "items": [
+   "Plagitõstuk",
+   "Hüdrauliline Laadimisramp"
+  ]
+ },
+ "wp-heracles-h160t": {
+  "brand": "Heracles",
+  "items": [
+   "Tõsterkahvlid",
+   "Lumesahk",
+   "Palgihaarts",
+   "Hammustakopp",
+   "Kivikopp",
+   "Tasnadusrest",
+   "Hüdrauliline Maapuur",
+   "Big Bag tõstja",
+   "Silohaarts"
+  ]
+ },
+ "wp-heracles-h190t": {
+  "brand": "Heracles",
+  "items": [
+   "Tõsterkahvlid",
+   "Lumesahk",
+   "Palgihaarts",
+   "Hammustakopp",
+   "Kivikopp",
+   "Tasnadusrest",
+   "Hüdrauliline Maapuur",
+   "Big Bag tõstja",
+   "Silohaarts"
+  ]
+ },
+ "wp-heracles-h220": {
+  "brand": "Heracles",
+  "items": [
+   "Tõsterkahvlid",
+   "Lumesahk",
+   "Palgihaarts",
+   "Hammustakopp",
+   "Kivikopp",
+   "Tasnadusrest",
+   "Hüdrauliline Maapuur",
+   "Big Bag tõstja",
+   "Silohaarts"
+  ]
+ },
+ "wp-heracles-h280": {
+  "brand": "Heracles",
+  "items": [
+   "Tõsterkahvlid",
+   "Lumesahk",
+   "Palgihaarts",
+   "Hammustakopp",
+   "Kivikopp",
+   "Tasnadusrest",
+   "Hüdrauliline Maapuur",
+   "Big Bag tõstja",
+   "Silohaarts"
+  ]
+ },
+ "wp-heracles-h280t": {
+  "brand": "Heracles",
+  "items": [
+   "Tõsterkahvlid",
+   "Lumesahk",
+   "Palgihaarts",
+   "Hammustakopp",
+   "Kivikopp",
+   "Tasnadusrest",
+   "Hüdrauliline Maapuur",
+   "Big Bag tõstja",
+   "Silohaarts"
+  ]
+ },
+ "wp-hercles-160t": {
+  "brand": "Heracles",
+  "items": [
+   "Tõsterkahvlid",
+   "Lumesahk",
+   "Palgihaarts",
+   "Hammustakopp",
+   "Kivikopp",
+   "Tasnadusrest",
+   "Hüdrauliline Maapuur",
+   "Big Bag tõstja",
+   "Silohaarts"
+  ]
+ },
+ "wp-jarelveetav-halumasin-proc12g-bensiin": {
+  "brand": "Lantzmann",
+  "items": [
+   "Plagitõstuk",
+   "Hüdrauliline Laadimisramp",
+   "6-kiil"
+  ]
+ },
+ "wp-jarelveetav-halumasin-proc12g": {
+  "brand": "Lantzmann",
+  "items": [
+   "Plagitõstuk",
+   "Hüdrauliline Laadimisramp",
+   "6-kiil"
+  ]
+ },
+ "wp-jarelveetav-halumasin-proc20e-elekter-480-automaatne": {
+  "brand": "Lantzmann",
+  "items": [
+   "Plagitõstuk",
+   "Hüdrauliline Laadimisramp"
+  ]
+ },
+ "wp-jarelveetav-halumasin-proc20eelekter": {
+  "brand": "Lantzmann",
+  "items": [
+   "Plagitõstuk",
+   "Hüdrauliline Laadimisramp",
+   "6-kiil"
+  ]
+ },
+ "wp-jarelveetav-halumasin-proc20g": {
+  "brand": "Lantzmann",
+  "items": [
+   "Plagitõstuk",
+   "Hüdrauliline Laadimisramp",
+   "6-kiil"
+  ]
+ },
+ "wp-lintsaeraam-bensiin-lantzmann-bs460-mini": {
+  "brand": "Lantzmann",
+  "items": [
+   "Saeterad",
+   "Saetera teritaja",
+   "Lisasiin"
+  ]
+ },
+ "wp-lintsaeraam-bensiin-lantzmann-bs910g-pro": {
+  "brand": "Lantzmann",
+  "items": [
+   "Lintsaeraami haagis",
+   "Saetera teritaja",
+   "Lisasiin"
+  ]
+ },
+ "wp-lintsaeraam-elekter-lantzmann-bs660e": {
+  "brand": "Lantzmann",
+  "items": [
+   "Lintsaeraami haagis",
+   "Saetera teritaja",
+   "Lisasiin"
+  ]
+ },
+ "wp-lintsaeraam-elekter-lantzmann-bs790e": {
+  "brand": "Lantzmann",
+  "items": [
+   "Lintsaeraami haagis",
+   "Saetera teritaja",
+   "Lisasiin"
+  ]
+ },
+ "wp-lintsaeraam-elekter-lantzmann-bs910e-pro": {
+  "brand": "Lantzmann",
+  "items": [
+   "Lintsaeraami haagis",
+   "Saetera teritaja",
+   "Lisasiin"
+  ]
+ },
+ "wp-lintsaeraam-lantzmann-bs660g": {
+  "brand": "Lantzmann",
+  "items": [
+   "Lintsaeraami haagis",
+   "Saetera teritaja",
+   "Lisasiin"
+  ]
+ },
+ "wp-miniekskavaator-bertz-n1-ekskavaator": {
+  "brand": "Bertž",
+  "items": [
+   "Kiirliides",
+   "Kraavikopp 200 mm",
+   "Hüdrauliline põial",
+   "Kallutav planerkopp 800 mm,",
+   "Reha",
+   "Murduv hammas",
+   "Hüdrauliline pinnasepuur 200 mm"
+  ]
+ },
+ "wp-miniekskavaator-bertz-n2": {
+  "brand": "Bertž",
+  "items": [
+   "Kiirliides",
+   "Kraavikopp 200 mm",
+   "Hüdrauliline põial",
+   "Kallutav planerkopp 800 mm",
+   "Reha",
+   "Murduv hammas",
+   "Hüdrauliline pinnasepuur 200 mm"
+  ]
+ },
+ "wp-se12sr": {
+  "brand": "Shantui",
+  "items": [
+   "Kiirliide mehaaniline",
+   "Kaevekopad",
+   "Kaablikraavi kopad",
+   "Planeerkopad",
+   "Sõelkopad",
+   "Hüdrovasarad",
+   "Haaratsid",
+   "Kobestuskihvad",
+   "Võsagiljotiinid",
+   "Reha",
+   "V-kujuline kopp"
+  ]
+ },
+ "wp-shantui-se135": {
+  "brand": "Shantui",
+  "items": [
+   "Kiirliide hüdrauliline",
+   "Kaevekopad",
+   "Kaablikraavi kopad",
+   "Planeerkopad",
+   "Setteroobad",
+   "Rotaatorkopad",
+   "Kallutav rotaator kiirühendused",
+   "Kallutavad kiirühendused",
+   "Tõstekahvlid",
+   "Sõelkopad",
+   "Hüdrovasarad",
+   "Maafreesid",
+   "Planeermistala",
+   "Haaratsid",
+   "Kobestuskihvad",
+   "Võsagiljotiinid",
+   "Reha",
+   "V-kujuline kopp"
+  ]
+ },
+ "wp-shantui-se18sr": {
+  "brand": "Shantui",
+  "items": [
+   "Kiirliide hüdrauliline",
+   "Kaevekopad",
+   "Kaablikraavi kopad",
+   "Planeerkopad",
+   "Setteroobad",
+   "Rotaatorkopad",
+   "Kallutav rotaator kiirühendused",
+   "Kallutavad kiirühendused",
+   "Tõstekahvlid",
+   "Sõelkopad",
+   "Hüdrovasarad",
+   "Maafreesid",
+   "Planeermistala",
+   "Haaratsid",
+   "Kobestuskihvad",
+   "Võsagiljotiinid",
+   "Reha",
+   "V-kujuline kopp"
+  ]
+ },
+ "wp-shantui-se20": {
+  "brand": "Shantui",
+  "items": [
+   "Kiirliide hüdrauliline",
+   "Kaevekopad",
+   "Kaablikraavi kopad",
+   "Planeerkopad",
+   "Setteroobad",
+   "Rotaatorkopad",
+   "Kallutav rotaator kiirühendused",
+   "Kallutavad kiirühendused",
+   "Tõstekahvlid",
+   "Sõelkopad",
+   "Hüdrovasarad",
+   "Maafreesid",
+   "Planeermistala",
+   "Haaratsid",
+   "Kobestuskihvad",
+   "Võsagiljotiinid",
+   "Reha",
+   "V-kujuline kopp"
+  ]
+ },
+ "wp-shantui-se215": {
+  "brand": "Shantui",
+  "items": [
+   "Kiirliide hüdrauliline",
+   "Kaevekopad",
+   "Kaablikraavi kopad",
+   "Planeerkopad",
+   "Setteroobad",
+   "Rotaatorkopad",
+   "Kallutav rotaator kiirühendused",
+   "Kallutavad kiirühendused",
+   "Tõstekahvlid",
+   "Sõelkopad",
+   "Hüdrovasarad",
+   "Maafreesid",
+   "Planeermistala",
+   "Kobestuskihvad",
+   "Võsagiljotiinid",
+   "Reha",
+   "V-kujuline kopp",
+   "Sorteerhaaratsid",
+   "Lammutushaaratsid"
+  ]
+ },
+ "wp-shantui-se27sr": {
+  "brand": "Shantui",
+  "items": [
+   "Kiirliide hüdrauliline",
+   "Kaevekopad",
+   "Kaablikraavi kopad",
+   "Planeerkopad",
+   "Setteroobad",
+   "Rotaatorkopad",
+   "Kallutav rotaator kiirühendused",
+   "Kallutavad kiirühendused",
+   "Tõstekahvlid",
+   "Sõelkopad",
+   "Hüdrovasarad",
+   "Maafreesid",
+   "Planeermistala",
+   "Haaratsid",
+   "Kobestuskihvad",
+   "Võsagiljotiinid",
+   "Reha",
+   "V-kujuline kopp"
+  ]
+ },
+ "wp-shantui-se335": {
+  "brand": "Shantui",
+  "items": [
+   "Kiirliide hüdrauliline",
+   "Kaevekopad",
+   "Kaablikraavi kopad",
+   "Planeerkopad",
+   "Setteroobad",
+   "Rotaatorkopad",
+   "Kallutav rotaator kiirühendused",
+   "Kallutavad kiirühendused",
+   "Tõstekahvlid",
+   "Sõelkopad",
+   "Hüdrovasarad",
+   "Maafreesid",
+   "Planeermistala",
+   "Kobestuskihvad",
+   "Võsagiljotiinid",
+   "Reha",
+   "V-kujuline kopp",
+   "Sorteerhaaratsid",
+   "Lammutushaaratsid"
+  ]
+ },
+ "wp-shantui-se36sr": {
+  "brand": "Shantui",
+  "items": [
+   "Kiirliide hüdrauliline",
+   "Kaevekopad",
+   "Kaablikraavi kopad",
+   "Planeerkopad",
+   "Setteroobad",
+   "Rotaatorkopad",
+   "Kallutav rotaator kiirühendused",
+   "Kallutavad kiirühendused",
+   "Tõstekahvlid",
+   "Sõelkopad",
+   "Hüdrovasarad",
+   "Maafreesid",
+   "Planeermistala",
+   "Haaratsid",
+   "Kobestuskihvad",
+   "Võsagiljotiinid",
+   "Reha",
+   "V-kujuline kopp"
+  ]
+ },
+ "wp-shantui-se58sr": {
+  "brand": "Shantui",
+  "items": [
+   "Kiirliide hüdrauliline",
+   "Kaevekopad",
+   "Kaablikraavi kopad",
+   "Planeerkopad",
+   "Setteroobad",
+   "Rotaatorkopad",
+   "Kallutav rotaator kiirühendused",
+   "Kallutavad kiirühendused",
+   "Tõstekahvlid",
+   "Sõelkopad",
+   "Hüdrovasarad",
+   "Maafreesid",
+   "Planeermistala",
+   "Haaratsid",
+   "Kobestuskihvad",
+   "Võsagiljotiinid",
+   "Reha",
+   "V-kujuline kopp"
+  ]
+ },
+ "wp-shantui-se85sr": {
+  "brand": "Shantui",
+  "items": [
+   "Kiirliide hüdrauliline",
+   "Kaevekopad",
+   "Kaablikraavi kopad",
+   "Planeerkopad",
+   "Setteroobad",
+   "Rotaatorkopad",
+   "Kallutav rotaator kiirühendused",
+   "Kallutavad kiirühendused",
+   "Tõstekahvlid",
+   "Sõelkopad",
+   "Hüdrovasarad",
+   "Maafreesid",
+   "Planeermistala",
+   "Haaratsid",
+   "Kobestuskihvad",
+   "Võsagiljotiinid",
+   "Reha",
+   "V-kujuline kopp"
+  ]
+ }
+}

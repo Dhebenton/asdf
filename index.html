@@ -39,66 +39,66 @@
 
           <nav class="tra">
                <div class="content ch fr g44">
-                    <a href="" class="fr logo">
+                    <a href="/" class="fr logo" aria-label="ETR Tehnika home">
                          <svg viewBox="0 0 101 14" fill="currentColor"><use href="#logo"></use></svg>
                     </a>
                     <div class="links-wrap">
                          <div class="links fr g24">
-                              <a href="/pages/all-products.html" >Machinery</a>
-                              <a href="" >Brands</a>
-                              <a href="" >Industries</a>
-                              <a href="" >Servicing</a>
-                              <a href="" >About Us</a>
-                              <a href="" >Contact</a>
+                              <a href="/pages/all-products.html" data-i18n="navMachinery">Machinery</a>
+                              <a href="/pages/all-brands.html" data-i18n="navBrands">Brands</a>
+                              <a href="/pages/all-industries.html" data-i18n="navIndustries">Industries</a>
+                              <a href="/pages/service-warranty.html" data-i18n="navServicing">Servicing</a>
+                              <a href="/pages/about.html" data-i18n="navAbout">About Us</a>
+                              <a href="/pages/contact.html" data-i18n="navContact">Contact</a>
                          </div>
                     </div>
                     <div class="fr g14">
-                         <button id="language-switcher" class="fr jc">
+                         <button id="language-switcher" class="fr jc" type="button" aria-label="Choose language" aria-haspopup="true" aria-expanded="false" aria-controls="language-select">
                               <svg viewBox="0 0 13 13" fill="currentColor"><use href="#globe"></use></svg>
                          </button>
                     </div>
-                    <button class="yes-tablet menu-button" aria-expanded="false" aria-label="Open navigation">
+                    <button class="yes-tablet menu-button" type="button" aria-expanded="false" aria-label="Open navigation" aria-controls="mobile-navigation">
                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="none" viewBox="0 0 16 12">
                               <path fill="#010204" d="M16 0H0v1.37143h16zM16 5.02857H0V6.4h16zM16 10.0571H0v1.3715h16z"></path>
                          </svg>
                     </button>
                </div>
-               <div class="language-select tra">
-                    <button class="active">English</button>
-                    <button>Estonian</button>
+               <div class="language-select tra" id="language-select" aria-hidden="true">
+                    <button class="active" type="button" data-language="en" lang="en">English</button>
+                    <button type="button" data-language="et" lang="et">Eesti</button>
                </div>
           </nav>
           <div class="background-blur"></div>
-          <!-- <div class="nav-menu-tablet ch yes-tablet">
+          <div class="nav-menu-tablet ch yes-tablet" id="mobile-navigation" role="dialog" aria-modal="true" aria-label="Main navigation">
                <div class="wrap">
                     <div class="top fr jsb">
-                         <a href="" class="fr logo">
+                         <a href="/" class="fr logo" aria-label="ETR Tehnika home">
                               <svg viewBox="0 0 101 14" fill="currentColor"><use href="#logo"></use></svg>
                          </a>
-                         <button class="icon close-bt">
+                         <button class="icon close-bt" type="button" aria-label="Close navigation">
                               <svg viewBox="0 0 9 9" fill="currentColor">
                                    <use href="#plus"></use>
                               </svg>
                          </button>
                     </div>
                     <div class="link fc">
-                         <a href="/pages/all-products.html" >Machinery</a>
-                         <a href="" >Brands</a>
-                         <a href="" >Industries</a>
-                         <a href="" >Servicing</a>
-                         <a href="" >Finance</a>
-                         <a href="" >About Us</a>
-                         <a href="" >Contact</a>
+                         <a href="/pages/all-products.html" data-i18n="navMachinery">Machinery</a>
+                         <a href="/pages/all-brands.html" data-i18n="navBrands">Brands</a>
+                         <a href="/pages/all-industries.html" data-i18n="navIndustries">Industries</a>
+                         <a href="/pages/service-warranty.html" data-i18n="navServicing">Servicing</a>
+                         <a href="/pages/financing-options.html" data-i18n="navFinance">Finance</a>
+                         <a href="/pages/about.html" data-i18n="navAbout">About Us</a>
+                         <a href="/pages/contact.html" data-i18n="navContact">Contact</a>
                     </div>
-                    <a href="" class="button">Send Us A Message</a>
+                    <a href="/pages/contact.html" class="button" data-i18n="navMessage">Send Us A Message</a>
                </div>
-          </div> -->
+          </div>
 
      <main id="home-hero">
           <div class="top ae fr g12 ch">
-               <h1>Reliable machinery for demanding applications <br>with expert guidance and support across Estonia.</h1>
-               <a href="/pages/categories.html" class="button">Browse Categories</a>
-               <a href="pages/contact.html" class="button grey">Speak To An Expert</a>
+               <h1 data-i18n="heroTitle">Reliable machinery for demanding applications <br>with expert guidance and support across Estonia.</h1>
+               <a href="/pages/categories.html" class="button" data-i18n="browseCategories">Browse Categories</a>
+               <a href="/pages/contact.html" class="button grey" data-i18n="speakExpert">Speak To An Expert</a>
           </div>
           <div class="bottom ch fr ae jsb">
                <picture class="fs">
@@ -106,33 +106,33 @@
                </picture>
                <div class="fc before">
                     <p class="head">
-                         <span class="no-tablet">Nationwide Support</span>
-                         <span class="yes-tablet no-hmobile">Choosing the Right Equipment</span>
-                         <span class="yes-hmobile">Equipment, Advice and Support</span>
+                         <span class="no-tablet" data-i18n="nationwideSupport">Nationwide Support</span>
+                         <span class="yes-tablet no-hmobile" data-i18n="rightEquipment">Choosing the Right Equipment</span>
+                         <span class="yes-hmobile" data-i18n="equipmentAdvice">Equipment, Advice and Support</span>
                     </p>
                     <p class="sub">
-                         <span class="no-tablet">Service and assistance across Estonia, <br>wherever the work takes you.</span>
-                         <span class="yes-tablet no-hmobile">Expert guidance, finance and trade-in options, to <br>support the right decision from selection to purchase.</span>
-                         <span class="yes-hmobile">ETR combines machinery sales with expert guidance, financing, <br>servicing and nationwide support across Estonia.</span>
+                         <span class="no-tablet" data-i18n="serviceEverywhere">Service and assistance across Estonia, <br>wherever the work takes you.</span>
+                         <span class="yes-tablet no-hmobile" data-i18n="guidanceFinance">Expert guidance, finance and trade-in options, to <br>support the right decision from selection to purchase.</span>
+                         <span class="yes-hmobile" data-i18n="etrCombines">ETR combines machinery sales with expert guidance, financing, <br>servicing and nationwide support across Estonia.</span>
                     </p>
                </div>
                <div class="fc no-hmobile before">
                     <p class="head">
-                         <span class="no-tablet">Ongoing Support</span>
-                         <span class="yes-tablet">Support Beyond the Sale</span>
+                         <span class="no-tablet" data-i18n="ongoingSupport">Ongoing Support</span>
+                         <span class="yes-tablet" data-i18n="beyondSale">Support Beyond the Sale</span>
                     </p>
                     <p class="sub">
-                         <span class="no-tablet">Practical advice from machine selection, <br>through to purchase and delivery.</span>
-                         <span class="yes-tablet">Servicing, warranty and nationwide technical support, <br>to keep your equipment performing throughout ownership.</span>
+                         <span class="no-tablet" data-i18n="practicalAdvice">Practical advice from machine selection, <br>through to purchase and delivery.</span>
+                         <span class="yes-tablet" data-i18n="warrantySupport">Servicing, warranty and nationwide technical support, <br>to keep your equipment performing throughout ownership.</span>
                     </p>
                </div>
                <div class="fc no-tablet before">
-                    <p class="head">Flexible Financing</p>
-                    <p class="sub">Finance and trade-in options, to make <br>purchasing your next machine easier.</p>
+                    <p class="head" data-i18n="flexibleFinance">Flexible Financing</p>
+                    <p class="sub" data-i18n="financeOptions">Finance and trade-in options, to make <br>purchasing your next machine easier.</p>
                </div>
                <div class="fc no-tablet before">
-                    <p class="head">Ongoing Support</p>
-                    <p class="sub">Service and assistance across Estonia, <br>wherever the work takes you.</p>
+                    <p class="head" data-i18n="ongoingSupport">Ongoing Support</p>
+                    <p class="sub" data-i18n="serviceEverywhere">Service and assistance across Estonia, <br>wherever the work takes you.</p>
                </div>
           </div>
      </main>
@@ -140,72 +140,72 @@
      <section id="categories-section" class="c grey-section">
           <div class="gradient bottom"></div>
           <div class="bottom"></div>
-          <h2>Browse Equipment By Category</h2>
+          <h2 data-i18n="categoriesHeading">Browse Equipment By Category</h2>
           <a class="button-arrow fr" href="/pages/categories.html">
                <svg viewBox="0 0 8 10" fill="currentColor"><use href="#button-arrow"></use></svg>
-               Browse More Categories
+               <span data-i18n="browseMoreCategories">Browse More Categories</span>
           </a>
-          <a href="/pages/all-products.html" class="card">
+          <a href="/pages/all-products.html?category=excavators" class="card">
                <picture>
                     <img src="/assets/excavator-cat.avif" loading="lazy" decoding="async">
                </picture>
-               <span>Excavators</span>
-               <h3>Excavation, Digging & Groundwork</h3>
+               <span data-i18n="categoryExcavators">Excavators</span>
+               <h3 data-i18n="categoryExcavatorsDescription">Excavation, Digging & Groundwork</h3>
                <div class="arrow fr jc">
                     <svg class="mobile-no" viewBox="0 0 11 7" fill="currentColor"><use href="#arrow-right"></use></svg>
                     <svg class="mobile-yes" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                </div>
           </a>
-          <a href="" class="card">
+          <a href="/pages/all-products.html?category=loaders" class="card">
                <picture>
                     <img src="/assets/loader-category.avif" loading="lazy" decoding="async">
                </picture>
-               <span>Loaders</span>
-               <h3>Lifting & Material Movement</h3>
+               <span data-i18n="categoryLoaders">Loaders</span>
+               <h3 data-i18n="categoryLoadersDescription">Lifting & Material Movement</h3>
                <div class="arrow fr jc">
                     <svg class="mobile-no" viewBox="0 0 11 7" fill="currentColor"><use href="#arrow-right"></use></svg>
                     <svg class="mobile-yes" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                </div>
           </a>
-          <a href="" class="card">
+          <a href="/pages/all-products.html?category=utvs" class="card">
                <picture>
                     <img src="/assets/utv-category.avif" loading="lazy" decoding="async">
                </picture>
-               <span>UTVs</span>
-               <h3>Transport, Work & Utility</h3>
+               <span data-i18n="categoryUtvs">UTVs</span>
+               <h3 data-i18n="categoryUtvsDescription">Transport, Work & Utility</h3>
                <div class="arrow fr jc">
                     <svg class="mobile-no" viewBox="0 0 11 7" fill="currentColor"><use href="#arrow-right"></use></svg>
                     <svg class="mobile-yes" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                </div>
           </a>
-          <a href="" class="card">
+          <a href="/pages/all-products.html?category=atvs" class="card">
                <picture>
                     <img src="/assets/atv-category.avif" loading="lazy" decoding="async">
                </picture>
-               <span>ATVs</span>
-               <h3>All-Terrain Work & Exploration</h3>
+               <span data-i18n="categoryAtvs">ATVs</span>
+               <h3 data-i18n="categoryAtvsDescription">All-Terrain Work & Exploration</h3>
                <div class="arrow fr jc">
                     <svg class="mobile-no" viewBox="0 0 11 7" fill="currentColor"><use href="#arrow-right"></use></svg>
                     <svg class="mobile-yes" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                </div>
           </a>
-          <a href="" class="card">
+          <a href="/pages/all-products.html?category=woodworking" class="card">
                <picture>
                     <img src="/assets/woodworking-category.avif" loading="lazy" decoding="async">
                </picture>
-               <span>Woodworking</span>
-               <h3>Forestry & Timber Processing</h3>
+               <span data-i18n="categoryWoodworking">Woodworking</span>
+               <h3 data-i18n="categoryWoodworkingDescription">Forestry & Timber Processing</h3>
                <div class="arrow fr jc">
                     <svg class="mobile-no" viewBox="0 0 11 7" fill="currentColor"><use href="#arrow-right"></use></svg>
                     <svg class="mobile-yes" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                </div>
           </a>
-          <a href="" class="card">
+          <a href="/pages/all-products.html?category=generators" class="card">
                <picture>
                     <img src="/assets/generator-category.avif" loading="lazy" decoding="async">
                </picture>
-               <span>Generators</span>
-               <h3>Reliable Power Anywhere</h3>
+               <span data-i18n="categoryGenerators">Generators</span>
+               <h3 data-i18n="categoryGeneratorsDescription">Reliable Power Anywhere</h3>
                <div class="arrow fr jc">
                     <svg class="mobile-yes" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                     <svg class="mobile-no" viewBox="0 0 11 7" fill="currentColor"><use href="#arrow-right"></use></svg>
@@ -214,37 +214,37 @@
      </section>
 
      <section class="ch fc ac grey-section g52" id="brands-section">
-          <h2>Browse Equipment by Brand.</h2>
+          <h2 data-i18n="brandsHeading">Browse Equipment by Brand.</h2>
           <div class="brands-wrap fr jsb">
-               <a href="" class="brand fr jc">
-                    <img class="aflatek" src="/assets/aflatek.svg" decoding="async" loading="lazy" />
+               <a href="/pages/all-products.html?brand=Aflatek" class="brand fr jc" data-i18n-aria-label="brandAflatekLabel" aria-label="Browse Aflatek products">
+                    <img class="aflatek" src="/assets/aflatek.svg" alt="Aflatek" decoding="async" loading="lazy" />
                </a>
-               <a href="" class="brand no-tablet fr jc">
-                    <img class="heracles" src="/assets/heracles.svg" decoding="async" loading="lazy" />
+               <a href="/pages/all-products.html?brand=Heracles" class="brand no-tablet fr jc" data-i18n-aria-label="brandHeraclesLabel" aria-label="Browse Heracles products">
+                    <img class="heracles" src="/assets/heracles.svg" alt="Heracles" decoding="async" loading="lazy" />
                </a>
-               <a href="" class="brand fr jc">
-                    <img class="lantzman" src="/assets/lantzman.svg" decoding="async" loading="lazy" />
+               <a href="/pages/all-products.html?brand=Lantzmann" class="brand fr jc" data-i18n-aria-label="brandLantzmannLabel" aria-label="Browse Lantzmann products">
+                    <img class="lantzman" src="/assets/lantzman.svg" alt="Lantzmann" decoding="async" loading="lazy" />
                </a>
-               <a href="" class="brand fr jc">
-                    <img class="geoworks" src="/assets/geoworks.svg" decoding="async" loading="lazy" />
+               <a href="/pages/all-products.html?brand=Geoworks" class="brand fr jc" data-i18n-aria-label="brandGeoworksLabel" aria-label="Browse Geoworks products">
+                    <img class="geoworks" src="/assets/geoworks.svg" alt="Geoworks" decoding="async" loading="lazy" />
                </a>
-               <a href="" class="brand fr jc">
-                    <img class="shantui" src="/assets/shantui.svg" decoding="async" loading="lazy" />
+               <a href="/pages/all-products.html?brand=Shantui" class="brand fr jc" data-i18n-aria-label="brandShantuiLabel" aria-label="Browse Shantui products">
+                    <img class="shantui" src="/assets/shantui.svg" alt="Shantui" decoding="async" loading="lazy" />
                </a>
-               <a href="" class="brand fr jc">
-                    <img class="loncin" src="/assets/loncin.svg" decoding="async" loading="lazy" />
+               <a href="/pages/all-products.html?brand=Loncin" class="brand fr jc" data-i18n-aria-label="brandLoncinLabel" aria-label="Browse Loncin products">
+                    <img class="loncin" src="/assets/loncin.svg" alt="Loncin" decoding="async" loading="lazy" />
                </a>
-               <a href="" class="brand fr jc">
-                    <img class="castloaders" src="/assets/castloaders.svg" decoding="async" loading="lazy" />
+               <a href="/pages/all-products.html?brand=Castloaders" class="brand fr jc" data-i18n-aria-label="brandCastloadersLabel" aria-label="Browse Castloaders products">
+                    <img class="castloaders" src="/assets/castloaders.svg" alt="Castloaders" decoding="async" loading="lazy" />
                </a>
           </div>
      </section>
 
      <section id="promotions-slider" class="c fc grey-section g52">
                <div class="gradient top"></div>
-               <h2>Promotions & Best Sellers</h2>
+               <h2 data-i18n="promotionsHeading">Promotions & Best Sellers</h2>
                <div class="slider" data-slider>
-                    <div data-slider-track id="product-cards" class="fr g16">
+                    <div data-slider-track id="product-cards" class="fr g16" aria-live="polite">
                          <a href="" class="product sale card">
                               <div class="image-wrap sale fc">
                                    <div class="sale-tag">Shantui Sale</div>
@@ -394,10 +394,10 @@
                     </div>
                     <div class="slider-bottom fr jsb">
                          <div class="fr g8 jsb">
-                              <button type="button" aria-label="Previous slide" class="slider-prev left fr jc">
+                              <button type="button" aria-label="Previous slide" data-i18n-aria-label="previousSlide" class="slider-prev left fr jc">
                                    <svg viewBox="0 0 11 7" fill="currentColor"><use href="#arrow-right"></use></svg>
                               </button>
-                              <button class="slider-next fr jc" type="button" aria-label="Next slide">
+                              <button class="slider-next fr jc" type="button" aria-label="Next slide" data-i18n-aria-label="nextSlide">
                                    <svg viewBox="0 0 11 7" fill="currentColor"><use href="#arrow-right"></use></svg>
                               </button>
                          </div>
@@ -408,67 +408,67 @@
           </section>
 
           <section id="browse-by-industries" class="background-black fc ch g52">
-               <h2>Browse By Industry</h2>
+               <h2 data-i18n="industriesHeading">Browse By Industry</h2>
                <div class="slider" data-slider data-slider-min="771">
                     <div data-slider-track class="fr g16">
-                         <a href="" class="black-card">
+                         <a href="/pages/all-products.html?industry=construction&amp;categories=excavators,loaders,compressors,generators" class="black-card">
                               <div class="image-wrap fc">
                                    <picture>
                                         <img src="/assets/contr-ind.avif" loading="lazy" decoding="async">
                                    </picture>
                               </div>
-                              <h3>Construction & Earthworks</h3>
-                              <p>Excavators, loaders, compressors, generators</p>
+                              <h3 data-i18n="industryConstruction">Construction & Earthworks</h3>
+                              <p data-i18n="industryConstructionProducts">Excavators, loaders, compressors, generators</p>
                               <svg class="yes-hmobile" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                          </a>
-                         <a href="" class="black-card">
+                         <a href="/pages/all-products.html?industry=agriculture&amp;categories=loaders,atvs,utvs,access-ramps" class="black-card">
                               <div class="image-wrap fc">
                                    <picture>
                                         <img src="/assets/farm-ind.avif" loading="lazy" decoding="async">
                                    </picture>
                               </div>
-                              <h3>Agriculture & Farming</h3>
-                              <p>Loaders, ATVs, UTVs, access ramps</p>
+                              <h3 data-i18n="industryAgriculture">Agriculture & Farming</h3>
+                              <p data-i18n="industryAgricultureProducts">Loaders, ATVs, UTVs, access ramps</p>
                               <svg class="yes-hmobile" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                          </a>
-                         <a href="" class="black-card">
+                         <a href="/pages/all-products.html?industry=forestry&amp;categories=wood-chippers,loaders,utvs,generators" class="black-card">
                               <div class="image-wrap fc">
                                    <picture>
                                         <img src="/assets/forest-ind.avif" loading="lazy" decocding="async">
                                    </picture>
                               </div>
-                              <h3>Forestry & Timber</h3>
-                              <p>Wood chippers, loaders, UTVs, generators</p>
+                              <h3 data-i18n="industryForestry">Forestry & Timber</h3>
+                              <p data-i18n="industryForestryProducts">Wood chippers, loaders, UTVs, generators</p>
                               <svg class="yes-hmobile" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                          </a>
-                         <a href="" class="black-card">
+                         <a href="/pages/all-products.html?industry=infrastructure&amp;categories=excavators,compressors,generators,protection-mats" class="black-card">
                               <div class="image-wrap fc">
                                    <picture>
                                         <img src="/assets/ifra-ind.avif" loading="lazy" decoding="async">
                                    </picture>
                               </div>
-                              <h3>Infrastructure & Utilities</h3>
-                              <p>Excavators, compressors, generators, protection mats</p>
+                              <h3 data-i18n="industryInfrastructure">Infrastructure & Utilities</h3>
+                              <p data-i18n="industryInfrastructureProducts">Excavators, compressors, generators, protection mats</p>
                               <svg class="yes-hmobile" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                          </a>
-                         <a href="" class="black-card">
+                         <a href="/pages/all-products.html?industry=landscaping&amp;categories=mini-excavators,compact-loaders,atvs,ground-reinforcement" class="black-card">
                               <div class="image-wrap fc">
                                    <picture>
                                         <img src="/assets/lawn-ind.avif" loading="lazy" decoding="async">
                                    </picture>
                               </div>
-                              <h3>Landscaping & Groundskeeping</h3>
-                              <p>Mini excavators, compact loaders, ATVs, ground reinforcement</p>
+                              <h3 data-i18n="industryLandscaping">Landscaping & Groundskeeping</h3>
+                              <p data-i18n="industryLandscapingProducts">Mini excavators, compact loaders, ATVs, ground reinforcement</p>
                               <svg class="yes-hmobile" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                          </a>
-                         <a href="" class="black-card">
+                         <a href="/pages/all-products.html?industry=transport&amp;categories=loaders,utvs,access-ramps,protection-mats" class="black-card">
                               <div class="image-wrap fc">
                                    <picture>
                                         <img src="/assets/loading-ind.avif" loading="lazy" decoding="async">
                                    </picture>
                               </div>
-                              <h3>Transport & Material Handling</h3>
-                              <p>Loaders, UTVs, access ramps, protection mats</p>
+                              <h3 data-i18n="industryTransport">Transport & Material Handling</h3>
+                              <p data-i18n="industryTransportProducts">Loaders, UTVs, access ramps, protection mats</p>
                               <svg class="yes-hmobile" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                          </a>
                     </div>
@@ -490,13 +490,13 @@
           <section class="fc c grey-section g52" id="shop-all">
                <div class="gradient bottom"></div>
                <div class="fr topp jsb">
-                    <h2>Shop By Category</h2>
+                    <h2 data-i18n="shopHeading">Shop By Category</h2>
                     <div class="g6">
-                         <button class="tab active">Excavators</button>
-                         <button class="tab">Loaders</button>
-                         <button class="tab">Bandsaw Frames</button>
-                         <button class="tab">UTV</button>
-                         <button class="tab">ATV</button>
+                         <button class="tab active" data-category="excavators" data-i18n="shopExcavators">Excavators</button>
+                         <button class="tab" data-category="loaders" data-i18n="shopLoaders">Loaders</button>
+                         <button class="tab" data-category="bandsaw" data-i18n="shopBandsaws">Bandsaw Frames</button>
+                         <button class="tab" data-category="utvs" data-i18n="shopUtvs">UTV</button>
+                         <button class="tab" data-category="atvs" data-i18n="shopAtvs">ATV</button>
                     </div>
                </div>
                <div data-slider data-slider-breakpoint="1024" class="fc slider g36">
@@ -621,8 +621,8 @@
                          </div>
                     </div>
                     <div class="fr no-tablet jsb align as">
-                         <span class="load-ammount">Loaded 3 of 17 equipment</span>
-                         <button class="button small grey">Load More</button>
+                         <span class="load-ammount">Loading equipment…</span>
+                         <button class="button small grey" data-i18n="loadMore">Load More</button>
                     </div>
                </div>
           </section>
@@ -631,29 +631,29 @@
                <img src="/assets/shantui-banner.avif" class="fs" alt="">
                <img src="/assets/shantui-white.svg" class="log" alt="">
                <div class="fc as g20">
-                    <h2>Shantui excavators and loaders, <br> exclusively available through ETR.</h2>
-                    <a href="" class="button">Browse Shantui Equipment</a>
+                    <h2 data-i18n="shantuiBannerTitle">Shantui excavators and loaders, <br> exclusively available through ETR.</h2>
+                    <a href="/pages/all-products.html?brand=Shantui" class="button" data-i18n="shantuiBannerButton">Browse Shantui Equipment</a>
                </div>
           </section>
 
           <section id="about-section" class="ch fr as jsb g80">
-               <h2>The People, Experience and Expertise <br>Behind Every ETR Customer Relationship.</h2>
+               <h2 data-i18n="aboutHeading">The People, Experience and Expertise <br>Behind Every ETR Customer Relationship.</h2>
                <div class="car-grid col">
                          <div class="car">
                               <p class="num">4+</p>
-                              <p class="an">Years of experience supplying construction and excavation equipment across Estonia</p>
+                              <p class="an" data-i18n="aboutExperience">Years of experience supplying construction and excavation equipment across Estonia</p>
                          </div>
                          <div class="car">
                               <p class="num">8+</p>
-                              <p class="an">Equipment brands brought together to help you compare and choose the right machinery</p>
+                              <p class="an" data-i18n="aboutBrands">Equipment brands brought together to help you compare and choose the right machinery</p>
                          </div>
                          <div class="car">
                               <p class="num">12+</p>
-                              <p class="an">Machines supplied and delivered to businesses and customers throughout Estonia</p>
+                              <p class="an" data-i18n="aboutMachines">Machines supplied and delivered to businesses and customers throughout Estonia</p>
                          </div>
                          <div class="car">
                               <p class="num">7+</p>
-                              <p class="an">Equipment specialists available to help you choose, finance and maintain your machinery</p>
+                              <p class="an" data-i18n="aboutSpecialists">Equipment specialists available to help you choose, finance and maintain your machinery</p>
                          </div>
                     </div>
           </section>
@@ -661,7 +661,7 @@
           
 <section id="teams-slider" class="c fc g52">
      <div class="gradient top"></div>
-     <h2>Leadership</h2>
+     <h2 data-i18n="leadershipHeading">Leadership</h2>
      <div class="slider" data-slider>
           <div data-slider-track class="fr g16">
                <div class="tra teams-card">
@@ -669,17 +669,17 @@
                          <img src="/assets/person-placeholder.png" />
                          <div class="cover tra fc">
                               <div class="fr jsb">
-                                   <span class="position">After-Sales</span>
+                                   <span class="position" data-i18n="teamAfterSales">After-Sales</span>
                                    <div class="icon tra fr jc">
                                         <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                                    </div>
                               </div>
                               <p class="name heading">Joosep Hein</p>
-                              <p class="des">Joosep Hein oversees after-sales service, helping customers with equipment maintenance, technical support, and assistance.</p>
+                              <p class="des" data-i18n="teamJoosepDescription">Joosep Hein oversees after-sales service, helping customers with equipment maintenance, technical support, and assistance.</p>
                               <div class="contact-wrap fr g16">
                                    <div class="heading fc g16">
-                                        <span class="heading">Phone:</span>
-                                        <span class="heading">Email:</span>
+                                        <span class="heading" data-i18n="phoneLabel">Phone:</span>
+                                        <span class="heading" data-i18n="emailLabel">Email:</span>
                                    </div>
                                    <div class="fc g16">
                                         <a href="tel:+37256831391" class="ans">+372 5683 1391</a>
@@ -690,7 +690,7 @@
                     </div>
                     <div class="fc bot g10">
                          <h3>Joosep Hein</h3>
-                         <p class="position">After-Sales Service Manager</p>
+                         <p class="position" data-i18n="teamJoosepRole">After-Sales Service Manager</p>
                     </div>
                </div>
                <div class="tra teams-card">
@@ -698,17 +698,17 @@
                          <img src="/assets/person-placeholder.png" />
                          <div class="cover tra fc">
                               <div class="fr jsb">
-                                   <span class="position">Sales</span>
+                                   <span class="position" data-i18n="teamSales">Sales</span>
                                    <div class="icon tra fr jc">
                                         <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                                    </div>
                               </div>
                               <p class="name heading">Tanel-Patrick Epner</p>
-                              <p class="des">Tanel-Patrick Epner leads sales operations, coordinating customer enquiries, relationships, and machinery purchasing across ETR.</p>
+                              <p class="des" data-i18n="teamTanelDescription">Tanel-Patrick Epner leads sales operations, coordinating customer enquiries, relationships, and machinery purchasing across ETR.</p>
                               <div class="contact-wrap fr g16">
                                    <div class="heading fc g16">
-                                        <span class="heading">Phone:</span>
-                                        <span class="heading">Email:</span>
+                                        <span class="heading" data-i18n="phoneLabel">Phone:</span>
+                                        <span class="heading" data-i18n="emailLabel">Email:</span>
                                    </div>
                                    <div class="fc g16">
                                         <a href="tel:+37253425735" class="ans">+372 5342 5735</a>
@@ -719,7 +719,7 @@
                     </div>
                     <div class="fc bot g10">
                          <h3>Tanel-Patrick Epner</h3>
-                         <p class="position">Sales Director</p>
+                         <p class="position" data-i18n="teamTanelRole">Sales Director</p>
                     </div>
                </div>
                <div class="tra teams-card">
@@ -727,17 +727,17 @@
                          <img src="/assets/person-placeholder.png" />
                          <div class="cover tra fc">
                               <div class="fr jsb">
-                                   <span class="position">Product & Sales</span>
+                                   <span class="position" data-i18n="teamProductSales">Product & Sales</span>
                                    <div class="icon tra fr jc">
                                         <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                                    </div>
                               </div>
                               <p class="name heading">Maris Ristal</p>
-                              <p class="des">Maris Ristal manages product and sales enquiries, helping customers compare machinery, specifications, and purchasing requirements.</p>
+                              <p class="des" data-i18n="teamMarisDescription">Maris Ristal manages product and sales enquiries, helping customers compare machinery, specifications, and purchasing requirements.</p>
                               <div class="contact-wrap fr g16">
                                    <div class="heading fc g16">
-                                        <span class="heading">Phone:</span>
-                                        <span class="heading">Email:</span>
+                                        <span class="heading" data-i18n="phoneLabel">Phone:</span>
+                                        <span class="heading" data-i18n="emailLabel">Email:</span>
                                    </div>
                                    <div class="fc g16">
                                         <a href="tel:+3725547367" class="ans">+372 5547367</a>
@@ -748,7 +748,7 @@
                     </div>
                     <div class="fc bot g10">
                          <h3>Maris Ristal</h3>
-                         <p class="position">Product & Sales Manager</p>
+                         <p class="position" data-i18n="teamProductSalesRole">Product & Sales Manager</p>
                     </div>
                </div>
                <div class="tra teams-card">
@@ -756,17 +756,17 @@
                          <img src="/assets/person-placeholder.png" />
                          <div class="cover tra fc">
                               <div class="fr jsb">
-                                   <span class="position">Product & Sales</span>
+                                   <span class="position" data-i18n="teamProductSales">Product & Sales</span>
                                    <div class="icon tra fr jc">
                                         <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                                    </div>
                               </div>
                               <p class="name heading">Ave Pärn</p>
-                              <p class="des">Ave Pärn handles product and sales enquiries, assisting customers with equipment selection, information, and purchase arrangements.</p>
+                              <p class="des" data-i18n="teamAveDescription">Ave Pärn handles product and sales enquiries, assisting customers with equipment selection, information, and purchase arrangements.</p>
                               <div class="contact-wrap fr g16">
                                    <div class="heading fc g16">
-                                        <span class="heading">Phone:</span>
-                                        <span class="heading">Email:</span>
+                                        <span class="heading" data-i18n="phoneLabel">Phone:</span>
+                                        <span class="heading" data-i18n="emailLabel">Email:</span>
                                    </div>
                                    <div class="fc g16">
                                         <a href="tel:+3725571526" class="ans">+372 5571526</a>
@@ -777,7 +777,7 @@
                     </div>
                     <div class="fc bot g10">
                          <h3>Ave Pärn</h3>
-                         <p class="position">Product & Sales Manager</p>
+                         <p class="position" data-i18n="teamProductSalesRole">Product & Sales Manager</p>
                     </div>
                </div>
           </div>
@@ -799,31 +799,31 @@
 
           <section id="way-to-buy" class="background-black fr jsb as ch g52">
                <div class="fc g24">
-                    <h2 class="line-height">More Ways to Purchase, Finance And <br class="no-tablet">Manage Your <br class="yes-tablet"/> Machinery and Equipment</h2>
-                    <a class="button-arrow no-hmobile fr" href="/pages/categories.html">
+                    <h2 class="line-height" data-i18n="waysHeading">More Ways to Purchase, Finance And <br class="no-tablet">Manage Your <br class="yes-tablet"/> Machinery and Equipment</h2>
+                    <a class="button-arrow no-hmobile fr" href="/pages/contact.html">
                          <svg viewBox="0 0 8 10" fill="currentColor"><use href="#button-arrow"></use></svg>
-                         Speak To An Expert
+                         <span data-i18n="speakExpert">Speak To An Expert</span>
                     </a>
                </div>
                <div class="col fr g24">
-                    <a href="" class="black-card">
+                    <a href="/pages/trade-in-options.html" class="black-card">
                          <div class="image-wrap fc">
                               <picture>
                                    <img src="/assets/trade-in.avif" loading="lazy" decoding="async">
                               </picture>
                          </div>
-                         <h3>Trade In Your Existing Machine</h3>
-                         <p>Put the value of your current equipment towards your next purchase with a straightforward trade-in process.</p>
+                         <h3 data-i18n="tradeInTitle">Trade In Your Existing Machine</h3>
+                         <p data-i18n="tradeInText">Put the value of your current equipment towards your next purchase with a straightforward trade-in process.</p>
                          <svg class="yes-hmobile" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                     </a>
-                    <a href="" class="black-card">
+                    <a href="/pages/financing-options.html" class="black-card">
                          <div class="image-wrap fc">
                               <picture>
                                    <img src="/assets/finance.avif" loading="lazy" decoding="async">
                               </picture>
                          </div>
-                         <h3>Explore Equipment Financing Options</h3>
-                         <p>Flexible financing solutions to help you spread the cost of your next machine with payment options suited to your business.</p>
+                         <h3 data-i18n="financingTitle">Explore Equipment Financing Options</h3>
+                         <p data-i18n="financingText">Flexible financing solutions to help you spread the cost of your next machine with payment options suited to your business.</p>
                          <svg class="yes-hmobile" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                     </a>
                </div>
@@ -831,51 +831,51 @@
 
           <section id="pointers" class="fr c jsb">
                <div class="fc g36">
-                    <h2 class="line-height">Why Customers Across Estonia <br>Choose ETR for Their Equipment</h2>
+                    <h2 class="line-height" data-i18n="pointersHeading">Why Customers Across Estonia <br>Choose ETR for Their Equipment</h2>
                     <img class="yes-hmobile" src="/assets/pointers.avif" />
                     <div class="pointers-wrap g8 fc">
                          <button class="pointer active">
                               <div class="fr jsb">
-                                   <h3 class="tra">Advice Before You Buy</h3>
+                                   <h3 class="tra" data-i18n="pointerAdviceTitle">Advice Before You Buy</h3>
                                    <div class="icon tra fr jc">
                                         <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                                    </div>
                               </div>
                               <div class="text-wrap tra">
-                                   <p>We help you choose the right machine and the attachments that go with it, so your investment fits the work you do from day one.</p>
+                                   <p data-i18n="pointerAdviceText">We help you choose the right machine and the attachments that go with it, so your investment fits the work you do from day one.</p>
                               </div>
                          </button>
                          <button class="pointer">
                               <div class="fr jsb">
-                                   <h3 class="tra">Flexible Financing Options</h3>
+                                   <h3 class="tra" data-i18n="pointerFinanceTitle">Flexible Financing Options</h3>
                                    <div class="icon tra fr jc">
                                         <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                                    </div>
                               </div>
                               <div class="text-wrap tra">
-                                   <p>Financing developed with credit institutions, so the equipment you need stays within reach whatever the size of your company or budget.</p>
+                                   <p data-i18n="pointerFinanceText">Financing developed with credit institutions, so the equipment you need stays within reach whatever the size of your company or budget.</p>
                               </div>
                          </button>
                          <button class="pointer">
                               <div class="fr jsb">
-                                   <h3 class="tra">Servicing and Warranty</h3>
+                                   <h3 class="tra" data-i18n="pointerServiceTitle">Servicing and Warranty</h3>
                                    <div class="icon tra fr jc">
                                         <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                                    </div>
                               </div>
                               <div class="text-wrap tra">
-                                   <p>Maintenance and repairs from our team, with a warranty on repair work and the manufacturer's warranty on spare parts.</p>
+                                   <p data-i18n="pointerServiceText">Maintenance and repairs from our team, with a warranty on repair work and the manufacturer's warranty on spare parts.</p>
                               </div>
                          </button>
                          <button class="pointer">
                               <div class="fr jsb">
-                                   <h3 class="tra">Support Across Estonia</h3>
+                                   <h3 class="tra" data-i18n="pointerSupportTitle">Support Across Estonia</h3>
                                    <div class="icon tra fr jc">
                                         <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                                    </div>
                               </div>
                               <div class="text-wrap tra">
-                                   <p>Technical support and service are available nationwide, so help is never far from the job, wherever in Estonia you work.</p>
+                                   <p data-i18n="pointerSupportText">Technical support and service are available nationwide, so help is never far from the job, wherever in Estonia you work.</p>
                               </div>
                          </button>
                     </div>
@@ -884,77 +884,77 @@
           </section>
 
           <section class="fr jsb as c" id="faq">
-               <h2>Common Questions</h2>
+               <h2 data-i18n="faqHeading">Common Questions</h2>
                <div class="column fc faq-wrap">
                     <div class="faq-column fr">
-                         <span class="heading">Machinery</span>
+                         <span class="heading" data-i18n="faqMachinery">Machinery</span>
                          <div class="faq first active">
-                              <h3>How do I choose the right machine for my requirements?</h3>
+                              <h3 data-i18n="faqChooseQ">How do I choose the right machine for my requirements?</h3>
                               <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                               <div class="wrap">
-                                   <p>Our team can help you compare machinery based on your workload, site conditions and budget, ensuring you find equipment suited to your requirements.</p>
+                                   <p data-i18n="faqChooseA">Our team can help you compare machinery based on your workload, site conditions and budget, ensuring you find equipment suited to your requirements.</p>
                               </div>
                          </div>
                          <div class="faq">
-                              <h3>Can I view the machinery before making a purchase?</h3>
+                              <h3 data-i18n="faqViewQ">Can I view the machinery before making a purchase?</h3>
                               <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                               <div class="wrap">
-                                   <p>You can contact our team to arrange a viewing of available machinery at our location in Peetri, Estonia. Availability may vary between models.</p>
+                                   <p data-i18n="faqViewA">You can contact our team to arrange a viewing of available machinery at our location in Peetri, Estonia. Availability may vary between models.</p>
                               </div>
                          </div>
                          <div class="faq">
-                              <h3>Do you offer financing and equipment trade-in options?</h3>
+                              <h3 data-i18n="faqFinanceQ">Do you offer financing and equipment trade-in options?</h3>
                               <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                               <div class="wrap">
-                                   <p>Yes, we can assist with financing options and equipment trade-ins to help make your next machinery purchase more straightforward and manageable.</p>
+                                   <p data-i18n="faqFinanceA">Yes, we can assist with financing options and equipment trade-ins to help make your next machinery purchase more straightforward and manageable.</p>
                               </div>
                          </div>
                     </div>
                     <div class="faq-column fr">
-                         <span class="heading">Servicing & Warranty</span>
+                         <span class="heading" data-i18n="faqService">Servicing & Warranty</span>
                          <div class="faq first">
-                              <h3>What types of machinery servicing and repairs do you provide?</h3>
+                              <h3 data-i18n="faqRepairsQ">What types of machinery servicing and repairs do you provide?</h3>
                               <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                               <div class="wrap">
-                                   <p>We provide machinery servicing, fault diagnosis and repairs, alongside technical guidance to help maintain equipment performance and minimise unnecessary downtime.</p>
+                                   <p data-i18n="faqRepairsA">We provide machinery servicing, fault diagnosis and repairs, alongside technical guidance to help maintain equipment performance and minimise unnecessary downtime.</p>
                               </div>
                          </div>
                          <div class="faq">
-                              <h3>Does purchased machinery come with warranty coverage?</h3>
+                              <h3 data-i18n="faqWarrantyQ">Does purchased machinery come with warranty coverage?</h3>
                               <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                               <div class="wrap">
-                                   <p>Warranty coverage depends on the machine, manufacturer and purchase conditions. Our team can explain the applicable terms before you make a purchase.</p>
+                                   <p data-i18n="faqWarrantyA">Warranty coverage depends on the machine, manufacturer and purchase conditions. Our team can explain the applicable terms before you make a purchase.</p>
                               </div>
                          </div>
                          <div class="faq">
-                              <h3>Can you help source replacement parts for my equipment?</h3>
+                              <h3 data-i18n="faqPartsQ">Can you help source replacement parts for my equipment?</h3>
                               <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                               <div class="wrap">
-                                   <p>Our team can assist with identifying and sourcing suitable replacement parts for supported machinery brands, subject to availability and compatibility.</p>
+                                   <p data-i18n="faqPartsA">Our team can assist with identifying and sourcing suitable replacement parts for supported machinery brands, subject to availability and compatibility.</p>
                               </div>
                          </div>
                     </div>
                     <div class="faq-column fr">
-                         <span class="heading">Our Team</span>
+                         <span class="heading" data-i18n="faqTeam">Our Team</span>
                          <div class="faq first">
-                              <h3>Where is ETR located and which areas do you serve?</h3>
+                              <h3 data-i18n="faqLocationQ">Where is ETR located and which areas do you serve?</h3>
                               <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                               <div class="wrap">
-                                   <p>Our head office is located at Läike tee 1 in Peetri, Harju County. We supply machinery and support customers throughout Estonia.</p>
+                                   <p data-i18n="faqLocationA">Our head office is located at Läike tee 1 in Peetri, Harju County. We supply machinery and support customers throughout Estonia.</p>
                               </div>
                          </div>
                          <div class="faq">
-                              <h3>How can I speak with someone about equipment enquiries?</h3>
+                              <h3 data-i18n="faqContactQ">How can I speak with someone about equipment enquiries?</h3>
                               <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                               <div class="wrap">
-                                   <p>You can reach our team through the contact page for assistance with machinery selection, product availability, financing and technical enquiries.</p>
+                                   <p data-i18n="faqContactA">You can reach our team through the contact page for assistance with machinery selection, product availability, financing and technical enquiries.</p>
                               </div>
                          </div>
                          <div class="faq">
-                              <h3>Can your team provide advice on machinery and attachments?</h3>
+                              <h3 data-i18n="faqAdviceQ">Can your team provide advice on machinery and attachments?</h3>
                               <svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg>
                               <div class="wrap">
-                                   <p>Yes, our specialists can help you understand equipment specifications, compare available models and identify suitable attachments for your intended applications.</p>
+                                   <p data-i18n="faqAdviceA">Yes, our specialists can help you understand equipment specifications, compare available models and identify suitable attachments for your intended applications.</p>
                               </div>
                          </div>
                     </div>
@@ -964,14 +964,14 @@
                <div id="estonia-map" class="fs"></div>
 
                <div class="coverage-card fc">
-                    <h2>Full Service Coverage Across Estonia</h2>
-                    <p>ETR provides servicing, repairs and technical support to keep customers’ machinery operating reliably across Estonia.</p>
-                    <a href="" class="button small">Learn More About Servicing</a>
+                    <h2 data-i18n="coverageHeading">Full Service Coverage Across Estonia</h2>
+                    <p data-i18n="coverageText">ETR provides servicing, repairs and technical support to keep customers’ machinery operating reliably across Estonia.</p>
+                    <a href="/pages/service-warranty.html" class="button small" data-i18n="coverageButton">Learn More About Servicing</a>
                </div>
                <div class="gap"></div>
                <div class="coverage-card address">
-                    <h3 class="heading">Head Office</h3>
-                    <p>Läike tee 1, Peetri Rae Parish, 75312 Harju County, Estonia</p>
+                    <h3 class="heading" data-i18n="headOffice">Head Office</h3>
+                    <p data-i18n="officeAddress">Läike tee 1, Peetri Rae Parish, 75312 Harju County, Estonia</p>
                </div>
           </section>
 
@@ -1017,8 +1017,8 @@
 
           <section id="call-to-action" class="fr ch jsb">
                <div class="fc g24 as">
-                    <h2 class="line-height">Talk to our experts about finding the right <br>equipment and support for your next project</h2>
-                    <a href="" class="button">Speak To An Expert</a>
+                    <h2 class="line-height" data-i18n="ctaHeading">Talk to our experts about finding the right <br>equipment and support for your next project</h2>
+                    <a href="/pages/contact.html" class="button" data-i18n="speakExpert">Speak To An Expert</a>
                </div>
                <picture>
                     <img src="/assets/cta-image.avif" loading="lazy" decoding="async">
@@ -1026,49 +1026,50 @@
           </section>
 
           <footer class="background-black ch">
-               <a href="" class="logo fr"><svg viewBox="0 0 101 14" fill="currentColor"><use href="#logo"></use></svg></a>
+               <a href="/" class="logo fr"><svg viewBox="0 0 101 14" fill="currentColor"><use href="#logo"></use></svg></a>
                <div class="links-wrap fr as g100">
                     <div class="links tra fc g12">
-                         <h3>Equipment</h3>
-                         <a href="/pages/all-brands.html">Excavators</a>
-                         <a href="/pages/all-industries.html">Generators</a>
-                         <a href="/pages/product-page.html">Loaders</a>
-                         <a href="">All Categories</a>
+                         <h3 data-i18n="footerEquipment">Equipment</h3>
+                         <a href="/pages/all-products.html?category=excavators" data-i18n="shopExcavators">Excavators</a>
+                         <a href="/pages/all-products.html?category=generators" data-i18n="categoryGenerators">Generators</a>
+                         <a href="/pages/all-products.html?category=loaders" data-i18n="shopLoaders">Loaders</a>
+                         <a href="/pages/categories.html" data-i18n="footerAllCategories">All Categories</a>
                     </div>
                     <div class="links mobile-no tra fc g12">
-                         <h3>Brands</h3>
-                         <a href="">Shantui</a>
-                         <a href="">Heracles</a>
-                         <a href="">Lantzmann</a>
-                         <a href="">All Brands</a>
+                         <h3 data-i18n="navBrands">Brands</h3>
+                         <a href="/pages/all-products.html?brand=Shantui">Shantui</a>
+                         <a href="/pages/all-products.html?brand=Heracles">Heracles</a>
+                         <a href="/pages/all-products.html?brand=Lantzmann">Lantzmann</a>
+                         <a href="/pages/all-brands.html" data-i18n="footerAllBrands">All Brands</a>
                     </div>
                     <div class="links tra fc g12">
-                         <h3>Resources</h3>
-                         <a href="/pages/service-warranty.html">Service & Warranty</a>
-                         <a href="">Financing Options</a>
-                         <a href="">Trade-In Options</a>
+                         <h3 data-i18n="footerResources">Resources</h3>
+                         <a href="/pages/service-warranty.html" data-i18n="footerService">Service & Warranty</a>
+                         <a href="/pages/financing-options.html" data-i18n="footerFinancing">Financing Options</a>
+                         <a href="/pages/trade-in-options.html" data-i18n="footerTradeIn">Trade-In Options</a>
                     </div>
                     <div class="links tra fc g12">
                          <h3>ETR</h3>
-                         <a href="/pages/about.html">About ETR</a>
-                         <a href="">Contact Us</a>
-                         <a href="">Our Location</a>
+                         <a href="/pages/about.html" data-i18n="footerAbout">About ETR</a>
+                         <a href="/pages/contact.html" data-i18n="footerContact">Contact Us</a>
+                         <a href="/pages/contact.html" data-i18n="footerLocation">Our Location</a>
                     </div>
                </div>
                <div class="socials-wrap fr g28">
-                    <a href="" class="fr"><img src="/assets/instagram.svg"/></a>
-                    <a href="" class="fr"><img src="/assets/facebook.svg"/></a>
+                    <a href="https://www.facebook.com/ETRTEHNIKA" class="fr" target="_blank" rel="noopener noreferrer"><img src="/assets/facebook.svg" alt="Facebook"/></a>
                     <a href="" class="fr"><img src="/assets/linkedin.svg"/></a>
-                    <a href="" class="fr"><img class="youtube" src="/assets/youtube.svg"/></a>
+                    <a href="https://www.youtube.com/@ETRTEHNIKA" class="fr" target="_blank" rel="noopener noreferrer"><img class="youtube" src="/assets/youtube.svg" alt="YouTube"/></a>
                </div>
                <div class="seperator fr jsb">
-                    <span>© 2026 ETR Tehnika. All rights reserved.</span>
+                    <span data-i18n="footerCopyright">© 2026 ETR Tehnika. All rights reserved.</span>
                </div>
           </footer>
 
      <script src="slider.js" defer></script>
      <script src="faq.js" defer></script>
      <script src="points.js" defer></script>
+     <script src="nav.js" defer></script>
+     <script src="promotions.js" defer></script>
 
        <script>
      
@@ -1417,39 +1418,6 @@ window.addEventListener('resize', () => {
 
 
 
-</script>
-<script>
-const nav = document.querySelector('nav');
-
-if (nav) {
-    let lastScroll = window.scrollY;
-    let scrollDistance = 0;
-    const threshold = 60;
-
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.scrollY;
-        const delta = currentScroll - lastScroll;
-
-        if (Math.sign(delta) !== Math.sign(scrollDistance)) {
-            scrollDistance = 0;
-        }
-
-        scrollDistance += delta;
-
-        if (currentScroll <= 30) {
-            nav.style.transform = 'translateY(0%)';
-            scrollDistance = 0;
-        } else if (scrollDistance >= threshold) {
-            nav.style.transform = 'translateY(-101%)';
-            scrollDistance = 0;
-        } else if (scrollDistance <= -threshold) {
-            nav.style.transform = 'translateY(0%)';
-            scrollDistance = 0;
-        }
-
-        lastScroll = currentScroll;
-    }, { passive: true });
-}
 </script>
 </body>
 </html>

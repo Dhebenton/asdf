@@ -1266,7 +1266,7 @@
      #way-to-buy {
           gap: var(--g36);
           padding: var(--g60);
-          .col {
+          .col, .column {
                a {
                     width: 100%;
                }

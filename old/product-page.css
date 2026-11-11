@@ -1,0 +1,1007 @@
+/* ============================================================
+   MAIN
+============================================================ */
+
+main {
+     padding: var(--g32);
+     gap: var(--g60);
+     .content-wrap {
+          flex: 1;
+
+          .title {
+               font-size: 13px;
+               font-weight: 400;
+               color: var(--subtext);
+               margin-bottom: var(--g14);
+          }
+
+          .price-wrap {
+               margin-top: var(--g20);
+               margin-bottom: var(--g28);
+               align-items: end;
+
+               p, p s {
+                    font-size: 14px;
+                    font-weight: 450;
+                    color: var(--heading);
+               }
+
+               .old-price {
+                    padding-left: var(--g8);
+               }
+
+               span {
+                    font-size: 12px;
+                    color: var(--subtext);
+                    margin-left: var(--g10);
+               }
+          }
+
+          .price-wrap.promotion {
+               p {
+                    color: var(--red);
+
+                    s {
+                         color: var(--subheading);
+                    }
+               }
+          }
+
+          h1 {
+               font-size: 18px;
+               line-height: 1.5;
+               font-weight: 480;
+               color: var(--heading);
+          }
+
+          .sub {
+               font-size: 13px;
+               font-weight: 420;
+               color: var(--text);
+               line-height: 1.8;
+               margin-top: var(--g8);
+          }
+
+          .spec {
+               padding: var(--g16) 0;
+               border-top: 1px solid var(--stroke);
+
+               .an {
+                    font-size: 12.5px;
+                    font-weight: 430;
+                    color: var(--subtext);
+               }
+
+               .sp {
+                    font-size: 14px;
+                    font-weight: 430;
+                    color: var(--heading);
+               }
+          }
+     }
+
+     .image-wrap {
+               aspect-ratio: 82 / 50;
+          border-radius: 2px;
+          overflow: hidden;
+          img, picture {
+               width: 100%;
+               object-fit: cover !important;
+               height: 100%;
+          }
+     }
+}
+
+.je {
+     justify-content: end;
+}
+
+/* ============================================================
+   MEET THE TEAM
+============================================================ */
+
+#description-black {
+     padding: var(--g36);
+     p {
+          font-size: 16px;
+          font-weight: 510;
+          color: white;
+          line-height: 1.8;
+     }
+}
+
+/* ============================================================
+   CTA WRAP
+============================================================ */
+
+.cta-wrap {
+     background-color: white;
+     position: sticky;
+     z-index: 10;
+     top: 0;
+
+     .wrap.one {
+          padding: var(--g12) 0;
+     }
+
+     .wrap {
+          border-bottom: 1px solid var(--stroke);
+     }
+
+     .name {
+          font-size: 12.5px;
+          font-weight: 510;
+          color: var(--heading);
+     }
+     
+     .links a {
+          padding: var(--g24) 0;
+          font-size: 12.5px;
+          border-bottom: 1px solid transparent;
+          color: var(--subtext);
+          font-weight: 440;
+
+          &:hover {
+               color: var(--text-hover);
+               border-bottom: 1px solid hsl(0, 0%, 10%);
+          }
+     }
+}
+
+/* ============================================================
+   TABLE
+============================================================ */
+
+#spec-table {
+     h3 {
+          font-size: 15px;
+          font-weight: 450;
+          color: var(--heading);
+     }
+
+     .down {
+               flex: 1;
+               align-items: start;
+          }
+
+     .spec-sheet {
+          background-color: #EDEDED;
+          padding: var(--g10) var(--g14);
+          color: var(--subheading);
+          font-size: 12px;
+          font-weight: 430;
+
+          svg {
+               height: 14px;
+          }
+
+          &:hover {
+               background-color: #E3E3E3;
+               color: var(--heading);
+          }
+     }
+
+     .table-row {
+          padding: var(--g10) var(--g12);
+          border-radius: 2px;
+          display: grid;
+          grid-template-columns: 2.5fr 2fr;
+
+          p {
+               font-size: 13px;
+               font-weight: 420;
+          }
+
+          .spec {
+               color: var(--subheading-main);
+          }
+
+          .unit {
+               color: var(--text);
+               line-height: 1.8;
+          }
+
+          &.bgr {
+               background-color: #F8F8F8;
+          }
+     }
+
+     .wrapper {
+     }
+}
+
+/* ============================================================
+   MEDIA SLIDER
+============================================================ */
+
+.media-slider {
+     .slider {
+          width: 100%;
+
+          .slider-track div, .slider-track picture, .slider-track video, .slider-track img, .slider-track iframe, .slider-track iframe {
+               max-height: 380px;
+               min-height: 380px;
+               width: auto;
+          }
+
+          .video-player {
+               position: relative;
+          }
+
+          .play-button {
+               position: absolute;
+               left: 50%;
+               top: 50%;
+               border-radius: 50px;
+               backdrop-filter: blur(4px);
+               transform: translateY(-50%);
+               z-index: 2;
+               height: 42px;
+               aspect-ratio: 1;
+               background-color: hsl(0, 0%, 45%, 0.4);
+
+               svg {
+                    width: 14px;
+                    transform: translateX(15%) translateY(5%);
+               }
+
+               &:hover {
+                    filter: brightness(60%);
+               }
+          }
+     }
+}
+
+.media-slider .video-player {
+     position: relative;
+     flex: 0 0 auto;
+     overflow: hidden;
+     background: #111;
+}
+
+.media-slider .video-player picture {
+     display: block;
+     height: 100%;
+}
+
+.media-slider .video-player picture img {
+     display: block;
+     width: auto;
+     height: 100%;
+     object-fit: cover;
+}
+
+.media-slider .video-player .etr-video-frame {
+     display: block;
+     width: 100%;
+     height: 100%;
+     border: 0;
+}
+
+.media-slider .video-player .play-button {
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+}
+
+#attachments {
+     .attachment-grid {
+          gap: var(--g12);
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+
+          .attachment {
+               img {
+                    width: 100%;
+                    aspect-ratio: 1.5 / 1;
+                    padding: var(--g20);
+                    object-fit: cover;
+               }
+               .content {
+                    padding: var(--g18);
+
+                    h3 {
+                         font-size: 13px;font-weight: 450;
+                         color: var(--heading);
+                    }
+
+                    .include {
+                         font-size: 12px;
+                         font-weight: 430;
+                         color: var(--text);
+
+                         div {
+                              border-radius: 2px;
+                              width: 15px;
+                              border: 1px solid hsl(0, 0%, 0%, .2);
+                              aspect-ratio: 1;
+                              color: inherit;
+
+                              svg {
+                                   height: 7px;
+                                   transition: inherit;
+                                   opacity: 0;
+                              }
+                         }
+
+                         &:hover {
+                              color: var(--subheading);
+                              div {
+                                   background-color: hsl(0, 0%, 0%, .03);
+                                   border-color: hsl(0, 0%, 0%, .3);
+                              }
+                         }
+
+                         &.active {
+                              color: var(--subheading);
+                              div {
+                                   border-color: hsl(0, 0%, 0%, .5);
+                                   svg {
+                                        opacity: 1;
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}
+
+
+/* ============================================================
+     MAIN
+============================================================ */
+
+.enquiry-flow {
+     background-color: white;
+     max-width: 1100px;
+     width: 80%;
+     position: fixed;
+     transform: translateX(-50%) translateY(-50%);
+     z-index: 1100;
+     left: 50%;
+     top: 50%;
+     border-radius: 2px;
+     max-height: 85%;
+     display: grid;
+     grid-template-columns: 1fr 3fr;
+     grid-template-rows: min-content 1fr min-content;
+
+     .top {
+          grid-column: 1 / 3;
+          padding: var(--g12) var(--g20);
+          border-bottom: 1px solid var(--stroke);
+
+          h2 {
+               font-size: 14px;
+          }
+
+          .iccon {
+               background-color: #F2F2F2;
+               color: var(--subheading);
+               rotate: 45deg;
+               aspect-ratio: 1;
+               border-radius: 50px;
+               width: 26px;
+               
+               svg {
+                    height: 10px;
+               }
+          }
+     }
+
+     .selected {
+          height: 100%;
+          border-right: 1px solid var(--stroke);
+          overflow-y: auto;
+          padding: var(--g32) var(--g20);
+
+          .select {
+               font-size: 12px;
+               font-weight: 460;
+               color: var(--text);
+               text-align: left;
+               padding: 9px 12px;
+               border-radius: 1px;
+               background-color: #f7f7f7;
+               svg {
+                    height: 9px;
+                    rotate: 45deg
+               }
+
+               &:hover {
+                    filter: brightness(97%);
+               }
+          }
+     }
+
+     h3 {
+          font-size: 12.5px;
+          font-weight: 460;
+          color: var(--subheading-main);
+          margin-bottom: var(--g20);
+     }
+
+     .bottom {
+          grid-column: 1 / 3;
+          padding: var(--g14) var(--g20);
+          border-top: 1px solid var(--stroke);
+     }
+
+     form {
+          background-color: var(--grey-section);
+          overflow-y: auto;
+          padding: var(--g32) var(--g20);
+     }
+}
+
+
+
+@media (max-width: 1580px) {
+
+     /* ============================================================
+          MAIN
+     ============================================================ */
+
+     main {
+          .content-wrap {
+               .title {
+                    font-size: 12px;
+               }
+
+               h1 {
+                    font-size: 16px;
+               }
+
+               .sub {
+                    font-size: 12px;
+               }
+
+               .spec {
+                    .an {
+                         font-size: 11.5px;
+                    }
+
+                    .sp {
+                         font-size: 13px;
+                         font-weight: 430;
+                         color: var(--heading);
+                    }
+               }
+          }
+     }
+     /* ============================================================
+          MEET THE TEAM
+     ============================================================ */
+
+     #description-black {
+          p {
+               font-size: 14px;
+          }
+     }
+
+     /* ============================================================
+          CTA WRAP
+     ============================================================ */
+
+     .cta-wrap {
+          .name {
+               font-size: 11.5px;
+          }
+          
+          .links a {
+               font-size: 11.5px;
+          }
+     }
+
+     /* ============================================================
+          TABLE
+     ============================================================ */
+
+     #spec-table {
+          h3 {
+               font-size: 14px;
+          }
+
+          .spec-sheet {
+               font-size: 11px;
+               svg {
+                    height: 13px;
+               }
+          }
+
+          .table-row {
+               grid-template-columns: 2.2fr 2fr;
+
+               p {
+                    font-size: 12px;
+               }
+          }
+     }
+
+     /* ============================================================
+          MEDIA SLIDER
+     ============================================================ */
+
+     .media-slider {
+          .slider {
+               .slider-track div, .slider-track picture, .slider-track video, .slider-track img, .slider-track iframe {
+               max-height: 320px;
+               min-height: 320px;
+               width: auto;
+          }
+
+               .play-button {
+                    scale: .9;
+               }
+          }
+     }
+
+     #attachments {
+     .attachment-grid {
+          
+          .attachment {
+               .content {
+                    h3 {
+                         font-size: 12px;
+                    }
+
+                    .include {
+                         font-size: 11px;
+                         div {
+                              width: 14px;
+
+                              svg {
+                                   height: 7px;
+                                   padding-top: 1px;
+                              }
+                         }
+                    }
+               }
+          }
+     }
+
+     
+}
+/* ============================================================
+          MAIN
+     ============================================================ */
+
+     .enquiry-flow {
+          background-color: white;
+          width: 85%;
+
+          .top {
+               h2 {
+                    font-size: 13px;
+               }
+
+               .iccon {
+                    width: 22px;
+                    
+                    svg {
+                         height: 8px;
+                    }
+               }
+          }
+
+          .selected {
+
+               .select {
+                    font-size: 10.5px;
+                    svg {
+                         height: 9px;
+                    }
+               }
+          }
+
+          h3 {
+               font-size: 11.5px;
+          }
+     }
+
+}
+
+@media (max-width: 1450px) {
+     main.prod {
+          display: grid; 
+          grid-template-columns: 1fr 1.5fr;
+
+          .column.image-wrap {
+               width: 100% !important;
+               max-width: 100%;
+          }
+     }
+
+     
+}
+
+@media (max-width: 1330px) {
+     main.prod {
+          grid-template-columns: 1fr;
+
+          .image-wrap {
+               grid-row: 1 / 2;
+          }
+     }
+
+     #spec-table {
+          align-items: end;
+
+          .wrapper .fr.as.jsb {
+               flex-direction: column;
+               gap: var(--g60);
+
+          }
+     }
+}
+
+@media (max-width: 1080px) {
+     .media-slider {
+          .slider {
+               .slider-track div, .slider-track picture, .slider-track video, .slider-track img, .slider-track iframe {
+                    max-height: 250px;
+                    min-height: 250px;
+                    width: auto;
+               }
+          }
+     }
+
+      #attachments {
+     .attachment-grid {
+          grid-template-columns: repeat(3, 1fr);
+     }
+     }
+}
+
+@media (max-width: 770px) {
+      /* ============================================================
+          MEET THE TEAM
+     ============================================================ */
+
+     #description-black {
+          p {
+               font-size: 13.5px;
+          }
+     }
+
+     /* ============================================================
+          MAIN
+     ============================================================ */
+
+     main {
+          .content-wrap {
+               .title {
+                    font-size: 11.5px;
+               }
+
+               h1 {
+                    font-size: 15px;
+               }
+
+               .sub {
+                    font-size: 11.5px;
+               }
+
+               .spec {
+                    .an {
+                         font-size: 11px;
+                    }
+
+                    .sp {
+                         font-size: 12.5px;
+                    }
+               }
+
+               .price-wrap {
+
+               p, p s {
+                    font-size: 13px;
+               }
+
+               span {
+                    font-size: 10.5px;
+               }
+          }
+          }
+     }
+
+     /* ============================================================
+          CTA WRAP
+     ============================================================ */
+
+     .cta-wrap {
+          padding: 0px;
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+          .wrap {
+               padding-left: var(--ch) !important;
+               padding-right: var(--ch) !important;
+          }
+          .name {
+               font-size: 11px;
+          }
+          
+          .links a {
+               font-size: 11px;
+               padding: var(--g16) 0;
+          }
+     }
+
+     /* ============================================================
+          TABLE
+     ============================================================ */
+
+     #spec-table {
+          h3 {
+               font-size: 13px;
+          }
+
+          .spec-sheet {
+               font-size: 10.5px;
+               svg {
+                    height: 12px;
+                    margin-top: -2px;
+               }
+          }
+
+          .table-row {
+               grid-template-columns: 2.2fr 2fr;
+
+               p {
+                    font-size: 10.5px;
+               }
+          }
+     }
+
+     #attachments {
+     .attachment-grid {
+          grid-template-columns: 1fr 1fr;
+     }
+     }
+
+     /* ============================================================
+          MAIN
+     ============================================================ */
+
+     .enquiry-flow {
+          background-color: white;
+          width: 90%;
+          
+          .selected {
+               display: none;
+          }
+
+          .top {
+               h2 {
+                    font-size: 12px;
+               }
+
+               .iccon {
+                    width: 22px;
+                    
+                    svg {
+                         height: 8px;
+                    }
+               }
+          }
+
+          .form-wrap {
+               grid-column: 1 / 3;
+               width: 100%;
+               max-height: 100%;
+               overflow: scroll;
+
+               .fr.two {
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: stretch;
+               }
+          }
+
+          h3 {
+               font-size: 10.5px;
+          }
+     }
+}
+
+@media (max-width: 540px) {
+      /* ============================================================
+          MEET THE TEAM
+     ============================================================ */
+
+     #description-black {
+          p {
+               font-size: 13px;
+          }
+     }
+
+     /* ============================================================
+          CTA WRAP
+     ============================================================ */
+
+     .cta-wrap {
+          .name {
+               font-size: 10.5px;
+          }
+          
+          .links a {
+               font-size: 11px;
+               padding: var(--g16) 0;
+          }
+
+          .button {
+               font-size: 10px;
+          }
+     }
+
+     /* ============================================================
+          MAIN
+     ============================================================ */
+
+     main {
+          .content-wrap {
+               .title {
+                    font-size: 11px;
+               }
+
+               h1 {
+                    font-size: 14px;
+               }
+
+               .sub {
+                    font-size: 10.5px;
+               }
+
+               .spec {
+                    gap: var(--g16);
+                    .an {
+                         font-size: 10.5px;
+                    }
+
+                    .sp {
+                         font-size: 11.5px;
+                    }
+               }
+          }
+     }
+
+      #attachments {
+     .attachment-grid {
+          grid-template-columns: 1fr 1fr;
+          .attachment {
+               .content {
+                    flex-direction: column;
+                    align-items: start;
+                    gap: var(--g12);
+                    h3 {
+                         font-size: 11px;
+                    }
+
+                    .include {
+                         font-size: 10.5px;
+                         div {
+                              width: 13px;
+                              margin-bottom: 1px;
+
+                              svg {
+                                   height: 5px;
+                                   padding-top: 0px;
+                              }
+                         }
+                    }
+               }
+          }
+     }
+
+     .media-slider {
+          .slider {
+               .slider-track div, .slider-track picture, .slider-track video, .slider-track img, .slider-track iframe {
+                    max-height: 180px;
+                    min-height: 180px;
+                    width: auto;
+               }
+          }
+     }
+}
+}
+
+
+/* ============================================================
+   ENQUIRY FLOW - OPEN / CLOSE ANIMATION
+============================================================ */
+
+.enquiry-flow {
+     opacity: 0;
+     visibility: hidden;
+     pointer-events: none;
+
+     transition:
+          opacity .35s ease,
+          visibility 0s linear .35s;
+}
+
+.enquiry-flow.active {
+     opacity: 1;
+     visibility: visible;
+     pointer-events: auto;
+
+     transition:
+          opacity .35s ease,
+          visibility 0s;
+}
+
+/* ============================================================
+   PAGE BLUR
+============================================================ */
+
+.page-blur.top-zindex {
+     z-index: 1099;
+}
+
+/* ============================================================
+   SELECTED EQUIPMENT & ATTACHMENTS
+============================================================ */
+
+.enquiry-flow .selected [hidden] {
+     display: none !important;
+}
+
+.enquiry-flow .selected .select {
+     width: 100%;
+     align-items: center;
+     gap: var(--g12);
+}
+
+.enquiry-flow .selected .select span {
+     flex: 1;
+     min-width: 0;
+}
+
+/* ============================================================
+   SCROLL LOCK
+============================================================ */
+
+body.enquiry-scroll-locked {
+     overscroll-behavior: none;
+}
+
+/* ============================================================
+   RADIO BUTTONS
+============================================================ */
+
+.enquiry-flow .radio-wrap {
+     position: relative;
+     cursor: pointer;
+}
+
+.enquiry-flow .radio-wrap input[type="radio"] {
+     position: absolute;
+     opacity: 0;
+     width: 1px;
+     height: 1px;
+}
+
+.enquiry-flow .radio-wrap input[type="radio"]:checked + .radio {
+     border-color: var(--subheading);
+}
+
+.enquiry-flow .radio-wrap input[type="radio"]:checked + .radio > div {
+     background-color: var(--subheading);
+}
+
+.enquiry-flow .radio-wrap:focus-within .radio {
+     outline: 2px solid var(--subheading);
+     outline-offset: 3px;
+}
+
+/* ============================================================
+   REDUCED MOTION
+============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+     .enquiry-flow,
+     .enquiry-flow.active {
+          transition-duration: 0s;
+     }
+}

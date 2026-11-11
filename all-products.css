@@ -77,6 +77,15 @@
      z-index: 106;
      display: grid;
      grid-template-rows: min-content 1fr min-content;
+     transform: translateX(-105%);
+     visibility: hidden;
+     transition: transform .35s cubic-bezier(.22, 1, .36, 1), visibility 0s linear .35s;
+
+     &.active {
+          transform: translateX(0);
+          visibility: visible;
+          transition-delay: 0s;
+     }
 
      .top {
           .heading {
@@ -86,7 +95,7 @@
           }
 
           .icon {
-               height: 24px;
+               height: 23px;
                aspect-ratio: 1;
                border-radius: 50px;
                background-color: #F2F2F2;
@@ -136,6 +145,9 @@
 
           .wrap {
                overflow: hidden;
+               max-height: 1000px;
+               opacity: 1;
+               transition: max-height .32s ease, opacity .22s ease;
           }
 
           .fil {
@@ -179,9 +191,14 @@
                rotate: 0deg;
           }
           .wrap {
-               height: 0px;
+               max-height: 0 !important;
+               opacity: 0;
           }
      }
+}
+
+body.filters-open {
+     overflow: hidden;
 }
 
 

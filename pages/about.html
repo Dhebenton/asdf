@@ -8,8 +8,8 @@
           <link rel="stylesheet" href="/pages.css">
           <link rel="stylesheet" href="/breakpoint.css">
           <link rel="stylesheet" href="/info-page.css">
-          <title>ETR Tehnika</title>
-          <meta name="description" content="">
+          <title data-i18n="aboutPageMetaTitle">About ETR Tehnika | Machinery Expertise Across Estonia</title>
+          <meta name="description" data-i18n-content="aboutPageMetaDescription" content="Meet ETR Tehnika and the specialists helping businesses across Estonia choose, finance, service and maintain dependable machinery.">
 
      </head>
      <body id="info-page">
@@ -45,17 +45,68 @@
                </symbol>
           </svg>
 
+          <nav class="tra">
+               <div class="content ch fr g44">
+                    <a href="/" class="fr logo" aria-label="ETR Tehnika home">
+                         <svg viewBox="0 0 101 14" fill="currentColor"><use href="#logo"></use></svg>
+                    </a>
+                    <div class="links-wrap">
+                         <div class="links fr g24">
+                              <a href="/pages/all-products.html" data-i18n="navMachinery">Machinery</a>
+                              <a href="/pages/all-brands.html" data-i18n="navBrands">Brands</a>
+                              <a href="/pages/all-industries.html" data-i18n="navIndustries">Industries</a>
+                              <a href="/pages/service-warranty.html" data-i18n="navServicing">Servicing</a>
+                              <a href="/pages/about.html" data-i18n="navAbout">About Us</a>
+                              <a href="/pages/contact.html" data-i18n="navContact">Contact</a>
+                         </div>
+                    </div>
+                    <div class="fr g14">
+                         <button id="language-switcher" class="fr jc" type="button" aria-label="Choose language" aria-haspopup="true" aria-expanded="false" aria-controls="language-select">
+                              <svg viewBox="0 0 13 13" fill="currentColor"><use href="#globe"></use></svg>
+                         </button>
+                    </div>
+                    <button class="yes-tablet menu-button" type="button" aria-expanded="false" aria-label="Open navigation" aria-controls="mobile-navigation">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="none" viewBox="0 0 16 12">
+                              <path fill="#010204" d="M16 0H0v1.37143h16zM16 5.02857H0V6.4h16zM16 10.0571H0v1.3715h16z"></path>
+                         </svg>
+                    </button>
+               </div>
+               <div class="language-select tra" id="language-select" aria-hidden="true">
+                    <button class="active" type="button" data-language="en" lang="en">English</button>
+                    <button type="button" data-language="et" lang="et">Eesti</button>
+               </div>
+          </nav>
+          <div class="background-blur"></div>
+          <div class="nav-menu-tablet ch yes-tablet" id="mobile-navigation" role="dialog" aria-modal="true" aria-label="Main navigation">
+               <div class="wrap">
+                    <div class="top fr jsb">
+                         <a href="/" class="fr logo" aria-label="ETR Tehnika home"><svg viewBox="0 0 101 14" fill="currentColor"><use href="#logo"></use></svg></a>
+                         <button class="icon close-bt" type="button" aria-label="Close navigation"><svg viewBox="0 0 9 9" fill="currentColor"><use href="#plus"></use></svg></button>
+                    </div>
+                    <div class="link fc">
+                         <a href="/pages/all-products.html" data-i18n="navMachinery">Machinery</a>
+                         <a href="/pages/all-brands.html" data-i18n="navBrands">Brands</a>
+                         <a href="/pages/all-industries.html" data-i18n="navIndustries">Industries</a>
+                         <a href="/pages/service-warranty.html" data-i18n="navServicing">Servicing</a>
+                         <a href="/pages/financing-options.html" data-i18n="navFinance">Finance</a>
+                         <a href="/pages/about.html" data-i18n="navAbout">About Us</a>
+                         <a href="/pages/contact.html" data-i18n="navContact">Contact</a>
+                    </div>
+                    <a href="/pages/contact.html" class="button" data-i18n="navMessage">Send Us A Message</a>
+               </div>
+          </div>
+
           <section class="breadcrumbs ch">
                <div class="fr g16 content">
-                    <a href="">Home</a>
+                    <a href="/" data-i18n="breadcrumbHome">Home</a>
                     <svg viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
-                    <a href="" class="active">Service & Warranty</a>
+                    <a href="/pages/about.html" class="active" data-i18n="navAbout">About Us</a>
                </div>
           </section>
 
           <section id="about-hero" class="">
                <div class="h1-wrap ch">
-                    <h1>We believe choosing the right equipment starts understanding <br>the people and businesses who rely on it every choosing day.</h1>
+                    <h1 data-i18n="aboutPageHero">We believe the right machinery starts with understanding <br class="mobile-no">the work and the people who depend on it every day.</h1>
                </div>
                <picture>
                     <img src="/assets/about-image.png" loading="lazy" decoding="async">
@@ -65,27 +116,28 @@
 
           <section class="ch first fc ae">
                <div class="column line-height fc g40">
-                    <h2 class="head-ln">lorem ipsum dolor sit amet consectetur adipiscing elit voluptas dolo resdes erunt cupiditate et citation quidem sed aute laborum maxime magna distinctio occaecat tempor id est</h2>
+                    <h2 class="head-ln mobile-no" data-i18n="aboutPageIntroHeading">Helping businesses find the right machinery through practical advice<br> and a clear understanding of their needs.</h2>
+                    <h2 class="head-ln mobile-yes" data-i18n="aboutPageIntroHeadingMobile">The right machinery starts with understanding your needs.</h2>
                     <div class="fc g20">
-                         <p class="text mobile-no">ETR provides machinery servicing, repairs and technical support to help customers maintain their equipment and keep it operating reliably. We understand the importance of dependable machinery and provide practical, knowledgeable support throughout its working life.</p>
-                         <p class="text mobile-yes">ETR provides machinery servicing, repairs and technical support to help customers maintain their equipment and keep it operating reliably.</p>
-                         <p class="text mobile-no">Our experienced team offers assistance tailored to each customer's requirements, from diagnosing technical issues to carrying out necessary repairs and maintenance. We also provide guidance on equipment operation, servicing and spare parts across our range of machinery brands, helping customers maintain performance and make informed decisions about their equipment.</p>
-                         <p class="text mobile-yes">Our experienced team offers practical assistance tailored to each customer's requirements, from identifying technical issues to carrying out necessary repairs. We also provide guidance on equipment operation, maintenance and spare parts across our range of machinery brands.</p>
+                         <p class="text mobile-no" data-i18n="aboutPageIntroTextOne">ETR provides machinery servicing, repairs and technical support to help customers maintain their equipment and keep it operating reliably. We understand the importance of dependable machinery and provide practical, knowledgeable support throughout its working life.</p>
+                         <p class="text mobile-yes" data-i18n="aboutPageIntroTextOneMobile">ETR provides machinery servicing, repairs and technical support to help customers maintain their equipment and keep it operating reliably.</p>
+                         <p class="text mobile-no" data-i18n="aboutPageIntroTextTwo">Our experienced team offers assistance tailored to each customer's requirements, from diagnosing technical issues to carrying out necessary repairs and maintenance. We also provide guidance on equipment operation, servicing and spare parts across our range of machinery brands, helping customers maintain performance and make informed decisions about their equipment.</p>
+                         <p class="text mobile-yes" data-i18n="aboutPageIntroTextTwoMobile">Our experienced team offers practical assistance tailored to each customer's requirements, from identifying technical issues to carrying out necessary repairs. We also provide guidance on equipment operation, maintenance and spare parts across our range of machinery brands.</p>
                     </div>
                </div>
           </section>
 
           <section class="c second fc ae">
                <div class="column fc g40">
-                    <h2>Why Choose ETR</h2>
+                    <h2 data-i18n="aboutWhyHeading">Why Choose ETR</h2>
                     <div class="fc info-table-wrap">
                          <div class="tra top-stroke info-table">
                               <picture>
                                    <img src="/assets/trade-in.avif" loading="lazy" decoding="async">
                               </picture>
                               <div class="fc g12">
-                                   <h3>Reliable Equipment Support</h3>
-                                   <p>Access practical servicing and repair assistance from an experienced team familiar with the machinery we supply, helping keep your equipment in working condition.</p>
+                                   <h3 data-i18n="aboutWhySupportTitle">Reliable Equipment Support</h3>
+                                   <p data-i18n="aboutWhySupportText">Access practical servicing and repair assistance from an experienced team familiar with the machinery we supply, helping keep your equipment in working condition.</p>
                               </div>
                               <div class="icon yes-hmobile fr jc">
                                    <svg viewBox="0 0 8 8" fill="currentColor"><use href="#plus"></use></svg>
@@ -96,8 +148,8 @@
                                    <img src="/assets/contr-ind.avif" loading="lazy" decoding="async">
                               </picture>
                               <div class="fc g12">
-                                   <h3>Experienced Technical Guidance</h3>
-                                   <p>Receive knowledgeable advice on machinery maintenance, operation and technical issues, with support tailored to your equipment and requirements.</p>
+                                   <h3 data-i18n="aboutWhyGuidanceTitle">Experienced Technical Guidance</h3>
+                                   <p data-i18n="aboutWhyGuidanceText">Receive knowledgeable advice on machinery maintenance, operation and technical issues, with support tailored to your equipment and requirements.</p>
                               </div>
                               <div class="icon yes-hmobile fr jc">
                                    <svg viewBox="0 0 8 8" fill="currentColor"><use href="#plus"></use></svg>
@@ -108,8 +160,8 @@
                                    <img src="/assets/farm-ind.avif" loading="lazy" decoding="async">
                               </picture>
                               <div class="fc g12">
-                                   <h3>Warranty & Peace of Mind</h3>
-                                   <p>Benefit from warranty coverage on completed repair work, alongside manufacturer warranties on spare parts, giving you confidence in the support behind your equipment.</p>
+                                   <h3 data-i18n="aboutWhyWarrantyTitle">Warranty & Peace of Mind</h3>
+                                   <p data-i18n="aboutWhyWarrantyText">Benefit from warranty coverage on completed repair work, alongside manufacturer warranties on spare parts, giving you confidence in the support behind your equipment.</p>
                               </div>
                               <div class="icon yes-hmobile fr jc">
                                    <svg viewBox="0 0 8 8" fill="currentColor"><use href="#plus"></use></svg>
@@ -120,30 +172,30 @@
           </section>
 
           <section id="about-section" class="ch fr as jsb g80">
-               <h2>lorem ipsum dolor sit amet consectetur <br>voluptas dolo resdes cupiditate et </h2>
+               <h2 data-i18n="aboutHeading">The People, Experience and Expertise <br>Behind Every ETR Customer Relationship.</h2>
                <div class="car-grid col">
                          <div class="car">
                               <p class="num">4+</p>
-                              <p class="an">Years of experience supplying construction and excavation equipment across Estonia</p>
+                              <p class="an" data-i18n="aboutExperience">Years of experience supplying construction and excavation equipment across Estonia</p>
                          </div>
                          <div class="car">
                               <p class="num">8+</p>
-                              <p class="an">Equipment brands brought together to help you compare and choose the right machinery</p>
+                              <p class="an" data-i18n="aboutBrands">Equipment brands brought together to help you compare and choose the right machinery</p>
                          </div>
                          <div class="car">
                               <p class="num">12+</p>
-                              <p class="an">Machines supplied and delivered to businesses and customers throughout Estonia</p>
+                              <p class="an" data-i18n="aboutMachines">Machines supplied and delivered to businesses and customers throughout Estonia</p>
                          </div>
                          <div class="car">
                               <p class="num">7+</p>
-                              <p class="an">Equipment specialists available to help you choose, finance and maintain your machinery</p>
+                              <p class="an" data-i18n="aboutSpecialists">Equipment specialists available to help you choose, finance and maintain your machinery</p>
                          </div>
                     </div>
           </section>
 
           <section id="teams-slider" class="c fc g52">
                <div class="gradient top"></div>
-               <h2>Leadership</h2>
+               <h2 data-i18n="leadershipHeading">Leadership</h2>
                <div class="slider" data-slider>
                     <div data-slider-track class="fr g16">
                          <div class="tra teams-card">
@@ -288,31 +340,31 @@
 
           <section id="way-to-buy" class="background-black fr jsb as ch g52">
                <div class="fc g24">
-                    <h2 class="line-height">More Ways to Purchase, Finance And <br class="no-tablet">Manage Your <br class="yes-tablet"/> Machinery and Equipment</h2>
-                    <a class="button-arrow no-hmobile fr" href="/pages/all-categories.html">
+                    <h2 class="line-height" data-i18n="waysHeading">More Ways to Purchase, Finance And <br class="no-tablet">Manage Your <br class="yes-tablet"/> Machinery and Equipment</h2>
+                    <a class="button-arrow no-hmobile fr" href="/pages/contact.html">
                          <svg viewBox="0 0 8 10" fill="currentColor"><use href="#button-arrow"></use></svg>
-                         Speak To An Expert
+                         <span data-i18n="speakExpert">Speak To An Expert</span>
                     </a>
                </div>
                <div class="column fr g24">
-                    <a href="" class="black-card">
+                    <a href="/pages/trade-in-options.html" class="black-card">
                          <div class="image-wrap fc">
                               <picture>
                                    <img src="/assets/trade-in.avif" loading="lazy" decoding="async">
                               </picture>
                          </div>
-                         <h3>Trade In Your Existing Machine</h3>
-                         <p>Put the value of your current equipment towards your next purchase with a straightforward trade-in process.</p>
+                         <h3 data-i18n="tradeInTitle">Trade In Your Existing Machine</h3>
+                         <p data-i18n="tradeInText">Put the value of your current equipment towards your next purchase with a straightforward trade-in process.</p>
                          <svg class="yes-hmobile" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                     </a>
-                    <a href="" class="black-card">
+                    <a href="/pages/financing-options.html" class="black-card">
                          <div class="image-wrap fc">
                               <picture>
                                    <img src="/assets/finance.avif" loading="lazy" decoding="async">
                               </picture>
                          </div>
-                         <h3>Explore Equipment Financing Options</h3>
-                         <p>Flexible financing solutions to help you spread the cost of your next machine with payment options suited to your business.</p>
+                         <h3 data-i18n="financingTitle">Explore Equipment Financing Options</h3>
+                         <p data-i18n="financingText">Flexible financing solutions to help you spread the cost of your next machine with payment options suited to your business.</p>
                          <svg class="yes-hmobile" viewBox="0 0 5 8" fill="currentColor"><use href="#chevron-right"></use></svg>
                     </a>
                </div>
@@ -320,8 +372,8 @@
 
           <section id="call-to-action" class="fr ch jsb">
                <div class="fc g24 as">
-                    <h2 class="line-height">Talk to our experts about finding the right <br>equipment and support for your next project</h2>
-                    <a href="" class="button">Speak To An Expert</a>
+                    <h2 class="line-height" data-i18n="ctaHeading">Talk to our experts about finding the right <br>equipment and support for your next project</h2>
+                    <a href="/pages/contact.html" class="button" data-i18n="speakExpert">Speak To An Expert</a>
                </div>
                <picture>
                     <img src="/assets/cta-image.avif" loading="lazy" decoding="async">
@@ -329,55 +381,48 @@
           </section>
 
           <footer class="background-black ch">
-               <a href="" class="logo fr"><svg viewBox="0 0 101 14" fill="currentColor"><use href="#logo"></use></svg></a>
+               <a href="/" class="logo fr"><svg viewBox="0 0 101 14" fill="currentColor"><use href="#logo"></use></svg></a>
                <div class="links-wrap fr as g100">
                     <div class="links tra fc g12">
-                         <h3>Equipment</h3>
-                         <a href="/pages/all-brands.html">Excavators</a>
-                         <a href="/pages/all-industries.html">Generators</a>
-                         <a href="">Loaders</a>
-                         <a href="">Forestry</a>
-                         <a href="">All Categories</a>
+                         <h3 data-i18n="footerEquipment">Equipment</h3>
+                         <a href="/pages/all-products.html?category=excavators" data-i18n="shopExcavators">Excavators</a>
+                         <a href="/pages/all-products.html?category=generators" data-i18n="categoryGenerators">Generators</a>
+                         <a href="/pages/all-products.html?category=loaders" data-i18n="shopLoaders">Loaders</a>
+                         <a href="/pages/categories.html" data-i18n="footerAllCategories">All Categories</a>
                     </div>
                     <div class="links mobile-no tra fc g12">
-                         <h3>Brands</h3>
-                         <a href="">Shantui</a>
-                         <a href="">Heracles</a>
-                         <a href="">Cast Loaders</a>
-                         <a href="">Lantzmann</a>
-                         <a href="">All Brands</a>
+                         <h3 data-i18n="navBrands">Brands</h3>
+                         <a href="/pages/all-products.html?brand=Shantui">Shantui</a>
+                         <a href="/pages/all-products.html?brand=Heracles">Heracles</a>
+                         <a href="/pages/all-products.html?brand=Lantzmann">Lantzmann</a>
+                         <a href="/pages/all-brands.html" data-i18n="footerAllBrands">All Brands</a>
                     </div>
                     <div class="links tra fc g12">
-                         <h3>Resources</h3>
-                         <a href="">Articles & Guides</a>
-                         <a href="">Equipment Manuals</a>
-                         <a href="">Service & Warranty</a>
-                         <a href="">Financing Options</a>
-                         <a href="">Trade-In Options</a>
+                         <h3 data-i18n="footerResources">Resources</h3>
+                         <a href="/pages/service-warranty.html" data-i18n="footerService">Service & Warranty</a>
+                         <a href="/pages/financing-options.html" data-i18n="footerFinancing">Financing Options</a>
+                         <a href="/pages/trade-in-options.html" data-i18n="footerTradeIn">Trade-In Options</a>
                     </div>
                     <div class="links tra fc g12">
                          <h3>ETR</h3>
-                         <a href="">About ETR</a>
-                         <a href="">Contact Us</a>
-                         <a href="">Our Location</a>
-                         <a href="">Our Reviews</a>
+                         <a href="/pages/about.html" data-i18n="footerAbout">About ETR</a>
+                         <a href="/pages/contact.html" data-i18n="footerContact">Contact Us</a>
+                         <a href="/pages/contact.html" data-i18n="footerLocation">Our Location</a>
                     </div>
                </div>
                <div class="socials-wrap fr g28">
-                    <a href="" class="fr"><img src="/assets/instagram.svg"/></a>
-                    <a href="" class="fr"><img src="/assets/facebook.svg"/></a>
+                    <a href="https://www.facebook.com/ETRTEHNIKA" class="fr" target="_blank" rel="noopener noreferrer"><img src="/assets/facebook.svg" alt="Facebook"/></a>
                     <a href="" class="fr"><img src="/assets/linkedin.svg"/></a>
-                    <a href="" class="fr"><img class="youtube" src="/assets/youtube.svg"/></a>
+                    <a href="https://www.youtube.com/@ETRTEHNIKA" class="fr" target="_blank" rel="noopener noreferrer"><img class="youtube" src="/assets/youtube.svg" alt="YouTube"/></a>
                </div>
                <div class="seperator fr jsb">
-                    <span>© 2026 ETR Tehnika. All rights reserved.</span>
-                    <div class="fr g20">
-                         <a href="">Privacy <span class="mobile-no">Policy</span></a>
-                         <a href="">Terms <span class="mobile-no">Of Service</span></a>
-                    </div>
+                    <span data-i18n="footerCopyright">© 2026 ETR Tehnika. All rights reserved.</span>
                </div>
           </footer>
 
-          <script src="/js/info-table.js"></script>
+          <script src="/about-page.js" defer></script>
+          <script src="/info-table.js" defer></script>
+          <script src="/slider.js" defer></script>
+          <script src="/nav.js" defer></script>
      </body>
 </html>

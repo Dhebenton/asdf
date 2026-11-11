@@ -1,0 +1,145 @@
+/* ============================================================
+   MEET THE TEAM
+============================================================ */
+
+#articles-page {
+     .blog-top {
+          h1 {
+               font-weight: 480;
+               line-height: 1.7;
+               margin-bottom: var(--g24);
+               font-size: 20px;
+          }
+
+          .def {
+               font-size: 12.5px;
+
+               span, p {
+                    font-weight: 440;
+               }
+
+               span {
+                    color: var(--headings);
+               }
+
+               p {
+                    color: var(--text);
+               }
+          }
+          
+          .sep {
+               height: 12px;
+               width: 1px;
+               background-color: hsl(0, 0%, 0%, .2);
+          }
+     }
+
+     article {
+          p {
+               font-size: 13px;
+               font-weight: 450;
+               color: var(--text);
+               line-height: 1.9;
+          }
+
+          picture {
+               width: 100%;
+          }
+     }
+}
+
+@media (max-width: 1580px) {
+     /* ============================================================
+   MEET THE TEAM
+============================================================ */
+
+#articles-page {
+     .blog-top {
+          h1 {
+               font-size: 18px;
+          }
+
+          .def {
+               font-size: 11.5px;
+          }
+          
+          .sep {
+               height: 11px;
+          }
+     }
+}
+}
+
+@media (max-width: 1080px) {
+ 
+}
+
+@media (max-width: 770px) {
+          /* ============================================================
+   MEET THE TEAM
+============================================================ */
+
+#articles-page {
+     .blog-top {
+          h1 {
+               font-size: 17px;
+               br {
+                    display: none;
+               }
+          }
+
+          .def {
+               font-size: 11px;
+          }
+          
+          .sep {
+               height: 10.5px;
+          }
+     }
+
+     article {
+          p {
+               font-size: 12px;
+               font-weight: 450;
+               color: var(--text);
+               line-height: 1.9;
+          }
+     }
+}
+
+   
+}
+
+@media (max-width: 540px) {
+#articles-page {
+     .blog-top {
+          h1 {
+               font-size: 15px;
+          }
+
+          .def {
+               font-size: 10px;
+               flex-direction: column;
+               gap: var(--g10);
+               align-items: start;
+          }
+
+          .def-wrap {
+               gap: var(--g40);
+          }
+
+          .sep {
+               display: none;
+          }
+     }
+
+     article {
+          p {
+               font-size: 11.5px;
+               font-weight: 450;
+               color: var(--text);
+               line-height: 1.9;
+          }
+     }
+}
+}

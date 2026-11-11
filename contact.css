@@ -15,9 +15,15 @@
           line-height: 1.9;
      }
 
+     .sha {
+          align-self: start;
+          justify-self: start;
+     }
+
      .grid {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
+          width: 100%;
           gap: var(--g28);
           row-gap: var(--g36);
 
