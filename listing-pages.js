@@ -74,7 +74,7 @@
                 <div class="fr g14"><button id="language-switcher" class="fr jc" type="button" aria-label="Choose language" aria-haspopup="true" aria-expanded="false" aria-controls="language-select"><svg viewBox="0 0 13 13" fill="currentColor"><use href="#globe"></use></svg></button></div>
                 <button class="yes-tablet menu-button" type="button" aria-expanded="false" aria-label="Open navigation" aria-controls="mobile-navigation"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="none" viewBox="0 0 16 12"><path fill="#010204" d="M16 0H0v1.37143h16zM16 5.02857H0V6.4h16zM16 10.0571H0v1.3715h16z"></path></svg></button>
             </div>
-            <div class="language-select tra" id="language-select" aria-hidden="true"><button class="active" type="button" data-language="en" lang="en">English</button><button type="button" data-language="et" lang="et">Eesti</button></div>
+            <div class="language-select tra" id="language-select" aria-hidden="true"><button type="button" data-language="en" lang="en">English</button><button class="active" type="button" data-language="et" lang="et">Eesti</button></div>
         </nav>
         <div class="background-blur"></div>
         <div class="nav-menu-tablet ch yes-tablet" id="mobile-navigation" role="dialog" aria-modal="true" aria-label="Main navigation"><div class="wrap">

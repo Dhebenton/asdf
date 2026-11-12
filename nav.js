@@ -457,7 +457,7 @@
     };
 
     const setLanguage = language => {
-        const selected = translations[language] ? language : 'en';
+        const selected = translations[language] ? language : 'et';
 
         document.documentElement.lang = selected;
         document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -629,5 +629,5 @@
     }
 
     mobileMenu?.setAttribute('aria-hidden', 'true');
-    setLanguage(readStoredLanguage() || 'en');
+    setLanguage(readStoredLanguage() || 'et');
 })();

@@ -9,7 +9,7 @@
      const PROJECT_ID = 'jqlee81t';
      const DATASET = 'production';
      const API_VERSION = '2026-10-21';
-     const LANGUAGE = 'en';
+     const currentLanguage = () => document.documentElement.lang === 'en' ? 'en' : 'et';
 
      const MAX_SPECS = 11;
      const INITIAL_ATTACHMENTS = 4;
@@ -77,7 +77,10 @@
           "items": items[]{
                _key,
                name,
-               "image": image.asset->url
+               image{
+                    "url": asset->url,
+                    "ref": asset._ref
+               }
           }
      }`;
 
@@ -99,15 +102,37 @@
           if (typeof value === 'string') return value;
 
           if (Array.isArray(value)) {
+               const language = currentLanguage();
+
                return (
-                    value.find(item => item.language === LANGUAGE && item.value)?.value ||
+                    value.find(item => item.language === language && item.value)?.value ||
                     value.find(item => item.language === 'et' && item.value)?.value ||
+                    value.find(item => item.language === 'en' && item.value)?.value ||
                     value.find(item => item.value)?.value ||
                     ''
                );
           }
 
           return '';
+     }
+
+     function sanityImageURL(image) {
+          const url = typeof image === 'string' ? image : image?.url;
+
+          if (/^https:\/\//i.test(url || '')) return url;
+
+          const reference = typeof image === 'string'
+               ? image
+               : image?.ref || image?.asset?._ref || image?._ref;
+          const match = String(reference || '').match(
+               /^image-([a-f\d]+)-(\d+x\d+)-([a-z\d]+)$/i
+          );
+
+          if (!match) return '';
+
+          const [, id, dimensions, format] = match;
+
+          return `https://cdn.sanity.io/images/${PROJECT_ID}/${DATASET}/${id}-${dimensions}.${format}`;
      }
 
      function normalize(value) {
@@ -421,8 +446,9 @@
                const tables = group.tables || [];
 
                const table =
-                    tables.find(item => item.language === LANGUAGE && item.rows?.length) ||
+                    tables.find(item => item.language === currentLanguage() && item.rows?.length) ||
                     tables.find(item => item.language === 'et' && item.rows?.length) ||
+                    tables.find(item => item.language === 'en' && item.rows?.length) ||
                     tables.find(item => item.rows?.length);
 
                if (!table) continue;
@@ -1062,15 +1088,15 @@ function renderMedia(product) {
                items.map(item => [item._key, item])
           );
 
-          return keys.map(key => {
-               const item = map.get(key);
-
-               return {
-                    key,
-                    name: localized(item?.name) || key.replace(/-/g, ' '),
-                    image: item?.image || ''
-               };
-          });
+          return keys
+               .map(key => map.get(key))
+               .filter(Boolean)
+               .map(item => ({
+                    key: item._key,
+                    name: localized(item.name) || item._key.replace(/-/g, ' '),
+                    translations: item.name,
+                    image: sanityImageURL(item.image)
+               }));
      }
 
      /* ============================================================
@@ -1100,6 +1126,24 @@ function renderMedia(product) {
           );
 
           function draw() {
+               const words = currentLanguage() === 'et'
+                    ? {
+                         heading: 'Lisavarustus',
+                         include: 'Lisa',
+                         loadMore: 'Laadi juurde',
+                         showing: (shown, total) => `Kuvatud ${shown}/${total} lisavarustust`
+                    }
+                    : {
+                         heading: 'Attachments',
+                         include: 'Include',
+                         loadMore: 'Load More',
+                         showing: (shown, total) => `Showing ${shown} of ${total} attachments`
+                    };
+
+               const heading = $('h2', section);
+
+               if (heading) heading.textContent = words.heading;
+
                grid.innerHTML = attachments.slice(0, visible).map(item => `
                     <div class="attachment card" data-addon="${escapeHTML(item.key)}">
                          <img
@@ -1122,18 +1166,18 @@ function renderMedia(product) {
                                              <use href="#check"></use>
                                         </svg>
                                    </div>
-                                   Include
+                                   ${words.include}
                               </button>
                          </div>
                     </div>
                `).join('');
 
                if (counter) {
-                    counter.textContent =
-                         `Showing ${visible} of ${attachments.length} attachments`;
+                    counter.textContent = words.showing(visible, attachments.length);
                }
 
                if (button) {
+                    button.textContent = words.loadMore;
                     button.hidden = visible >= attachments.length;
                }
           }
@@ -1169,6 +1213,13 @@ function renderMedia(product) {
                     attachments.length
                );
 
+               draw();
+          });
+
+          document.addEventListener('etr:languagechange', () => {
+               attachments.forEach(item => {
+                    item.name = localized(item.translations) || item.key.replace(/-/g, ' ');
+               });
                draw();
           });
 
