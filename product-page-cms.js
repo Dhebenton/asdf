@@ -116,6 +116,94 @@
           return '';
      }
 
+     function productWords() {
+          return currentLanguage() === 'et'
+               ? {
+                    equipment: 'Masinad',
+                    home: 'Avaleht',
+                    productDescriptionFallback: 'Tootekirjeldus lisatakse peagi.',
+                    longDescriptionFallback: 'Täpsem tootekirjeldus lisatakse peagi.',
+                    specification: 'Tehnilised andmed',
+                    toBeConfirmed: 'Täpsustamisel',
+                    priceOnRequest: 'Hind päringul',
+                    vat: '+ KM',
+                    viewSpecificationSheet: 'Vaata tehnilist lehte',
+                    features: 'Omadused',
+                    specifications: 'Tehnilised andmed',
+                    media: 'Meedia',
+                    attachments: 'Lisavarustus',
+                    playVideo: 'Esita video',
+                    equipmentSpecifications: 'Toote tehnilised andmed',
+                    specificationSheet: 'Tehniline leht',
+                    productSpecifications: 'Toote spetsifikatsioonid',
+                    previousSlide: 'Eelmine slaid',
+                    nextSlide: 'Järgmine slaid',
+                    getInTouch: 'Võta ühendust',
+                    sendEnquiry: 'Saada päring',
+                    closeEnquiry: 'Sulge päring',
+                    selectedEquipment: 'Valitud masin',
+                    selectedAttachments: 'Valitud lisavarustus',
+                    yourDetails: 'Teie andmed',
+                    firstName: 'Eesnimi',
+                    lastName: 'Perekonnanimi',
+                    emailRequired: 'E-post (kohustuslik)',
+                    phoneRequired: 'Telefoninumber (kohustuslik)',
+                    purchasingFor: 'Ostja',
+                    business: 'Ettevõte',
+                    personal: 'Eraisik',
+                    intendedPayment: 'Soovitud makseviis',
+                    fullPayment: 'Täismakse',
+                    finance: 'Finantseerimine',
+                    message: 'Sõnum',
+                    typeMessage: 'Kirjutage oma sõnum siia',
+                    enquirySent: 'Päring saadetud',
+                    enquiryThanks: 'Täname. Meie meeskonna liige võtab teiega peagi ühendust.',
+                    sendMessage: 'Saada sõnum'
+               }
+               : {
+                    equipment: 'Equipment',
+                    home: 'Home',
+                    productDescriptionFallback: 'Product description to be added.',
+                    longDescriptionFallback: 'Detailed product description to be added.',
+                    specification: 'Specification',
+                    toBeConfirmed: 'To be confirmed',
+                    priceOnRequest: 'Price on request',
+                    vat: '+ VAT',
+                    viewSpecificationSheet: 'View Specification Sheet',
+                    features: 'Features',
+                    specifications: 'Specifications',
+                    media: 'Media',
+                    attachments: 'Attachments',
+                    playVideo: 'Play video',
+                    equipmentSpecifications: 'Equipment specifications',
+                    specificationSheet: 'Specification Sheet',
+                    productSpecifications: 'Product Specifications',
+                    previousSlide: 'Previous slide',
+                    nextSlide: 'Next slide',
+                    getInTouch: 'Get In Touch',
+                    sendEnquiry: 'Send An Enquiry',
+                    closeEnquiry: 'Close enquiry',
+                    selectedEquipment: 'Selected Equipment',
+                    selectedAttachments: 'Selected Attachments',
+                    yourDetails: 'Your Details',
+                    firstName: 'First Name',
+                    lastName: 'Last Name',
+                    emailRequired: 'Email (Required)',
+                    phoneRequired: 'Phone Number (Required)',
+                    purchasingFor: 'Purchasing For',
+                    business: 'Business',
+                    personal: 'Personal',
+                    intendedPayment: 'Intended Payment',
+                    fullPayment: 'Full Payment',
+                    finance: 'Finance',
+                    message: 'Message',
+                    typeMessage: 'Type your message here',
+                    enquirySent: 'Enquiry Sent',
+                    enquiryThanks: 'Thank you. A member of our team will be in touch shortly.',
+                    sendMessage: 'Send Message'
+               };
+     }
+
      function sanityImageURL(image) {
           const url = typeof image === 'string' ? image : image?.url;
 
@@ -182,10 +270,10 @@
 
      function formatPrice(amount) {
           return typeof amount === 'number' && Number.isFinite(amount)
-               ? `€${amount.toLocaleString('en-IE', {
+               ? `€${amount.toLocaleString(currentLanguage() === 'et' ? 'et-EE' : 'en-IE', {
                     maximumFractionDigits: 2
                })}`
-               : 'Price on request';
+               : productWords().priceOnRequest;
      }
 
      /* ============================================================
@@ -386,6 +474,7 @@
      ============================================================ */
 
      async function loadProductImage(product) {
+          const words = productWords();
           const imageWrap = $('main.prod .image-wrap');
 
           if (!imageWrap) return;
@@ -419,7 +508,7 @@
           const image = document.createElement('img');
 
           image.src = url;
-          image.alt = product.name || 'Equipment';
+          image.alt = localized(product.name) || product.name || words.equipment;
           image.loading = 'eager';
           image.decoding = 'async';
           image.className = 'etr-product-image';
@@ -478,6 +567,7 @@
      }
 
      function getHeroStats(product, specs) {
+          const words = productWords();
           const selected = [];
           const used = new Set();
 
@@ -536,8 +626,8 @@
 
           while (selected.length < 3) {
                selected.push({
-                    label: 'Specification',
-                    value: 'To be confirmed'
+                    label: words.specification,
+                    value: words.toBeConfirmed
                });
           }
 
@@ -549,18 +639,19 @@
      ============================================================ */
 
      function renderHero(product, specs) {
+          const words = productWords();
           const content = $('main.prod .content-wrap');
 
           const brand =
                localized(product.brand?.name) ||
-               'Equipment';
+               words.equipment;
 
           const category =
                localized(product.category?.name) ||
                localized(product.category?.title) ||
-               'Equipment';
+               words.equipment;
 
-          const name = String(product.name || 'Equipment').trim();
+          const name = String(localized(product.name) || product.name || words.equipment).trim();
 
           const title = normalize(name).includes(normalize(category))
                ? name
@@ -568,7 +659,7 @@
 
           const description =
                localized(product.shortDescription) ||
-               'Product description to be added.';
+               words.productDescriptionFallback;
 
           const onSale =
                product.isOnSale === true &&
@@ -597,7 +688,7 @@
                                    </s>
                               ` : ''}
                          </p>
-                         <span>+ VAT</span>
+                         <span>${words.vat}</span>
                     </div>
 
                     ${getHeroStats(product, specs).map(spec => `
@@ -619,9 +710,9 @@
                `;
 
                breadcrumbs.innerHTML = `
-                    <a href="/">Home</a>
+                    <a href="/">${words.home}</a>
                     ${separator}
-                    <a href="/pages/all-products.html">Equipment</a>
+                    <a href="/pages/all-products.html">${words.equipment}</a>
                     ${separator}
                     <span>${escapeHTML(category)}</span>
                     ${separator}
@@ -641,6 +732,7 @@
      ============================================================ */
 
      function renderLongDescription(product) {
+          const words = productWords();
           const target = $('#description-black .column');
 
           if (!target) return;
@@ -649,7 +741,7 @@
 
           const paragraphs = content
                ? content.split(/\n\s*\n|\n/).filter(Boolean)
-               : ['Detailed product description to be added.'];
+               : [words.longDescriptionFallback];
 
           target.innerHTML = paragraphs.map(paragraph => `
                <p class="heading">${escapeHTML(paragraph.trim())}</p>
@@ -661,6 +753,7 @@
      ============================================================ */
 
      function renderSpecs(product, allSpecs) {
+          const words = productWords();
           const section = $('#spec-table');
 
           if (!section) return false;
@@ -717,7 +810,7 @@
 
                label.className = 'etr-brochure-label';
 
-               label.textContent = 'View Specification Sheet';
+               label.textContent = words.viewSpecificationSheet;
 
                button.appendChild(label);
 
@@ -935,6 +1028,8 @@ function renderMedia(product) {
      ============================================================ */
 
      function renderMedia(product) {
+          const words = productWords();
+          const productName = localized(product.name) || product.name || words.equipment;
           const section = $('.media-slider');
           const track = section && $('[data-slider-track]', section);
 
@@ -974,7 +1069,7 @@ function renderMedia(product) {
                          <picture class="fr">
                               <img
                                    src="${escapeHTML(poster)}"
-                                   alt="${escapeHTML(product.name)} video"
+                                   alt="${escapeHTML(productName)} video"
                                    loading="lazy"
                                    decoding="async"
                               >
@@ -984,7 +1079,7 @@ function renderMedia(product) {
                     <button
                          type="button"
                          class="play-button fr jc"
-                         aria-label="Play video"
+                         aria-label="${words.playVideo}"
                     >
                          <svg viewBox="0 0 15 20" fill="none">
                               <path
@@ -1002,7 +1097,7 @@ function renderMedia(product) {
                          iframe.src =
                               `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoID)}?autoplay=1&rel=0`;
 
-                         iframe.title = `${product.name} video`;
+                         iframe.title = `${productName} video`;
                          iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
                          iframe.allowFullscreen = true;
 
@@ -1036,7 +1131,7 @@ function renderMedia(product) {
                const image = document.createElement('img');
 
                image.src = item.url;
-               image.alt = localized(item.alt) || product.name;
+               image.alt = localized(item.alt) || productName;
                image.loading = 'lazy';
                image.decoding = 'async';
 
@@ -1047,7 +1142,7 @@ function renderMedia(product) {
           const heading = $('h2', section);
 
           if (heading) {
-               heading.textContent = `${product.name} Media`;
+               heading.textContent = `${productName} ${words.media}`;
           }
 
           document.dispatchEvent(new CustomEvent('sliderReset', {
@@ -1237,6 +1332,8 @@ function renderMedia(product) {
      ============================================================ */
 
      function setupSectionNavigation(product, available) {
+          const words = productWords();
+          const productName = localized(product.name) || product.name || words.equipment;
           /*
              FIRST CTA (MOBILE)
 
@@ -1251,7 +1348,7 @@ function renderMedia(product) {
                const links = $('.links', mobileCTA);
 
                if (name) {
-                    name.textContent = product.name || 'Equipment';
+                    name.textContent = productName;
                }
 
                if (links) {
@@ -1278,7 +1375,7 @@ function renderMedia(product) {
           const name = $('.name', sectionCTA);
 
           if (name) {
-               name.textContent = product.name || 'Equipment';
+               name.textContent = productName;
           }
 
           const links = $('.links', sectionCTA);
@@ -1297,22 +1394,22 @@ function renderMedia(product) {
 
           const sections = [
                {
-                    label: 'Features',
+                    label: words.features,
                     id: 'features',
                     available: !!features
                },
                {
-                    label: 'Specifications',
+                    label: words.specifications,
                     id: 'spec-table',
                     available: available.specs
                },
                {
-                    label: 'Media',
+                    label: words.media,
                     id: 'product-media',
                     available: available.media
                },
                {
-                    label: 'Attachments',
+                    label: words.attachments,
                     id: 'attachments',
                     available: available.attachments
                }
@@ -1372,6 +1469,89 @@ function renderMedia(product) {
           });
      }
 
+     function refreshProductLanguage(product) {
+          const words = productWords();
+          const specs = getSpecs(product);
+          const productName = localized(product.name) || product.name || words.equipment;
+          const setText = (selector, value) => {
+               const element = $(selector);
+               if (element) element.textContent = value;
+          };
+
+          renderHero(product, specs);
+          renderLongDescription(product);
+          renderSpecs(product, specs);
+
+          setText('#spec-table .wrapper > h2', words.equipmentSpecifications);
+          setText('#spec-table .down > h3', words.specificationSheet);
+          setText('#spec-table .column > h3', words.productSpecifications);
+
+          $$('.cta-wrap .name').forEach(element => {
+               element.textContent = productName;
+          });
+
+          const sectionLabels = {
+               '#features': words.features,
+               '#spec-table': words.specifications,
+               '#product-media': words.media,
+               '#attachments': words.attachments
+          };
+
+          $$('.cta-wrap.two .links a[href^="#"]').forEach(link => {
+               const label = sectionLabels[link.getAttribute('href')];
+               if (label) link.textContent = label;
+          });
+
+          const mediaHeading = $('#product-media h2');
+          if (mediaHeading) mediaHeading.textContent = `${productName} ${words.media}`;
+
+          const playButton = $('#product-media .play-button');
+          if (playButton) playButton.setAttribute('aria-label', words.playVideo);
+
+          const previousSlide = $('#product-media .slider-prev');
+          const nextSlide = $('#product-media .slider-next');
+          previousSlide?.setAttribute('aria-label', words.previousSlide);
+          nextSlide?.setAttribute('aria-label', words.nextSlide);
+
+          setText('.cta-wrap.two .button.grey', words.getInTouch);
+          $$('[data-open-enquiry]').forEach(button => {
+               button.textContent = words.sendEnquiry;
+          });
+
+          setText('.enquiry-flow .top h2', words.sendEnquiry);
+          const closeEnquiry = $('.enquiry-close');
+          closeEnquiry?.setAttribute('aria-label', words.closeEnquiry);
+          setText('.selected-equipment > h3', words.selectedEquipment);
+          setText('.selected-attachments > h3', words.selectedAttachments);
+          setText('#product-enquiry-form > h3', words.yourDetails);
+
+          const firstName = $('#product-enquiry-form [name="firstName"]');
+          const lastName = $('#product-enquiry-form [name="lastName"]');
+          const message = $('#enquiry-message');
+          if (firstName) firstName.placeholder = words.firstName;
+          if (lastName) lastName.placeholder = words.lastName;
+          if (message) message.placeholder = words.typeMessage;
+
+          setText('label[for="enquiry-email"]', words.emailRequired);
+          setText('label[for="enquiry-phone"]', words.phoneRequired);
+          setText('label[for="enquiry-message"]', words.message);
+
+          const choiceLabels = $$('#product-enquiry-form .fc.flex.g6 > label');
+          if (choiceLabels[0]) choiceLabels[0].textContent = words.purchasingFor;
+          if (choiceLabels[1]) choiceLabels[1].textContent = words.intendedPayment;
+
+          setText('[data-radio-value="Business"] span', words.business);
+          setText('[data-radio-value="Personal"] span', words.personal);
+          setText('[data-radio-value="Full Payment"] span', words.fullPayment);
+          setText('[data-radio-value="Finance"] span', words.finance);
+          setText('.enquiry-success h3', words.enquirySent);
+          setText('.enquiry-success p', words.enquiryThanks);
+          setText('.enquiry-submit', words.sendMessage);
+
+          const productImage = $('main.prod .etr-product-image');
+          if (productImage) productImage.alt = productName;
+     }
+
      /* ============================================================
         INITIALISE
      ============================================================ */
@@ -1407,6 +1587,10 @@ function renderMedia(product) {
                     throw new Error(`Product not found: ${slug}`);
                }
 
+               document.addEventListener('etr:languagechange', () => {
+                    refreshProductLanguage(product);
+               });
+
                const specs = getSpecs(product);
 
                /*
@@ -1421,6 +1605,8 @@ function renderMedia(product) {
 
                const hasSpecs = renderSpecs(product, specs);
                const hasMedia = renderMedia(product);
+
+               refreshProductLanguage(product);
 
                finishSkeleton();
 
@@ -1442,6 +1628,8 @@ function renderMedia(product) {
                     media: hasMedia,
                     attachments: hasAttachments
                });
+
+               refreshProductLanguage(product);
 
                document.dispatchEvent(new CustomEvent('etr:productloaded', {
                     detail: { product }

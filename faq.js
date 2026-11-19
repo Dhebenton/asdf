@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
           });
      });
 
-     // Recalculate active height on resize
      window.addEventListener("resize", () => {
           const active = document.querySelector("#faq .faq.active");
 
