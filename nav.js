@@ -315,7 +315,7 @@
             teamProductSalesRole: 'Toote- ja müügijuht',
             phoneLabel: 'Telefon:',
             emailLabel: 'E-post:',
-            waysHeading: 'Rohkem võimalusi tehnika ostmiseks, finantseerimiseks ja haldamiseks',
+            waysHeading: 'Rohkem võimalusi tehnika ostmiseks,<br> finantseerimiseks ja haldamiseks',
             tradeInTitle: 'Anna olemasolev masin vahetusse',
             tradeInText: 'Kasuta olemasoleva tehnika väärtust järgmise ostu sissemaksena lihtsa vahetusprotsessi kaudu.',
             financingTitle: 'Tutvu tehnika finantseerimisvõimalustega',

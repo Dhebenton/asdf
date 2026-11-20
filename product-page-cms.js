@@ -273,7 +273,7 @@
                ? `€${amount.toLocaleString(currentLanguage() === 'et' ? 'et-EE' : 'en-IE', {
                     minimumFractionDigits: 2,
                     maximumFractionDigits: 2
-               })}`
+               }).replace(/,(\d{2})$/, '.$1')}`
                : productWords().priceOnRequest;
      }
 
