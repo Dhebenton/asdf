@@ -168,7 +168,7 @@
                     specification: 'Specification',
                     toBeConfirmed: 'To be confirmed',
                     priceOnRequest: 'Price on request',
-                    vat: '+ VAT',
+                    vat: 'VAT included',
                     viewSpecificationSheet: 'View Specification Sheet',
                     features: 'Features',
                     specifications: 'Specifications',
