@@ -1454,14 +1454,6 @@ footer {
      }
 }
 
-html[lang="et"] footer .links-wrap {
-     column-gap: 0;
-}
-
-html[lang="et"] footer .links-wrap .links {
-     width: 50%;
-}
-
 /* ============================================================
    ORGANISE
 ============================================================ */
