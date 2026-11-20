@@ -135,7 +135,10 @@
     };
 
     const formatPrice = value => typeof value === 'number'
-        ? new Intl.NumberFormat('en-IE', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(value)
+        ? new Intl.NumberFormat('en-IE', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2, maximumFractionDigits: 2 })
+            .formatToParts(value)
+            .map(part => part.type === 'decimal' ? '.' : part.value)
+            .join('')
         : 'Price on request';
 
     const createCard = product => {

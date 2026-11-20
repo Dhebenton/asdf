@@ -169,7 +169,7 @@
     const formatPrice = (value, selected) => typeof value === 'number'
         ? new Intl.NumberFormat(selected === 'et' ? 'et-EE' : 'en-IE', {
             style: 'currency', currency: 'EUR', minimumFractionDigits: 2, maximumFractionDigits: 2
-        }).format(value).replace(/,(\d{2})(?=\s*€)/, '.$1')
+        }).formatToParts(value).map(part => part.type === 'decimal' ? '.' : part.value).join('')
         : copy[selected].priceOnRequest;
 
     const createCard = (product, selected) => {
