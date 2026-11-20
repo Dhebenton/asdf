@@ -168,7 +168,7 @@
 
     const formatPrice = (value, selected) => typeof value === 'number'
         ? new Intl.NumberFormat(selected === 'et' ? 'et-EE' : 'en-IE', {
-            style: 'currency', currency: 'EUR', maximumFractionDigits: 0
+            style: 'currency', currency: 'EUR', minimumFractionDigits: 2, maximumFractionDigits: 2
         }).format(value)
         : copy[selected].priceOnRequest;
 

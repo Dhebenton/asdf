@@ -271,6 +271,7 @@
      function formatPrice(amount) {
           return typeof amount === 'number' && Number.isFinite(amount)
                ? `€${amount.toLocaleString(currentLanguage() === 'et' ? 'et-EE' : 'en-IE', {
+                    minimumFractionDigits: 2,
                     maximumFractionDigits: 2
                })}`
                : productWords().priceOnRequest;
