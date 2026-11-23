@@ -652,6 +652,11 @@
                localized(product.category?.title) ||
                words.equipment;
 
+          const categorySlug = String(product.category?.slug || '').trim();
+          const categoryURL = categorySlug
+               ? `/pages/all-products.html?category=${encodeURIComponent(categorySlug)}`
+               : '/pages/all-products.html';
+
           const name = String(localized(product.name) || product.name || words.equipment).trim();
 
           const title = normalize(name).includes(normalize(category))
@@ -715,7 +720,7 @@
                     ${separator}
                     <a href="/pages/all-products.html">${words.equipment}</a>
                     ${separator}
-                    <span>${escapeHTML(category)}</span>
+                    <a href="${escapeHTML(categoryURL)}">${escapeHTML(category)}</a>
                     ${separator}
                     <span class="active">${escapeHTML(name)}</span>
                `;
