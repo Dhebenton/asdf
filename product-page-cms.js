@@ -15,6 +15,19 @@
      const INITIAL_ATTACHMENTS = 4;
      const ATTACHMENTS_PER_PAGE = 2;
 
+     const CATEGORY_FILTERS = Object.freeze({
+          'cat-atv': 'atvs',
+          'cat-ekskavaatorid': 'excavators',
+          'cat-generaatorid': 'generators',
+          'cat-kompressorid': 'compressors',
+          'cat-laadurid': 'loaders',
+          'cat-murukarjed': 'ground-reinforcement',
+          'cat-pealesoiduteed': 'access-ramps',
+          'cat-pinnasekaitsematid': 'protection-mats',
+          'cat-puidutoo': 'woodworking',
+          'cat-utv': 'utvs'
+     });
+
      const API = `https://${PROJECT_ID}.api.sanity.io/v${API_VERSION}/data/query/${DATASET}`;
 
      const $ = (selector, parent = document) => parent.querySelector(selector);
@@ -46,6 +59,7 @@
                "slug": slug.current
           },
           "category": category->{
+               _id,
                name,
                title,
                "slug": slug.current
@@ -652,9 +666,12 @@
                localized(product.category?.title) ||
                words.equipment;
 
-          const categorySlug = String(product.category?.slug || '').trim();
-          const categoryURL = categorySlug
-               ? `/pages/all-products.html?category=${encodeURIComponent(categorySlug)}`
+          const categoryFilter =
+               CATEGORY_FILTERS[product.category?._id] ||
+               String(product.category?.slug || '').trim();
+
+          const categoryURL = categoryFilter
+               ? `/pages/all-products.html?category=${encodeURIComponent(categoryFilter)}`
                : '/pages/all-products.html';
 
           const name = String(localized(product.name) || product.name || words.equipment).trim();
