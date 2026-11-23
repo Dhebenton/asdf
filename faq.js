@@ -19,10 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
           });
      }
 
-     // First FAQ active on load
      activateFAQ(faqs[0]);
 
-     // Change active FAQ on hover or click
      faqs.forEach(faq => {
           faq.addEventListener("mouseenter", () => {
                if (!faq.classList.contains("active")) {
