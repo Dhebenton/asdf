@@ -28,6 +28,17 @@
           'cat-utv': 'utvs'
      });
 
+     const CATEGORY_FILTER_ALIASES = Object.freeze({
+          woodworking: [
+               'woodworking',
+               'wood processing',
+               'woodprocessing',
+               'forestry',
+               'puidutoo',
+               'puidutootlus'
+          ]
+     });
+
      const API = `https://${PROJECT_ID}.api.sanity.io/v${API_VERSION}/data/query/${DATASET}`;
 
      const $ = (selector, parent = document) => parent.querySelector(selector);
@@ -244,6 +255,25 @@
                .replace(/[\u0300-\u036f]/g, '')
                .replace(/[^\p{L}\p{N}]+/gu, ' ')
                .trim();
+     }
+
+     function getCategoryFilter(category) {
+          const mappedFilter = CATEGORY_FILTERS[category?._id];
+
+          if (mappedFilter) return mappedFilter;
+
+          const categoryText = normalize([
+               localized(category?.name),
+               localized(category?.title),
+               category?.slug
+          ].filter(Boolean).join(' '));
+          const paddedCategoryText = ` ${categoryText} `;
+
+          const aliasedFilter = Object.entries(CATEGORY_FILTER_ALIASES).find(([, aliases]) =>
+               aliases.some(alias => paddedCategoryText.includes(` ${normalize(alias)} `))
+          )?.[0];
+
+          return aliasedFilter || String(category?.slug || '').trim();
      }
 
      async function fetchSanity(query, variables = {}) {
@@ -666,9 +696,7 @@
                localized(product.category?.title) ||
                words.equipment;
 
-          const categoryFilter =
-               CATEGORY_FILTERS[product.category?._id] ||
-               String(product.category?.slug || '').trim();
+          const categoryFilter = getCategoryFilter(product.category);
 
           const categoryURL = categoryFilter
                ? `/pages/all-products.html?category=${encodeURIComponent(categoryFilter)}`
