@@ -490,6 +490,15 @@
             'aria-label',
             selected === 'en' ? 'Choose language, English selected' : 'Vali keel, valitud eesti keel'
         );
+        const mobileMenuOpen = mobileMenu?.classList.contains('active');
+        menuButton?.setAttribute(
+            'aria-label',
+            selected === 'en'
+                ? (mobileMenuOpen ? 'Close navigation' : 'Open navigation')
+                : (mobileMenuOpen ? 'Sulge navigeerimine' : 'Ava navigeerimine')
+        );
+        closeButton?.setAttribute('aria-label', selected === 'en' ? 'Close navigation' : 'Sulge navigeerimine');
+        mobileMenu?.setAttribute('aria-label', selected === 'en' ? 'Main navigation' : 'Põhinavigeerimine');
         storeLanguage(selected);
         document.dispatchEvent(new CustomEvent('etr:languagechange', {
             detail: { language: selected }
@@ -510,7 +519,7 @@
         backgroundBlur?.classList.remove('active');
         document.body.classList.remove('nav-open');
         menuButton?.setAttribute('aria-expanded', 'false');
-        menuButton?.setAttribute('aria-label', 'Open navigation');
+        menuButton?.setAttribute('aria-label', document.documentElement.lang === 'et' ? 'Ava navigeerimine' : 'Open navigation');
         mobileMenu.setAttribute('aria-hidden', 'true');
 
         if (restoreFocus) menuButton?.focus({ preventScroll: true });
@@ -524,7 +533,7 @@
         backgroundBlur?.classList.add('active');
         document.body.classList.add('nav-open');
         menuButton?.setAttribute('aria-expanded', 'true');
-        menuButton?.setAttribute('aria-label', 'Close navigation');
+        menuButton?.setAttribute('aria-label', document.documentElement.lang === 'et' ? 'Sulge navigeerimine' : 'Close navigation');
         mobileMenu.setAttribute('aria-hidden', 'false');
         closeButton?.focus({ preventScroll: true });
     };

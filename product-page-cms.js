@@ -1597,7 +1597,9 @@ function renderMedia(product) {
           setText('[data-radio-value="Finance"] span', words.finance);
           setText('.enquiry-success h3', words.enquirySent);
           setText('.enquiry-success p', words.enquiryThanks);
-          setText('.enquiry-submit', words.sendMessage);
+          const enquiry = $('.enquiry-flow');
+          enquiry?.setAttribute('aria-label', words.sendEnquiry);
+          setText('.enquiry-submit', enquiry?.classList.contains('success') ? words.closeEnquiry : words.sendMessage);
 
           const productImage = $('main.prod .etr-product-image');
           if (productImage) productImage.alt = productName;

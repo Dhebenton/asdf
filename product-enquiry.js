@@ -39,6 +39,13 @@
           let scrollPosition = 0;
           let previousStyles = null;
 
+          const enquiryActionText = action => {
+               const estonian = document.documentElement.lang === 'et';
+               return action === 'close'
+                    ? (estonian ? 'Sulge päring' : 'Close enquiry')
+                    : (estonian ? 'Saada sõnum' : 'Send Message');
+          };
+
           function selectRadio(option) {
                const name = option.dataset.radioName;
 
@@ -63,7 +70,7 @@
                form.inert = false;
                submitButton.type = 'submit';
                submitButton.setAttribute('form', 'product-enquiry-form');
-               submitButton.textContent = 'Send Message';
+               submitButton.textContent = enquiryActionText('send');
                submitButton.disabled = false;
                formStatus.hidden = true;
                formStatus.textContent = '';
@@ -76,7 +83,7 @@
                form.inert = true;
                submitButton.type = 'button';
                submitButton.removeAttribute('form');
-               submitButton.textContent = 'Close';
+               submitButton.textContent = enquiryActionText('close');
                submitButton.disabled = false;
 
                requestAnimationFrame(() => {

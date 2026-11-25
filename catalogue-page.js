@@ -183,7 +183,7 @@
 
     renderContext(); renderFilters(); render();
     const fields = `{_id,name,price,salePrice,isOnSale,isBestseller,"slug":slug.current,"image":images[0].asset->url,"brand":brand->{name},"category":category->{name,title,"slug":slug.current},mainFeature,technicalInfo[]{table[]{language,value{rows[]{cells}}}}}`;
-    const query = `*[_type=="product"&&!(_id in path("drafts.**"))&&defined(slug.current)]|order(name asc)${fields}`;
+    const query = `*[_type=="product"&&!(_id in path("drafts.**"))&&defined(slug.current)]|order(category->order asc,name asc)${fields}`;
     fetch(`https://jqlee81t.api.sanity.io/v2026-10-21/data/query/production?query=${encodeURIComponent(query)}`)
         .then(response => { if (!response.ok) throw new Error(`Sanity HTTP ${response.status}`); return response.json(); })
         .then(data => { if (!Array.isArray(data.result)) throw new Error('Invalid Sanity response'); state.products = data.result.filter(product => product.slug && product.name); })
