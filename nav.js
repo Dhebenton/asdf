@@ -227,7 +227,7 @@
             formSendAnother: 'Send Another Message'
         },
         et: {
-            navMachinery: 'Masinad',
+            navMachinery: 'Tooted',
             navBrands: 'Kaubamärgid',
             navIndustries: 'Valdkonnad',
             navServicing: 'Hooldus',
