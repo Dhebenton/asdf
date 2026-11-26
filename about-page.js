@@ -7,6 +7,7 @@
     const people = [
         {
             name: 'Joosep Hein',
+            image: '/assets/Joosep.png',
             teamKey: 'teamAfterSales',
             team: 'After-Sales',
             descriptionKey: 'teamJoosepDescription',
@@ -19,6 +20,7 @@
         },
         {
             name: 'Tanel-Patrick Epner',
+            image: '/assets/tanel.png',
             teamKey: 'teamSales',
             team: 'Sales',
             descriptionKey: 'teamTanelDescription',
@@ -31,6 +33,7 @@
         },
         {
             name: 'Maris Ristal',
+            image: '/assets/Maris.png',
             teamKey: 'teamProductSales',
             team: 'Product & Sales',
             descriptionKey: 'teamMarisDescription',
@@ -43,6 +46,7 @@
         },
         {
             name: 'Ave Pärn',
+            image: '/assets/Ave.png',
             teamKey: 'teamProductSales',
             team: 'Product & Sales',
             descriptionKey: 'teamAveDescription',
@@ -62,7 +66,7 @@
     track.innerHTML = people.map(person => `
         <div class="tra teams-card">
             <div class="image-wrap fr">
-                <img src="/assets/person-placeholder.png" alt="${escapeHTML(person.name)}" loading="lazy" decoding="async">
+                <img src="${escapeHTML(person.image)}" alt="${escapeHTML(person.name)}" loading="lazy" decoding="async">
                 <div class="cover tra fc">
                     <div class="fr jsb">
                         <span class="position" data-i18n="${person.teamKey}">${escapeHTML(person.team)}</span>
