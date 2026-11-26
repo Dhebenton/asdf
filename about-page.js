@@ -13,23 +13,10 @@
             descriptionKey: 'teamJoosepDescription',
             description: 'Joosep Hein oversees after-sales service, helping customers with equipment maintenance, technical support, and assistance.',
             roleKey: 'teamJoosepRole',
-            role: 'After-Sales Service Manager',
+            role: 'CEO & Head Of After Sales | Board Member',
             phoneHref: '+37256831391',
             phone: '+372 5683 1391',
             email: 'joosep@etrtehnika.ee'
-        },
-        {
-            name: 'Tanel-Patrick Epner',
-            image: '/assets/tanel.png',
-            teamKey: 'teamSales',
-            team: 'Sales',
-            descriptionKey: 'teamTanelDescription',
-            description: 'Tanel-Patrick Epner leads sales operations, coordinating customer enquiries, relationships, and machinery purchasing across ETR.',
-            roleKey: 'teamTanelRole',
-            role: 'Sales Director',
-            phoneHref: '+37253425735',
-            phone: '+372 5342 5735',
-            email: 'tanel.epner@etrtehnika.ee'
         },
         {
             name: 'Maris Ristal',
